@@ -17,6 +17,10 @@ https://raw.githubusercontent.com/cretueusebiu/laravel-vue-spa
 - `composer install`
 - Edit `.env` and set your database connection details
 - `php artisan migrate`
+- import file .sql from `database\scripts\database.sql` 
+
+        //TODO: create migrations
+
 - (When installed via git clone or download, run `php artisan key:generate` and `php artisan jwt:secret`)
 - `npm install`
 
