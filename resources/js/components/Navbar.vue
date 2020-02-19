@@ -27,8 +27,14 @@
               {{ user.name }}
             </a>
             <div class="dropdown-menu">
-              <router-link :to="{ name: 'settings.profile' }" class="dropdown-item pl-3">
+
+              <router-link :to="{ name: 'admin.home' }" class="dropdown-item pl-3">
                 <fa icon="cog" fixed-width />
+                {{ $t('admin') }}
+              </router-link>
+
+              <router-link :to="{ name: 'settings.profile' }" class="dropdown-item pl-3">
+                <fa icon="user" fixed-width />
                 {{ $t('settings') }}
               </router-link>
 

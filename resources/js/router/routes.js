@@ -21,5 +21,12 @@ export default [
       { path: 'password', name: 'settings.password', component: page('settings/password.vue') }
     ] },
 
+  { path: '/admin',
+    component: page('admin/index.vue'),
+    children: [
+      { path: '', redirect: { name: 'admin.home' } },
+      { path: 'home', name: 'admin.home', component: page('admin/home.vue') }
+    ] },
+
   { path: '*', component: page('errors/404.vue') }
 ]
