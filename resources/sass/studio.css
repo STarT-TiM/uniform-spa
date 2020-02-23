@@ -1,0 +1,3248 @@
+body,
+html {
+	height: 100%
+}
+input[type=number] {
+	-moz-appearance: textfield
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0
+}
+input[type=range] {
+	-webkit-appearance: none;
+	background-color: transparent;
+	outline: none;
+	padding: 0
+}
+input[type=range]::-webkit-slider-runnable-track {
+	background-color: #f4f4f4;
+	border: 1px solid #cacaca;
+	height: 5px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border-radius: 3px
+}
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 25px;
+	height: 25px;
+	margin-top: -9px;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid #666;
+	border-radius: 25px
+}
+input[type=range]::-webkit-slider-thumb:active {
+	background-color: #009ddc
+}
+input[type=range]::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid #666;
+	border-radius: 50%
+}
+input[type=range]::-moz-range-thumb.active {
+	background-color: #009ddc
+}
+input[type=range]::-moz-range-track {
+	background-color: #f4f4f4;
+	height: 3px;
+	border: 1px solid #cacaca;
+	border-radius: 3px
+}
+input[type=range]:-moz-ui-invalid {
+	box-shadow: none
+}
+input[type=range]::-ms-track {
+	height: 5px;
+	background: transparent!important;
+	border-color: transparent!important;
+	border-width: 3px 0;
+	color: transparent;
+	padding: 0
+}
+input[type=range]::-ms-fill-lower,
+input[type=range]::-ms-fill-upper {
+	background: #f4f4f4;
+	border: 1px solid #cacaca;
+	border-radius: 3px
+}
+input[type=range]::-ms-thumb {
+	border: 1px solid #666;
+	width: 18px;
+	height: 18px;
+	margin-top: 0;
+	background-color: #fff;
+	border-radius: 10px;
+	cursor: pointer
+}
+input[type=range]::-ms-thumb:active {
+	background-color: #009ddc
+}
+label.block {
+	display: block
+}
+iframe[name=google_conversion_frame] {
+	display: none
+}
+.wrapper.main {
+	margin: 0;
+	padding: 0;
+	width: 100%
+}
+.up-footer {
+	display: none
+}
+.btn {
+	font-size: 14px
+}
+.sb-site-container {
+	min-height: 100%
+}
+.pop-dialog a,
+.Studio a {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.pop-dialog h1,
+.pop-dialog h2,
+.pop-dialog h3,
+.Studio h1,
+.Studio h2,
+.Studio h3 {
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+	font-weight: 500;
+	letter-spacing: 0;
+	text-transform: none
+}
+.pop-dialog h1,
+.Studio h1 {
+	font-size: 22.4px
+}
+.Studio {
+	position: relative;
+	font-size: 14px;
+	top: 1rem
+}
+.Studio a {
+	text-decoration: none
+}
+.Studio>.content .tools {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	-webkit-flex-direction: column-reverse;
+	-ms-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	pointer-events: none
+}
+.Studio>.content .tools>.desc {
+	display: none
+}
+.Studio>.content .menu {
+	pointer-events: all
+}
+.Studio>.content .panes {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1
+}
+.ProductView>.container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	text-align: center
+}
+.ProductView>.controls {
+	position: absolute;
+	left: 10px;
+	bottom: 100px;
+	background-color: #fff;
+	border-radius: 6px;
+	font-size: 12px
+}
+.ProductView>.controls>li {
+	margin: 5px 0 5px 5px;
+	padding: 5px 0
+}
+.ProductView>.controls>li>a,
+.ProductView>.controls>li>div>a {
+	display: block;
+	text-align: center;
+	line-height: 1;
+	color: #666
+}
+.ProductView>.controls>li>a:hover {
+	text-decoration: none
+}
+.ProductView>.controls>li.shareButton {
+	display: none;
+	position: relative;
+	padding: 0;
+	margin-top: 10px
+}
+.ProductView>.controls>li.shareButton>div {
+	padding: 5px 0;
+	position: relative;
+	z-index: 1
+}
+.ProductView>.controls>li.shareButton .share-links {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 0;
+	height: 54px;
+	background-color: #f6f4f3;
+	background-color: hsla(20, 14%, 96%, .8);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-webkit-transition: width .5s;
+	transition: width .5s;
+	overflow: hidden
+}
+.ProductView>.controls>li.shareButton .share-links>li {
+	float: left;
+	padding: 11px 15px
+}
+.ProductView>.controls>li.shareButton .share-links>li>a {
+	-webkit-background-size: 30px 30px;
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: top;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	padding-top: 0
+}
+.ProductView>.controls>li.shareButton .share-links>li>a:hover {
+	text-decoration: none
+}
+.ProductView>.controls>li.shareButton .share-links>li.email a {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zM13.1 13.9h22.1L24 23.6l-11.2-9.7h.3zm-2.6 17.6v-15-.4l7.9 6.8-7.9 8.8v-.2zm24.4 2.6H13.1c-.2 0-.4 0-.5-.1l8.2-9.1 2.2 1.9c.3.2.6.4 1 .4s.7-.1 1-.4l2.1-1.9 8.3 9c-.2.2-.3.2-.5.2zm2.6-2.6v.2l-8-8.7 7.9-6.9v15.4z'/%3E%3C/svg%3E")
+}
+.ProductView>.controls>li.shareButton .share-links>li.twitter a {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zm11.2 18.2v.7c0 7.6-5.8 16.5-16.5 16.5-3.3 0-6.3-1-8.9-2.6.5.1.9.1 1.4.1 2.7 0 5.2-.9 7.2-2.5-2.5 0-4.7-1.7-5.4-4 .4.1.7.1 1.1.1.5 0 1-.1 1.5-.2-2.6-.5-4.6-2.8-4.6-5.6v-.1c.8.4 1.7.7 2.6.7-1.6-1-2.6-2.8-2.6-4.8 0-1.1.3-2.1.8-2.9 2.9 3.5 7.1 5.8 11.9 6-.1-.4-.2-.9-.2-1.3 0-3.2 2.6-5.8 5.8-5.8 1.7 0 3.2.7 4.2 1.8 1.3-.3 2.6-.7 3.7-1.4-.4 1.4-1.3 2.5-2.5 3.2 1.2-.1 2.3-.5 3.3-.9-.7 1.2-1.7 2.2-2.8 3z'/%3E%3C/svg%3E")
+}
+.ProductView>.controls>li.shareButton .share-links>li.facebook a {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zm5.7 14.1h-2.5c-1.1 0-1.8.6-1.9 1.7-.1.9 0 1.8 0 2.7 0 .3.2.3.4.3h3.8c.4 0 .5.1.5.5-.2 1.5-.3 3-.4 4.4 0 .3-.2.4-.5.4h-3c-.7 0-.7-.1-.7.6v13.9c0 .5-.1.6-.6.6h-5.2c-.5 0-.6-.2-.6-.6v-7-7.1c0-.4-.1-.5-.5-.5h-2.2c-.3 0-.4-.1-.4-.4v-4.4c0-.3.1-.4.4-.4h2.3c.4 0 .5-.1.5-.5v-3.4c0-1.4.4-2.6 1.2-3.8 1-1.4 2.5-2.1 4.2-2.1 1.7-.1 3.5 0 5.2-.1.3 0 .3.1.3.3v4.5c0 .3 0 .4-.3.4z'/%3E%3C/svg%3E")
+}
+.ProductView>.controls>li.shareButton .share-links>li.pinterest a {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M24 0C10.7 0 0 10.7 0 24c0 9.8 5.9 18.3 14.4 22-.1-1.7 0-3.7.4-5.5.5-1.9 3.1-13.1 3.1-13.1s-.8-1.5-.8-3.8c0-3.6 2.1-6.2 4.6-6.2 2.2 0 3.2 1.6 3.2 3.6 0 2.2-1.4 5.5-2.1 8.5-.6 2.5 1.3 4.6 3.8 4.6 4.5 0 7.6-5.8 7.6-12.8 0-5.3-3.5-9.2-10-9.2-7.3 0-11.8 5.4-11.8 11.5 0 2.1.6 3.6 1.6 4.7.4.5.5.7.3 1.3-.1.4-.4 1.5-.5 1.9-.2.6-.7.8-1.2.6-3.4-1.4-4.9-5-4.9-9.2 0-6.8 5.7-15 17.2-15 9.2 0 15.2 6.6 15.2 13.7C40.1 31 34.9 38 27.2 38c-2.6 0-5-1.4-5.9-3 0 0-1.4 5.5-1.7 6.6-.5 1.9-1.5 3.7-2.4 5.1 2.2.6 4.4 1 6.8 1 13.3 0 24-10.7 24-24C48 10.7 37.3 0 24 0z'/%3E%3C/svg%3E")
+}
+.ProductView>.controls>li.shareButton.active>div {
+	background-color: #08588c;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px
+}
+.ProductView>.controls>li.shareButton.active>div:after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: " ";
+	left: 100%;
+	top: 50%;
+	margin-top: -8px;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 5px solid #08588c
+}
+.ProductView>.controls>li.shareButton.active>.share-links {
+	width: 242px;
+	border-top: 1px solid #959595;
+	border-right: 1px solid #959595;
+	border-bottom: 1px solid #959595
+}
+.ProductView>.controls>li.shareButton.active>div>a.share {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M24 4.5c10.8 0 19.5 8.7 19.5 19.5S34.8 43.5 24 43.5 4.5 34.8 4.5 24 13.2 4.5 24 4.5m0-4C11 .5.5 11 .5 24S11 47.5 24 47.5 47.5 37 47.5 24 37 .5 24 .5z'/%3E%3Cpath d='M26.4 10.6H18c-4.3 0-7.8 3.5-7.8 7.8 0 3.3 2 6.2 5.2 7.3l1.3.5-1.8 1.8c-.4.4-.4 1.1 0 1.5.3.3 1.1.3 1.5 0l3.3-3.3h6.8c4.3 0 7.8-3.5 7.8-7.8-.1-4.4-3.6-7.8-7.9-7.8zM37.9 30.2c0-2.8-2.2-5-4.9-5-1.7 1.6-4 2.6-6.6 2.6h-2.9c-.4.7-.6 1.5-.6 2.4 0 2.8 2.2 5 5 5h3.8l1.8 1.8c.5.5 1.2.5 1.6 0 .5-.5.5-1.2 0-1.6l-.5-.5c1.9-.7 3.3-2.4 3.3-4.7z'/%3E%3C/svg%3E");
+	color: #fff
+}
+.ProductView>.controls>li.clear-btn {
+	display: none
+}
+.ProductView>.controls>li.templates-btn {
+	position: fixed;
+	top: 50px
+}
+.ProductView>.controls>li a {
+	padding-top: 32px;
+	width: 60px
+}
+.ProductView>.controls>li a.rotateButton {
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M47.8 39.5L39 32.3c-.1-.1-.3-.2-.5-.2-.4 0-.7.3-.7.7v2.8H25.6c-.6 0-1.1.5-1.1 1.1v6.7c0 .6.5 1.1 1.1 1.1h12.3v2.8c0 .3.2.5.4.6.2.1.5.1.7-.1l8.8-7.3.2-.3v-.5l-.2-.2zM2.2 9.5z'/%3E%3Cpath d='M28.6 6.6c1.1-1.2 1.6-2.5 1.7-3.2v-.1h.3c.5.1.8.1 1.6.6.8.4 2.1 1.3 4.2 2.7 1.1.8 2.6 2.1 3.7 3.1.6.5 1.1 1 1.4 1.4l.2.2-5.5 5.9c-.3-.1-.6-.3-.9-.6-.3-.2-.7-.4-1-.6l-.3-.2-.1-.1c-.1-.2-.4-.4-.6-.3-.3.1-.5.3-.5.6v17.3c0 .2.1.3.2.4s.3.2.4.2h2.1c.2 0 .3-.1.4-.2s.2-.3.2-.4V20.6h.2c.7 0 1.4-.3 2-.9l6.2-6.6c.5-.5.7-1.2.7-1.8 0-.7-.3-1.3-.7-1.9-.2-.2-3.6-3.8-6.2-5.6-2.2-1.5-3.6-2.4-4.6-3-1-.6-1.8-.8-2.7-.9h-.1c-.1.1-.3.1-.6.1s-.9 0-1.6.4c-.7.4-1.3 1.1-1.6 2.2 0 .1-.3.8-.8 1.6-.6.7-1.5 1.4-2.9 1.5-1.5-.1-2.4-.8-3-1.5-.3-.4-.5-.8-.6-1l-.1-.3v-.1c-.3-1.2-.9-1.9-1.6-2.2-.7-.6-1.4-.6-1.7-.6-.3 0-.5 0-.7.1h-.1c-.8.1-1.5.3-2.6.9-1 .6-2.4 1.5-4.6 3-2.6 1.7-6.1 5.3-6.2 5.5-.5.5-.7 1.2-.7 1.9s.2 1.3.7 1.8l6.2 6.6c.5.6 1.2.9 2 .9h.3V38c0 2.5 1.9 4.5 4.3 4.5h7.2c.2 0 .3-.1.4-.2.1-.1.2-.3.2-.4v-2.1c0-.2-.1-.3-.2-.4-.1-.1-.3-.2-.4-.2H15c-.3 0-.5-.1-.7-.3-.2-.2-.3-.5-.3-.9V15.9c0-.2-.1-.3-.2-.4-.1-.1-.3-.2-.4-.2s-.3.1-.4.2c-.1.1-.1.1-.1.2 0 0-.2.2-.5.4-.4.3-1 .6-1.4.9-.1.1-.3.2-.4.2L5 11.3l.2-.2c1.1-1.1 3.4-3.4 5.1-4.5 2.2-1.5 3.4-2.3 4.2-2.7.8-.4 1.1-.5 1.6-.6h.3l.1.1c.2.6.7 1.9 1.7 3.2C19.3 7.8 21 8.9 23.4 9c2.4-.1 4.1-1.2 5.2-2.4zM44.6 9.5z'/%3E%3C/svg%3E") no-repeat top;
+	-webkit-background-size: 30px 30px;
+	background-size: 30px 30px
+}
+.ProductView>.controls>li a.rotateButton.disabled {
+	-webkit-filter: grayscale(1);
+	opacity: .6;
+	cursor: default
+}
+.ProductView>.controls>li a.zoomButton {
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M44.3 42.9c-2.7-2.7-5.4-5.5-8.1-8.2C44 27.6 45 15.2 38.1 7 30.9-1.5 17.8-2.4 9.5 5 1.4 12.1.7 24.8 7.6 33c3.2 3.7 7.7 6.1 12.5 6.8 2.3.3 4.6.2 6.9-.3.8-.2 1.5-.4 2.2-.6.4-.1 1-.5 1.4-.5 1-.2 0-.3.7.1 1 .6 1.9 1.9 2.7 2.7l4.2 4.2c.7.8 1.5 1.8 2.5 2.3 3 1.5 5.9-2.4 3.6-4.8zm-21.5-7.4c-6.4 0-12.3-4.1-14.6-10-2.5-6.5-.3-14 5.3-18.1 4.8-3.6 11.5-4 16.7-1.2 5.9 3.2 9.2 10.2 7.9 16.8-1.4 7.2-8 12.5-15.3 12.5zm7-18.7h-4.1v-4.1c0-1.6-.9-2.8-2.4-2.8s-2.4 1.3-2.4 2.8v4.1h-5.1c-1.6 0-2.8.9-2.8 2.4 0 1.6 1.3 2.4 2.8 2.4h5.1v5.1c0 1.5.9 2.8 2.4 2.8s2.4-1.3 2.4-2.8v-5.1h4.1c1.6 0 2.8-.9 2.8-2.4 0-1.6-1.3-2.4-2.8-2.4z'/%3E%3C/svg%3E") no-repeat top;
+	-webkit-background-size: 30px 30px;
+	background-size: 30px 30px
+}
+.ProductView>.controls>li a.templatesButton {
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M47.6 12.3s-1-1.1-2.4-2.4c-1.4-1.3-3.1-2.8-4.6-3.9-2.6-1.8-4.1-2.7-5.2-3.3-.6-.3-1-.5-1.5-.6-.4-.1-.8-.2-1.1-.2-.2 0-.4-.1-.7-.1-.2 0-.4 0-.7.1-.2.1-.4.2-.6.4-.3.2-.4.5-.5.7-.1.2-.2.4-.2.7 0 .2-.2.6-.4 1.1-.4.8-1 1.7-2 2.4-.9.7-2.1 1.3-3.7 1.3-1.1 0-2-.3-2.7-.6-1.1-.6-1.9-1.4-2.5-2.3-.3-.4-.5-.8-.6-1.2-.2-.4-.3-.6-.3-.8-.1-.4-.2-.9-.6-1.3-.2-.2-.5-.4-.7-.4-.3-.1-.5-.1-.7-.1-.3 0-.5.1-.7.1-.4 0-.8.1-1.2.3-.7.2-1.3.6-2.3 1.2-1 .6-2.3 1.5-4.2 2.7-1.6 1-3.3 2.6-4.7 3.9C1.4 11.3.4 12.4.4 12.4c-.5.5-.5 1.4 0 1.9L7.5 22c.4.5 1.1.6 1.7.3l1.4-.8v23.2c0 .4.2.7.4 1 .3.3.6.4 1 .4h23.8c.4 0 .7-.2 1-.4.3-.3.4-.6.4-1v-13-9-1.2c.8.5 1.4.8 1.4.8.6.3 1.3.2 1.7-.3l7.3-7.8c.5-.5.5-1.3 0-1.9zM39 19.4c-.3-.2-.7-.4-1-.6-.3-.2-.7-.5-.9-.6l-.1-.1c-.1-.1-.2-.3-.3-.4-.3-.3-.6-.4-1-.4s-.7.2-1 .4c-.3.3-.4.6-.4 1v24.7H13.4V31.8v-9-4.1c0-.4-.2-.7-.4-1-.3-.3-.6-.4-1-.4s-.7.2-1 .4c-.1.1-.2.3-.3.4 0 0-.1 0-.1.1-.4.3-1.1.8-1.7 1.1-.1 0-.1.1-.1.1l-5.4-5.9 1.9-1.9C6.5 10.4 7.9 9.2 9 8.4c2.5-1.7 4-2.6 4.9-3.1.5-.2.8-.4 1-.5.1 0 .3-.1.4-.1.1.4.3.8.5 1.3.5 1.1 1.4 2.3 2.7 3.4 1.3 1.1 3.2 1.9 5.5 1.9 1.5 0 2.8-.4 3.9-.9 1.7-.8 2.8-2.1 3.6-3.2.4-.6.7-1.1.9-1.6.1-.3.2-.5.3-.8.1 0 .2 0 .4.1.3.1.8.3 1.8.9.9.6 2.2 1.4 4.1 2.7 1.3.9 3 2.3 4.3 3.6.5.5 1 .9 1.4 1.3l-5.7 6z'/%3E%3Cpath d='M16.3 17.2h14.9v5.7H16.3zM16.3 25.7h14.9v3.8H16.3zM16.3 32.3h14.9v1.9H16.3z'/%3E%3C/svg%3E") no-repeat top;
+	-webkit-background-size: 30px 30px;
+	background-size: 30px 30px
+}
+.ProductView>.controls>li a.share {
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M24 4.5c10.8 0 19.5 8.7 19.5 19.5S34.8 43.5 24 43.5 4.5 34.8 4.5 24 13.2 4.5 24 4.5m0-4C11 .5.5 11 .5 24S11 47.5 24 47.5 47.5 37 47.5 24 37 .5 24 .5z'/%3E%3Cpath d='M26.4 10.6H18c-4.3 0-7.8 3.5-7.8 7.8 0 3.3 2 6.2 5.2 7.3l1.3.5-1.8 1.8c-.4.4-.4 1.1 0 1.5.3.3 1.1.3 1.5 0l3.3-3.3h6.8c4.3 0 7.8-3.5 7.8-7.8-.1-4.4-3.6-7.8-7.9-7.8zM37.9 30.2c0-2.8-2.2-5-4.9-5-1.7 1.6-4 2.6-6.6 2.6h-2.9c-.4.7-.6 1.5-.6 2.4 0 2.8 2.2 5 5 5h3.8l1.8 1.8c.5.5 1.2.5 1.6 0 .5-.5.5-1.2 0-1.6l-.5-.5c1.9-.7 3.3-2.4 3.3-4.7z'/%3E%3C/svg%3E") no-repeat top;
+	-webkit-background-size: 30px 30px;
+	background-size: 30px 30px
+}
+.ProductView>.controls>li a.clearButton {
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M27.1 47.8C11.4 49.7-1.7 36.6.2 20.9 1.5 10.1 10.1 1.6 20.9.2c15.7-1.9 28.9 11.2 26.9 26.9-1.3 10.8-9.9 19.4-20.7 20.7zm-.6-42.6c-12.3-1.6-22.9 9-21.3 21.3C6.3 35 13 41.7 21.5 42.8c12.3 1.6 22.9-9 21.3-21.3-.9-8.3-7.8-15.2-16.3-16.3zm1.6 18.9l4-4c1.1-1.1 1.1-2.9 0-4s-2.9-1.1-4 0l-4 4-4-4c-1.1-1.1-2.9-1.1-4 0s-1.1 2.9 0 4l4 4-4 4c-1.1 1.1-1.1 2.9 0 4 .5.5 1.3.8 1.9.8.6 0 1.4-.3 1.9-.8l4-4 4 4c.5.5 1.3.8 1.9.8.6 0 1.4-.3 1.9-.8 1.1-1.1 1.1-2.9 0-4l-3.6-4z'/%3E%3C/svg%3E") no-repeat top;
+	-webkit-background-size: 30px 30px;
+	background-size: 30px 30px
+}
+.MenuBar>li {
+	float: left;
+	width: 20%;
+	background-color: #fff;
+	background-color: hsla(0, 0%, 100%, .95);
+	border-left: 1px solid #dcdcdc;
+	border-top: 1px solid #dcdcdc
+}
+.MenuBar>li:first-child {
+	border-left: none
+}
+.MenuBar>li:last-child {
+	background-color: #009ddc
+}
+.MenuBar>li>a {
+	color: #666;
+	display: block;
+	font-size: 11px;
+	padding-top: 32px;
+	padding-bottom: 5px;
+	text-align: center;
+	-webkit-background-size: 22px 22px;
+	background-size: 22px 22px;
+	background-repeat: no-repeat;
+	background-position: center 8px
+}
+.MenuBar>li>a.editProduct {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M40.8 6.3c-5.4-3.7-6.3-4.1-7.6-4.2-.7-.1-1-.2-1.2.7-.3 1.3-2.4 6.2-7.9 6.3-5.6-.1-7.6-5-7.9-6.3-.2-.9-.6-.8-1.2-.7-1.4.2-2.2.6-7.6 4.2-3 2-7.2 6.5-7.2 6.5L7.7 21s3.7-2 3.7-2.6V46h25.2V18.4c0 .6 3.7 2.6 3.7 2.6l7.7-8.3s-4.2-4.4-7.2-6.4z'/%3E%3C/svg%3E")
+}
+.MenuBar>li>a.addImage {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M44 15.4h-9.1V5.6c0-2.2-1.8-4-4-4H17.1c-2.2 0-4 1.8-4 4v9.8H4c-2.2 0-4 1.8-4 4v23c0 2.2 1.8 4 4 4h40c2.2 0 4-1.8 4-4v-23c0-2.2-1.8-4-4-4zM21.3 4.7h5.4c1.6 0 2.9 1.3 2.9 2.9s-1.3 2.9-2.9 2.9h-5.4c-1.6 0-2.9-1.3-2.9-2.9s1.3-2.9 2.9-2.9zm2.3 37.8c-7.2 0-12.9-5.8-12.9-12.9 0-7.2 5.8-12.9 12.9-12.9s12.9 5.8 12.9 12.9c.1 7.1-5.7 12.9-12.9 12.9zm0-22.8c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8zm0 15.8c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z'/%3E%3C/svg%3E")
+}
+.MenuBar>li>a.addText {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M37.4 0H10.6C8.3 0 6.3 2.1 6.3 4.2v1.6c0 2.2 2 4.3 4.3 4.3H19v34c0 2.2 2.1 3.9 4.3 3.9h1.6c2.2 0 4.3-1.7 4.3-3.9v-34h8.4c2.2 0 4.3-2.1 4.3-4.3V4.2C41.7 2.1 39.7 0 37.4 0z'/%3E%3C/svg%3E")
+}
+.MenuBar>li>a.saveDesign {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M43.6 37H24.4c.2-.1.4-.2.5-.4l13.4-16.3c.2-.2.3-.5.3-.8 0-.7-.6-1.2-1.2-1.2h-5.1V2.1c0-1.2-.9-2.1-2.1-2.1H17.8c-1.2 0-2.1.9-2.1 2.1v16.1h-5.1c-.5 0-.9.3-1.1.7-.2.4-.1 1 .2 1.3L23 36.6c.1.2.3.3.5.4H4.4c-1.2 0-2.1.9-2.1 2.1v6.8c0 1.2.9 2.1 2.1 2.1h39.2c1.2 0 2.1-.9 2.1-2.1v-6.8c0-1.2-.9-2.1-2.1-2.1zM41 42.3h-7.5c-.7 0-1.3-.6-1.3-1.3 0-.7.6-1.3 1.3-1.3H41c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3z'/%3E%3C/svg%3E")
+}
+.MenuBar>li>a.buyLink {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M31.3 21.9c-2-1-4.1-1.8-6.1-2.8-1-.5-2.1-1-3-1.7-2-1.5-1.6-4.3.8-5.1 1-.4 2.1-.4 3.2-.4 2.3 0 4.5.6 6.5 1.6.5.3 1.1.5 1.7.5 1.9 0 3.4-1.5 3.4-3.4 0-1.5-1-2.8-2.4-3.2-.2-.1-.4-.3-.8-.4-1.7-.8-3.4-1.2-5.3-1.5-1.6-.2-1.5.2-1.5-1.7V1.3c0-1.1-.2-1.2-1.3-1.2H22.9c-.9 0-1.1.2-1.1 1.1v3.7c0 .6-.2.8-.8 1-1 .3-2 .6-2.9 1-4.7 2.4-6.5 7.1-5.3 11.8.7 2.7 2.5 4.5 4.9 5.8 2.3 1.2 4.7 2.1 7.1 3.2.9.4 1.7.9 2.4 1.5 2.2 1.9 1.7 4.9-1 6-.8.3-1.8.5-2.7.5-2.9.1-5.6-.7-8.2-2-.7-.4-1.1-.5-1.4-.4h-.3c-1.9 0-3.4 1.5-3.4 3.4 0 1.4.9 2.6 2.1 3.1.2.1.4.3.7.4 2.3 1.2 4.7 1.8 7.2 2 .8.1 1 .4 1 1.1v3.4c0 .9.2 1.1 1.1 1.2h3.8c1 0 1.1-.2 1.2-1.2 0-1.2.1-2.4 0-3.6 0-.8.2-1.2 1-1.4.9-.2 1.7-.6 2.6-.9 5.2-2.5 7.5-8.6 5.1-13.9-.9-2.3-2.6-3.9-4.7-5z'/%3E%3C/svg%3E");
+	color: #fff
+}
+.Pane {
+	position: absolute;
+	background-color: #fff;
+	left: 0;
+	right: 0;
+	top: 100%;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	z-index: 2;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	pointer-events: all
+}
+.Pane.show {
+	top: 0
+}
+.Pane a.close-icon {
+	position: fixed;
+	margin-top: -3rem;
+	right: 1rem;
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	overflow: hidden;
+	cursor: pointer;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M61 16L49 4 31 22 13 4 1 16l18 18L1 52l12 12 18-18 18 18 12-12-18-18z'/%3E%3Cpath fill='%23FFF' d='M61 13L49 1 31 19 13 1 1 13l18 18L1 49l12 12 18-18 18 18 12-12-18-18z'/%3E%3C/svg%3E") no-repeat 50%;
+	-webkit-background-size: 24px 24px;
+	background-size: 24px 24px
+}
+.Pane a.close-icon:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M61 16L49 4 31 22 13 4 1 16l18 18L1 52l12 12 18-18 18 18 12-12-18-18z'/%3E%3Cpath fill='%23009DDC' d='M61 13L49 1 31 19 13 1 1 13l18 18L1 49l12 12 18-18 18 18 12-12-18-18z'/%3E%3C/svg%3E")
+}
+.Pane .section .sub-section {
+	margin-bottom: .5rem
+}
+.Pane .section label.section-name {
+	display: none
+}
+.ContinuePane,
+.EditGroupPane,
+.IntroPane {
+	display: none;
+	margin-top: 1rem
+}
+.ContinuePane,
+.IntroPane {
+	text-align: center
+}
+.ContinuePane>.intro-nav,
+.IntroPane>.intro-nav {
+	margin: 1rem
+}
+.ContinuePane>.intro-nav>li:first-child,
+.IntroPane>.intro-nav>li:first-child {
+	border-top: none
+}
+.ContinuePane>.intro-nav>li,
+.IntroPane>.intro-nav>li {
+	display: block;
+	padding: 16px 0;
+	border-top: 1px solid #dcdcdc;
+	text-align: left;
+	white-space: nowrap
+}
+.ContinuePane>.intro-nav>li>a,
+.IntroPane>.intro-nav>li>a {
+	background-position: 16px;
+	background-repeat: no-repeat;
+	-webkit-background-size: 32px 32px;
+	background-size: 32px 32px;
+	display: block;
+	height: 51px;
+	padding-left: 65px
+}
+.ContinuePane>.intro-nav>li>a:hover h1,
+.ContinuePane>.intro-nav>li>a:hover span,
+.IntroPane>.intro-nav>li>a:hover h1,
+.IntroPane>.intro-nav>li>a:hover span {
+	color: #009ddc
+}
+.ContinuePane>.intro-nav>li>a div,
+.IntroPane>.intro-nav>li>a div {
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 18' fill='%2308588c'%3E%3Cpath d='M3.3 17.1l7.5-7c.3-.3.5-.7.5-1.1 0-.4-.2-.8-.5-1.1L3.3.9C2.7.3 1.7.4 1.1 1c-.5.6-.5 1.6.1 2.1L7.5 9l-6.3 5.9c-.6.6-.7 1.5-.1 2.2.6.5 1.6.6 2.2 0z'/%3E%3C/svg%3E") no-repeat 100%;
+	-webkit-background-size: 10px 10px;
+	background-size: 10px 10px;
+	padding-right: 20px
+}
+.ContinuePane>.intro-nav>li>a h1,
+.IntroPane>.intro-nav>li>a h1 {
+	color: #666;
+	font-size: 18px;
+	line-height: 22px;
+	padding-top: 5px;
+	margin-bottom: 0
+}
+.ContinuePane>.intro-nav>li>a:hover,
+.IntroPane>.intro-nav>li>a:hover {
+	text-decoration: none
+}
+.ContinuePane>.intro-nav>li>a span,
+.IntroPane>.intro-nav>li>a span {
+	color: #959595;
+	display: block
+}
+.ContinuePane>.intro-nav>li>a.image,
+.IntroPane>.intro-nav>li>a.image {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M44 15.4h-9.1V5.6c0-2.2-1.8-4-4-4H17.1c-2.2 0-4 1.8-4 4v9.8H4c-2.2 0-4 1.8-4 4v23c0 2.2 1.8 4 4 4h40c2.2 0 4-1.8 4-4v-23c0-2.2-1.8-4-4-4zM21.3 4.7h5.4c1.6 0 2.9 1.3 2.9 2.9s-1.3 2.9-2.9 2.9h-5.4c-1.6 0-2.9-1.3-2.9-2.9s1.3-2.9 2.9-2.9zm2.3 37.8c-7.2 0-12.9-5.8-12.9-12.9 0-7.2 5.8-12.9 12.9-12.9s12.9 5.8 12.9 12.9c.1 7.1-5.7 12.9-12.9 12.9zm0-22.8c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8zm0 15.8c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z'/%3E%3C/svg%3E")
+}
+.ContinuePane>.intro-nav>li>a.text,
+.IntroPane>.intro-nav>li>a.text {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M37.4 0H10.6C8.3 0 6.3 2.1 6.3 4.2v1.6c0 2.2 2 4.3 4.3 4.3H19v34c0 2.2 2.1 3.9 4.3 3.9h1.6c2.2 0 4.3-1.7 4.3-3.9v-34h8.4c2.2 0 4.3-2.1 4.3-4.3V4.2C41.7 2.1 39.7 0 37.4 0z'/%3E%3C/svg%3E")
+}
+.ContinuePane>.intro-nav>li>a.product,
+.IntroPane>.intro-nav>li>a.product {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M40.8 6.3c-5.4-3.7-6.3-4.1-7.6-4.2-.7-.1-1-.2-1.2.7-.3 1.3-2.4 6.2-7.9 6.3-5.6-.1-7.6-5-7.9-6.3-.2-.9-.6-.8-1.2-.7-1.4.2-2.2.6-7.6 4.2-3 2-7.2 6.5-7.2 6.5L7.7 21s3.7-2 3.7-2.6V46h25.2V18.4c0 .6 3.7 2.6 3.7 2.6l7.7-8.3s-4.2-4.4-7.2-6.4z'/%3E%3C/svg%3E")
+}
+.ContinuePane>.intro-nav>li>a.templates,
+.IntroPane>.intro-nav>li>a.templates {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M47.6 12.3s-1-1.1-2.4-2.4c-1.4-1.3-3.1-2.8-4.6-3.9-2.6-1.8-4.1-2.7-5.2-3.3-.6-.3-1-.5-1.5-.6-.4-.1-.8-.2-1.1-.2-.2 0-.4-.1-.7-.1-.2 0-.4 0-.7.1-.2.1-.4.2-.6.4-.3.2-.4.5-.5.7-.1.2-.2.4-.2.7 0 .2-.2.6-.4 1.1-.4.8-1 1.7-2 2.4-.9.7-2.1 1.3-3.7 1.3-1.1 0-2-.3-2.7-.6-1.1-.6-1.9-1.4-2.5-2.3-.3-.4-.5-.8-.6-1.2-.2-.4-.3-.6-.3-.8-.1-.4-.2-.9-.6-1.3-.2-.2-.5-.4-.7-.4-.3-.1-.5-.1-.7-.1-.3 0-.5.1-.7.1-.4 0-.8.1-1.2.3-.7.2-1.3.6-2.3 1.2-1 .6-2.3 1.5-4.2 2.7-1.6 1-3.3 2.6-4.7 3.9C1.4 11.3.4 12.4.4 12.4c-.5.5-.5 1.4 0 1.9L7.5 22c.4.5 1.1.6 1.7.3l1.4-.8v23.2c0 .4.2.7.4 1 .3.3.6.4 1 .4h23.8c.4 0 .7-.2 1-.4.3-.3.4-.6.4-1v-13-9-1.2c.8.5 1.4.8 1.4.8.6.3 1.3.2 1.7-.3l7.3-7.8c.5-.5.5-1.3 0-1.9zM39 19.4c-.3-.2-.7-.4-1-.6-.3-.2-.7-.5-.9-.6l-.1-.1c-.1-.1-.2-.3-.3-.4-.3-.3-.6-.4-1-.4s-.7.2-1 .4c-.3.3-.4.6-.4 1v24.7H13.4V31.8v-9-4.1c0-.4-.2-.7-.4-1-.3-.3-.6-.4-1-.4s-.7.2-1 .4c-.1.1-.2.3-.3.4 0 0-.1 0-.1.1-.4.3-1.1.8-1.7 1.1-.1 0-.1.1-.1.1l-5.4-5.9 1.9-1.9C6.5 10.4 7.9 9.2 9 8.4c2.5-1.7 4-2.6 4.9-3.1.5-.2.8-.4 1-.5.1 0 .3-.1.4-.1.1.4.3.8.5 1.3.5 1.1 1.4 2.3 2.7 3.4 1.3 1.1 3.2 1.9 5.5 1.9 1.5 0 2.8-.4 3.9-.9 1.7-.8 2.8-2.1 3.6-3.2.4-.6.7-1.1.9-1.6.1-.3.2-.5.3-.8.1 0 .2 0 .4.1.3.1.8.3 1.8.9.9.6 2.2 1.4 4.1 2.7 1.3.9 3 2.3 4.3 3.6.5.5 1 .9 1.4 1.3l-5.7 6z'/%3E%3Cpath d='M16.3 17.2h14.9v5.7H16.3zM16.3 25.7h14.9v3.8H16.3zM16.3 32.3h14.9v1.9H16.3z'/%3E%3C/svg%3E")
+}
+.AddTextPane {
+	height: auto;
+	text-align: center
+}
+.AddTextPane .addText {
+	margin-top: 25px
+}
+.AddImagePane>.intro {
+	text-align: center
+}
+.AddImagePane>.intro ul {
+	margin-top: 2rem
+}
+.AddImagePane>.intro ul li {
+	padding: 1rem 0;
+	border-top: 1px solid #dcdcdc;
+	text-align: left;
+	white-space: nowrap
+}
+.AddImagePane>.intro ul li:first-child {
+	border-top: none
+}
+.AddImagePane>.intro ul li a {
+	background-position: 16px;
+	background-repeat: no-repeat;
+	-webkit-background-size: 32px 32px;
+	background-size: 32px 32px;
+	display: block;
+	height: 51px;
+	padding-left: 65px
+}
+.AddImagePane>.intro ul li a div {
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 18' fill='%2308588c'%3E%3Cpath d='M3.3 17.1l7.5-7c.3-.3.5-.7.5-1.1 0-.4-.2-.8-.5-1.1L3.3.9C2.7.3 1.7.4 1.1 1c-.5.6-.5 1.6.1 2.1L7.5 9l-6.3 5.9c-.6.6-.7 1.5-.1 2.2.6.5 1.6.6 2.2 0z'/%3E%3C/svg%3E") no-repeat 100%;
+	-webkit-background-size: 10px 10px;
+	background-size: 10px 10px;
+	padding-right: 20px
+}
+.AddImagePane>.intro ul li a h2 {
+	color: #666;
+	font-size: 18px;
+	line-height: 22px;
+	padding-top: 5px;
+	margin-bottom: 0
+}
+.AddImagePane>.intro ul li a:hover {
+	text-decoration: none
+}
+.AddImagePane>.intro ul li a:hover h2,
+.AddImagePane>.intro ul li a:hover span {
+	color: #009ddc
+}
+.AddImagePane>.intro ul li a span {
+	color: #959595;
+	display: block
+}
+.AddImagePane>.intro ul li a.clipart {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M24 2.1c-13.3 0-24 10.7-24 24 0 6.5 2.5 8.5 6.6 8.8v-3.8c0-2.6 2.1-4.8 4.8-4.8h24.9c2.6 0 4.8 2.1 4.8 4.8v3.8c4.3-.3 7-2.3 7-8.8-.1-13.2-10.8-24-24.1-24zM8.5 22c-.6 3.2-2.5 5.6-4.3 5.3-1.8-.4-2.8-3.3-2.2-6.5.6-3.2 2.5-5.6 4.3-5.3 1.8.3 2.8 3.2 2.2 6.5zm15.3-3.5c-6.3 0-11.4-3.1-11.4-7s5.1-7 11.4-7 11.4 3.1 11.4 7-5.1 7-11.4 7zm20.1 8.7c-1.8.3-3.8-2-4.3-5.3-.6-3.2.4-6.1 2.2-6.4 1.8-.3 3.8 2 4.3 5.3.7 3.2-.3 6.1-2.2 6.4zm-7.6 1.1H11.4c-1.5 0-2.7 1.2-2.7 2.7v12.1c0 .8.3 1.4.8 1.9s1.2.8 1.9.8h24.9c.8 0 1.4-.3 1.9-.8s.8-1.2.8-1.9v-12c0-1.5-1.2-2.8-2.7-2.8zM18.2 39.4c-.6 0-1-1.9-1-4.3s.5-4.3 1-4.3c.6 0 1 1.9 1 4.3s-.4 4.3-1 4.3zm11.6 0c-.6 0-1-1.9-1-4.3s.5-4.3 1-4.3c.6 0 1 1.9 1 4.3s-.4 4.3-1 4.3z'/%3E%3C/svg%3E")
+}
+.AddImagePane>.intro ul li a.upload {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M41.8 41.3c0 1.1-.9 2-2 2H7.9c-1.1 0-2-.9-2-2V18c0-1.1.9-2 2-2h28.7v-1.9H7.9C5.7 14.1 4 15.9 4 18v23.3c0 2.1 1.7 3.9 3.9 3.9h31.9c2.1 0 3.9-1.7 3.9-3.9V24.8h-1.9v16.5z'/%3E%3Cpath d='M9.5 20.4v18.5c0 .9.7 1.6 1.6 1.6h25.5c.9 0 1.6-.7 1.6-1.6V24.8c-.9-.1-1.6-.8-1.6-1.8v-4.2H11.1c-.9 0-1.6.7-1.6 1.6zM41.5 2.9L35 10.8h3.1V23c0 .2.1.3.3.3h6.2c.2 0 .3-.1.3-.3V10.8H48l-6.5-7.9z'/%3E%3C/svg%3E")
+}
+.AddImagePane>.intro ul li a.myimages {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23666'%3E%3Cpath d='M41.9 13.2h-8.1L24.4.2c0-.1-.2-.2-.4-.2s-.4.1-.5.2l-9.4 13h-8c-2.4 0-4.3 1.9-4.3 4.3v26.1c0 2.4 1.9 4.3 4.3 4.3h35.8c2.4 0 4.3-1.9 4.3-4.3v-26c.1-2.4-1.9-4.4-4.3-4.4zM24 1.6l8.4 11.6H15.6L24 1.6zm20.1 42.1c0 1.2-1 2.2-2.2 2.2H6.1c-1.2 0-2.2-1-2.2-2.2V17.6c0-1.2 1-2.2 2.2-2.2h35.8c1.2 0 2.2 1 2.2 2.2v26.1zm-5.8-25.3H9.7c-1 0-1.8.8-1.8 1.8V41c0 1 .8 1.8 1.8 1.8h28.5c1 0 1.8-.8 1.8-1.8V20.2c.1-1-.7-1.8-1.7-1.8z'/%3E%3C/svg%3E")
+}
+.AddImagePane>.main {
+	display: none
+}
+.AddImagePane>.main .buttons a {
+	float: left;
+	border-left: 1px solid #dcdcdc;
+	width: 33.3%;
+	-webkit-background-size: 28px 28px;
+	background-size: 28px 28px;
+	background-repeat: no-repeat;
+	background-position: top;
+	color: #959595;
+	font-size: 11px;
+	text-align: center;
+	padding-top: 30px
+}
+.AddImagePane>.main .buttons a:first-child {
+	border: none
+}
+.AddImagePane>.main .buttons a.selected {
+	color: #08588c
+}
+.AddImagePane>.main .buttons a.clipArtCatalog {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M24 2.1c-13.3 0-24 10.7-24 24 0 6.5 2.5 8.5 6.6 8.8v-3.8c0-2.6 2.1-4.8 4.8-4.8h24.9c2.6 0 4.8 2.1 4.8 4.8v3.8c4.3-.3 7-2.3 7-8.8-.1-13.2-10.8-24-24.1-24zM8.5 22c-.6 3.2-2.5 5.6-4.3 5.3-1.8-.4-2.8-3.3-2.2-6.5.6-3.2 2.5-5.6 4.3-5.3 1.8.3 2.8 3.2 2.2 6.5zm15.3-3.5c-6.3 0-11.4-3.1-11.4-7s5.1-7 11.4-7 11.4 3.1 11.4 7-5.1 7-11.4 7zm20.1 8.7c-1.8.3-3.8-2-4.3-5.3-.6-3.2.4-6.1 2.2-6.4 1.8-.3 3.8 2 4.3 5.3.7 3.2-.3 6.1-2.2 6.4zm-7.6 1.1H11.4c-1.5 0-2.7 1.2-2.7 2.7v12.1c0 .8.3 1.4.8 1.9s1.2.8 1.9.8h24.9c.8 0 1.4-.3 1.9-.8s.8-1.2.8-1.9v-12c0-1.5-1.2-2.8-2.7-2.8zM18.2 39.4c-.6 0-1-1.9-1-4.3s.5-4.3 1-4.3c.6 0 1 1.9 1 4.3s-.4 4.3-1 4.3zm11.6 0c-.6 0-1-1.9-1-4.3s.5-4.3 1-4.3c.6 0 1 1.9 1 4.3s-.4 4.3-1 4.3z'/%3E%3C/svg%3E")
+}
+.AddImagePane>.main .buttons a.clipArtCatalog.selected {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%2308588c'%3E%3Cpath d='M24 2.1c-13.3 0-24 10.7-24 24 0 6.5 2.5 8.5 6.6 8.8v-3.8c0-2.6 2.1-4.8 4.8-4.8h24.9c2.6 0 4.8 2.1 4.8 4.8v3.8c4.3-.3 7-2.3 7-8.8-.1-13.2-10.8-24-24.1-24zM8.5 22c-.6 3.2-2.5 5.6-4.3 5.3-1.8-.4-2.8-3.3-2.2-6.5.6-3.2 2.5-5.6 4.3-5.3 1.8.3 2.8 3.2 2.2 6.5zm15.3-3.5c-6.3 0-11.4-3.1-11.4-7s5.1-7 11.4-7 11.4 3.1 11.4 7-5.1 7-11.4 7zm20.1 8.7c-1.8.3-3.8-2-4.3-5.3-.6-3.2.4-6.1 2.2-6.4 1.8-.3 3.8 2 4.3 5.3.7 3.2-.3 6.1-2.2 6.4zm-7.6 1.1H11.4c-1.5 0-2.7 1.2-2.7 2.7v12.1c0 .8.3 1.4.8 1.9s1.2.8 1.9.8h24.9c.8 0 1.4-.3 1.9-.8s.8-1.2.8-1.9v-12c0-1.5-1.2-2.8-2.7-2.8zM18.2 39.4c-.6 0-1-1.9-1-4.3s.5-4.3 1-4.3c.6 0 1 1.9 1 4.3s-.4 4.3-1 4.3zm11.6 0c-.6 0-1-1.9-1-4.3s.5-4.3 1-4.3c.6 0 1 1.9 1 4.3s-.4 4.3-1 4.3z'/%3E%3C/svg%3E")
+}
+.AddImagePane>.main .buttons a.uploadImage {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M41.8 41.3c0 1.1-.9 2-2 2H7.9c-1.1 0-2-.9-2-2V18c0-1.1.9-2 2-2h28.7v-1.9H7.9C5.7 14.1 4 15.9 4 18v23.3c0 2.1 1.7 3.9 3.9 3.9h31.9c2.1 0 3.9-1.7 3.9-3.9V24.8h-1.9v16.5z'/%3E%3Cpath d='M9.5 20.4v18.5c0 .9.7 1.6 1.6 1.6h25.5c.9 0 1.6-.7 1.6-1.6V24.8c-.9-.1-1.6-.8-1.6-1.8v-4.2H11.1c-.9 0-1.6.7-1.6 1.6zM41.5 2.9L35 10.8h3.1V23c0 .2.1.3.3.3h6.2c.2 0 .3-.1.3-.3V10.8H48l-6.5-7.9z'/%3E%3C/svg%3E")
+}
+.AddImagePane>.main .buttons a.uploadImage.selected {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%2308588c'%3E%3Cpath d='M41.8 41.3c0 1.1-.9 2-2 2H7.9c-1.1 0-2-.9-2-2V18c0-1.1.9-2 2-2h28.7v-1.9H7.9C5.7 14.1 4 15.9 4 18v23.3c0 2.1 1.7 3.9 3.9 3.9h31.9c2.1 0 3.9-1.7 3.9-3.9V24.8h-1.9v16.5z'/%3E%3Cpath d='M9.5 20.4v18.5c0 .9.7 1.6 1.6 1.6h25.5c.9 0 1.6-.7 1.6-1.6V24.8c-.9-.1-1.6-.8-1.6-1.8v-4.2H11.1c-.9 0-1.6.7-1.6 1.6zM41.5 2.9L35 10.8h3.1V23c0 .2.1.3.3.3h6.2c.2 0 .3-.1.3-.3V10.8H48l-6.5-7.9z'/%3E%3C/svg%3E")
+}
+.AddImagePane>.main .buttons a.myImages {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M41.9 13.2h-8.1L24.4.2c0-.1-.2-.2-.4-.2s-.4.1-.5.2l-9.4 13h-8c-2.4 0-4.3 1.9-4.3 4.3v26.1c0 2.4 1.9 4.3 4.3 4.3h35.8c2.4 0 4.3-1.9 4.3-4.3v-26c.1-2.4-1.9-4.4-4.3-4.4zM24 1.6l8.4 11.6H15.6L24 1.6zm20.1 42.1c0 1.2-1 2.2-2.2 2.2H6.1c-1.2 0-2.2-1-2.2-2.2V17.6c0-1.2 1-2.2 2.2-2.2h35.8c1.2 0 2.2 1 2.2 2.2v26.1zm-5.8-25.3H9.7c-1 0-1.8.8-1.8 1.8V41c0 1 .8 1.8 1.8 1.8h28.5c1 0 1.8-.8 1.8-1.8V20.2c.1-1-.7-1.8-1.7-1.8z'/%3E%3C/svg%3E")
+}
+.AddImagePane>.main .buttons a.myImages.selected {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%2308588c'%3E%3Cpath d='M41.9 13.2h-8.1L24.4.2c0-.1-.2-.2-.4-.2s-.4.1-.5.2l-9.4 13h-8c-2.4 0-4.3 1.9-4.3 4.3v26.1c0 2.4 1.9 4.3 4.3 4.3h35.8c2.4 0 4.3-1.9 4.3-4.3v-26c.1-2.4-1.9-4.4-4.3-4.4zM24 1.6l8.4 11.6H15.6L24 1.6zm20.1 42.1c0 1.2-1 2.2-2.2 2.2H6.1c-1.2 0-2.2-1-2.2-2.2V17.6c0-1.2 1-2.2 2.2-2.2h35.8c1.2 0 2.2 1 2.2 2.2v26.1zm-5.8-25.3H9.7c-1 0-1.8.8-1.8 1.8V41c0 1 .8 1.8 1.8 1.8h28.5c1 0 1.8-.8 1.8-1.8V20.2c.1-1-.7-1.8-1.7-1.8z'/%3E%3C/svg%3E")
+}
+.AddImagePane>.main>.container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 82px;
+	bottom: 0
+}
+.AddImagePane.showMain>.intro {
+	display: none
+}
+.AddImagePane.showMain>.main {
+	display: block
+}
+.ClipArtCatalog,
+.MyImages {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #f4f4f4;
+	border-top: 1px solid #cacaca
+}
+.ClipArtCatalog:after,
+.MyImages:after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: " ";
+	bottom: 100%;
+	left: 50%;
+	margin-left: -10px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #f4f4f4
+}
+.ClipArtCatalog:before,
+.MyImages:before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: " ";
+	bottom: 100%;
+	left: 50%;
+	margin-left: -11px;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 11px solid #cacaca
+}
+.ClipArtCatalog .container,
+.MyImages .container {
+	position: absolute;
+	top: 1rem;
+	bottom: 0;
+	left: 0;
+	right: 0
+}
+.ClipArtCatalog:after,
+.ClipArtCatalog:before {
+	left: calc(16.65% + 10px)
+}
+.ClipArtCatalog .search-container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: .5rem 1rem
+}
+.ClipArtCatalog .search-container .searchForm {
+	float: left;
+	width: 70%
+}
+.ClipArtCatalog .search-container .searchForm>.searchLabel,
+.ClipArtCatalog .search-container .searchForm>.searchLabel>.searchField {
+	width: 100%
+}
+.ClipArtCatalog .search-container .searchButton {
+	float: right;
+	width: 25%
+}
+.CategoryList>.scroller,
+.ClipartList>.scroller {
+	bottom: 4rem
+}
+.BrowseByCategory>.scroller {
+	position: absolute;
+	top: .5rem;
+	left: 1rem;
+	right: 0;
+	bottom: 4rem;
+	overflow: auto
+}
+.BrowseByCategory>.scroller>.categoryButton {
+	width: 25%;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-background-size: 24px 24px;
+	background-size: 24px 24px;
+	color: #666;
+	margin-bottom: 40px;
+	padding-top: 32px;
+	padding-left: 8px;
+	padding-right: 8px;
+	vertical-align: top;
+	font-size: 12px;
+	line-height: 1.2;
+	text-align: center
+}
+.BrowseByCategory>.scroller>.categoryButton:hover {
+	color: #009ddc
+}
+.BrowseByCategory>.scroller>.categoryButton.design-elements {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M48 25.9c0 .4-.1.7-.1 1.1-.7 5.2-2.8 9.7-6.4 13.5-3.5 3.7-7.8 6.1-12.8 7-.8.2-1.7.2-2.5.3h-4c-.4-.1-.8-.1-1.2-.2-5.2-.7-9.6-2.8-13.4-6.3-3-2.8-5.1-6.1-6.4-10C.5 29.1.1 26.9 0 24.6v-.2-1.2c0-.4.1-.8.1-1.2.3-4.1 1.6-7.9 3.9-11.3C7.5 5.4 12.4 2 18.5.5c1.6-.4 3.2-.6 4.9-.6h1.2c.4 0 .8.1 1.3.1 5.5.4 10.3 2.5 14.4 6.2 4 3.6 6.5 8.2 7.5 13.5.1.7.2 1.5.3 2.2v.2c-.1 1.3-.1 2.6-.1 3.8zM24 47.3c12.8 0 23.2-10.3 23.3-23.1C47.4 11.3 37 .8 24.1.8 11.2.7.9 11.1.8 23.8.7 36.9 11.2 47.3 24 47.3z'/%3E%3Cpath d='M1.2 24.1c.2.1.3.1.4.1 1 .4 2 .7 3 1.1H5c1-.3 2-.7 2.9-1.1.1 0 .2-.1.2-.1.1.6.1 1.3.2 1.9.5 3.3 1.9 6.3 4.3 8.8 2.3 2.5 5.1 4.1 8.5 4.7 4.8.9 9.1-.2 12.8-3.3 3.4-2.7 5.3-6.3 5.9-10.6.1-.5.1-1 .2-1.5.1 0 .2.1.3.1 1 .4 1.9.7 2.9 1.1h.5c1-.3 2-.7 2.9-1.1.1 0 .2-.1.3-.1 0 .5 0 .9-.1 1.3-.5 4.9-2.2 9.4-5.4 13.2-3.5 4.2-7.9 6.9-13.3 7.9-7.3 1.3-13.8-.7-19.2-5.7-3.8-3.5-6.1-8-7.1-13.1-.4-1.2-.5-2.4-.6-3.6z'/%3E%3Cpath d='M8.9 24c0-8.4 6.8-15.2 15.2-15.2 8.4 0 15.1 6.8 15.1 15.3 0 8.4-6.9 15.2-15.4 15.1-8.2-.1-15-6.8-14.9-15.2zM24 38.5c7.9 0 14.4-6.4 14.4-14.4S31.9 9.7 24 9.7C16.1 9.6 9.6 16.1 9.6 24c0 8 6.4 14.5 14.4 14.5z'/%3E%3Cpath d='M23 11.1c.5 0 .7-.2.8-.6.1.4.4.7.9.6-.3.3-.5.6-.3 1-.4-.3-.7-.3-1.1 0 .1-.4.1-.7-.3-1zM33.5 14.3c-.2.4-.2.7.2 1-.4-.1-.8.1-.9.5-.1-.3-.1-.5-.2-.6-.1-.1-.3-.1-.6-.2.4-.2.6-.5.5-.9.3.4.6.5 1 .2zM12.1 24.8c-.5 0-.5 0-1 .3 0-.2 0-.4-.1-.5-.1-.1-.3-.2-.5-.3.4-.1.7-.4.6-.8.3.4.6.5 1 .3-.2.5-.2.5 0 1zM12.9 28.4c-.1.4 0 .8.4 1-.4 0-.7.2-.8.7-.1-.1-.9-.5-1-.6.3-.3.5-.6.2-1 .5.2.8.2 1.2-.1zM29.4 36.6c-.3-.4-.6-.4-1-.2.2-.4.2-.7-.1-1.1.5.2.8 0 1-.4 0 .5.3.7.7.8-.4.1-.6.4-.6.9zM15 16.2c-.2-.4-.5-.5-.9-.5.3-.3.4-.6.1-1 .4.2.7.2 1-.2-.1.4.1.8.5.9-.3.1-.6.3-.7.8zM36.5 18.7c-.4.3-.4.6-.2 1-.2-.1-.4-.2-.6-.2-.2 0-.3.2-.5.3.2-.5 0-.8-.4-1 .4 0 .7-.2.8-.7.1.5.4.7.9.6zM29.6 12.4c-.4.1-.7.3-.7.8-.3-.3-.5-.5-1-.4.2-.3.4-.7.1-1.1.4.2.8.1 1-.3 0 .3 0 .5.1.6.1.2.3.2.5.4zM12.3 18.5c.3.6.3.6.9.7-.4.2-.6.5-.4 1-.3-.3-.7-.4-1-.1.1-.4.1-.8-.3-1 .3.1.6-.1.8-.6zM35 29c.4-.3.6-.5.4-1 .4.3.7.4 1.1.1-.2.4-.1.8.3 1-.5-.1-.7.1-.9.6-.3-.4-.4-.8-.9-.7zM33.9 32.5c-.3.3-.4.7-.1 1.1-.3-.1-.4-.2-.6-.2-.2 0-.3.2-.5.3.1-.5 0-.8-.5-1 .4-.1.7-.3.7-.7.3.4.6.6 1 .5zM19.1 36.7c0-.4-.1-.8-.6-.9.4-.1.7-.3.7-.8.2.4.5.6 1 .4l-.1 1.1c-.5-.2-.8-.1-1 .2zM19.6 11.9c-.3.4-.2.7.1 1.1-.4-.1-.8 0-1 .4-.1-.4-.2-.7-.7-.8.4-.2.6-.5.6-.9.3.3.6.4 1 .2zM36 24.4c.3-.4.3-.7 0-1.1.4.1.8.1 1-.3 0 .4.2.8.6.8-.4.2-.6.5-.6.9-.3-.3-.6-.5-1-.3zM16.2 33c-.5.4-.5.4-.6 1-.3-.4-.6-.4-1-.2.2-.4.2-.7-.2-1 .4.1.7-.1.9-.5.1.5.3.8.9.7zM23.4 37.1c.4-.3.5-.6.3-1 .4.3.7.3 1.1 0-.1.4-.1.8.3 1-.4 0-.7.2-.8.6-.2-.4-.4-.7-.9-.6z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.design-elements:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M48 25.9c0 .4-.1.7-.1 1.1-.7 5.2-2.8 9.7-6.4 13.5-3.5 3.7-7.8 6.1-12.8 7-.8.2-1.7.2-2.5.3h-4c-.4-.1-.8-.1-1.2-.2-5.2-.7-9.6-2.8-13.4-6.3-3-2.8-5.1-6.1-6.4-10C.5 29.1.1 26.9 0 24.6v-.2-1.2c0-.4.1-.8.1-1.2.3-4.1 1.6-7.9 3.9-11.3C7.5 5.4 12.4 2 18.5.5c1.6-.4 3.2-.6 4.9-.6h1.2c.4 0 .8.1 1.3.1 5.5.4 10.3 2.5 14.4 6.2 4 3.6 6.5 8.2 7.5 13.5.1.7.2 1.5.3 2.2v.2c-.1 1.3-.1 2.6-.1 3.8zM24 47.3c12.8 0 23.2-10.3 23.3-23.1C47.4 11.3 37 .8 24.1.8 11.2.7.9 11.1.8 23.8.7 36.9 11.2 47.3 24 47.3z'/%3E%3Cpath d='M1.2 24.1c.2.1.3.1.4.1 1 .4 2 .7 3 1.1H5c1-.3 2-.7 2.9-1.1.1 0 .2-.1.2-.1.1.6.1 1.3.2 1.9.5 3.3 1.9 6.3 4.3 8.8 2.3 2.5 5.1 4.1 8.5 4.7 4.8.9 9.1-.2 12.8-3.3 3.4-2.7 5.3-6.3 5.9-10.6.1-.5.1-1 .2-1.5.1 0 .2.1.3.1 1 .4 1.9.7 2.9 1.1h.5c1-.3 2-.7 2.9-1.1.1 0 .2-.1.3-.1 0 .5 0 .9-.1 1.3-.5 4.9-2.2 9.4-5.4 13.2-3.5 4.2-7.9 6.9-13.3 7.9-7.3 1.3-13.8-.7-19.2-5.7-3.8-3.5-6.1-8-7.1-13.1-.4-1.2-.5-2.4-.6-3.6z'/%3E%3Cpath d='M8.9 24c0-8.4 6.8-15.2 15.2-15.2 8.4 0 15.1 6.8 15.1 15.3 0 8.4-6.9 15.2-15.4 15.1-8.2-.1-15-6.8-14.9-15.2zM24 38.5c7.9 0 14.4-6.4 14.4-14.4S31.9 9.7 24 9.7C16.1 9.6 9.6 16.1 9.6 24c0 8 6.4 14.5 14.4 14.5z'/%3E%3Cpath d='M23 11.1c.5 0 .7-.2.8-.6.1.4.4.7.9.6-.3.3-.5.6-.3 1-.4-.3-.7-.3-1.1 0 .1-.4.1-.7-.3-1zM33.5 14.3c-.2.4-.2.7.2 1-.4-.1-.8.1-.9.5-.1-.3-.1-.5-.2-.6-.1-.1-.3-.1-.6-.2.4-.2.6-.5.5-.9.3.4.6.5 1 .2zM12.1 24.8c-.5 0-.5 0-1 .3 0-.2 0-.4-.1-.5-.1-.1-.3-.2-.5-.3.4-.1.7-.4.6-.8.3.4.6.5 1 .3-.2.5-.2.5 0 1zM12.9 28.4c-.1.4 0 .8.4 1-.4 0-.7.2-.8.7-.1-.1-.9-.5-1-.6.3-.3.5-.6.2-1 .5.2.8.2 1.2-.1zM29.4 36.6c-.3-.4-.6-.4-1-.2.2-.4.2-.7-.1-1.1.5.2.8 0 1-.4 0 .5.3.7.7.8-.4.1-.6.4-.6.9zM15 16.2c-.2-.4-.5-.5-.9-.5.3-.3.4-.6.1-1 .4.2.7.2 1-.2-.1.4.1.8.5.9-.3.1-.6.3-.7.8zM36.5 18.7c-.4.3-.4.6-.2 1-.2-.1-.4-.2-.6-.2-.2 0-.3.2-.5.3.2-.5 0-.8-.4-1 .4 0 .7-.2.8-.7.1.5.4.7.9.6zM29.6 12.4c-.4.1-.7.3-.7.8-.3-.3-.5-.5-1-.4.2-.3.4-.7.1-1.1.4.2.8.1 1-.3 0 .3 0 .5.1.6.1.2.3.2.5.4zM12.3 18.5c.3.6.3.6.9.7-.4.2-.6.5-.4 1-.3-.3-.7-.4-1-.1.1-.4.1-.8-.3-1 .3.1.6-.1.8-.6zM35 29c.4-.3.6-.5.4-1 .4.3.7.4 1.1.1-.2.4-.1.8.3 1-.5-.1-.7.1-.9.6-.3-.4-.4-.8-.9-.7zM33.9 32.5c-.3.3-.4.7-.1 1.1-.3-.1-.4-.2-.6-.2-.2 0-.3.2-.5.3.1-.5 0-.8-.5-1 .4-.1.7-.3.7-.7.3.4.6.6 1 .5zM19.1 36.7c0-.4-.1-.8-.6-.9.4-.1.7-.3.7-.8.2.4.5.6 1 .4l-.1 1.1c-.5-.2-.8-.1-1 .2zM19.6 11.9c-.3.4-.2.7.1 1.1-.4-.1-.8 0-1 .4-.1-.4-.2-.7-.7-.8.4-.2.6-.5.6-.9.3.3.6.4 1 .2zM36 24.4c.3-.4.3-.7 0-1.1.4.1.8.1 1-.3 0 .4.2.8.6.8-.4.2-.6.5-.6.9-.3-.3-.6-.5-1-.3zM16.2 33c-.5.4-.5.4-.6 1-.3-.4-.6-.4-1-.2.2-.4.2-.7-.2-1 .4.1.7-.1.9-.5.1.5.3.8.9.7zM23.4 37.1c.4-.3.5-.6.3-1 .4.3.7.3 1.1 0-.1.4-.1.8.3 1-.4 0-.7.2-.8.6-.2-.4-.4-.7-.9-.6z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.animals {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M42.5 35.1c.2 10.9-4.1 14.1-11.7 10.5-3.9-1.9-7.4-2.7-11 .2-6 4.8-8.2 0-9.7-4.3-2.3-6.7-.3-12.4 5-17.2 4.9-4.4 10.3-6.7 16.5-3.6 6.7 3.3 10.6 8.9 10.9 14.4z'/%3E%3Ccircle cx='6' cy='13.2' r='6'/%3E%3Cellipse transform='rotate(-10.166 24.588 7.262)' cx='24.6' cy='7.3' rx='5.2' ry='7'/%3E%3Cellipse cx='42.6' cy='12.9' rx='5.4' ry='7'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.animals:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M42.5 35.1c.2 10.9-4.1 14.1-11.7 10.5-3.9-1.9-7.4-2.7-11 .2-6 4.8-8.2 0-9.7-4.3-2.3-6.7-.3-12.4 5-17.2 4.9-4.4 10.3-6.7 16.5-3.6 6.7 3.3 10.6 8.9 10.9 14.4z'/%3E%3Ccircle cx='6' cy='13.2' r='6'/%3E%3Cellipse transform='rotate(-10.166 24.588 7.262)' cx='24.6' cy='7.3' rx='5.2' ry='7'/%3E%3Cellipse cx='42.6' cy='12.9' rx='5.4' ry='7'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.holidays {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M26.5 32.6h18.7v14.9H26.5V32.6zm-5-20.9H2.8v16.1h18.7V11.7zM2.8 32.6v14.9h18.7V32.6H2.8zm23.7-20.9v16.1h18.7V11.7H26.5zM42.9 1.5c-.3-.4-.8-.7-1.1-.8-.4-.1-.8-.2-1.1-.2-.8 0-1.6.2-2.4.5-2.5 1-5.6 3-8.8 5.7-1.8 1.5-3.2 2.9-4.5 4.4.2.2.5.4.7.6h4c.7-.7 1.5-1.4 2.3-2 2-1.7 3.9-3 5.5-3.9.4-.2.7-.4 1-.5-1.1 1.6-3.1 3.6-5.5 5.7-.4.3-.7.6-1.1.9h5.9c1.2-1.2 2.4-2.4 3.3-3.4.7-.9 1.3-1.7 1.7-2.5.4-.8.7-1.5.8-2.5-.1-.8-.3-1.5-.7-2zM25.1 11c-.5-.5-1-1-1.6-1.4-2.1-1.8-4.2-3.3-6.1-4.3-.9-.5-1.8-1-2.6-1.3-.8-.3-1.6-.5-2.4-.5-.3 0-.7 0-1.1.2-.4.1-.8.4-1.1.8-.6.5-.7 1.1-.7 1.7 0 1 .4 1.7.8 2.5.5.9 1.3 1.9 2.2 3h5.3c-1.1-1-2.1-2.1-2.8-2.9-.2-.2-.3-.4-.5-.6 1.5.7 3.4 2 5.4 3.6H25.8c-.2-.4-.5-.6-.7-.8z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.holidays:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M26.5 32.6h18.7v14.9H26.5V32.6zm-5-20.9H2.8v16.1h18.7V11.7zM2.8 32.6v14.9h18.7V32.6H2.8zm23.7-20.9v16.1h18.7V11.7H26.5zM42.9 1.5c-.3-.4-.8-.7-1.1-.8-.4-.1-.8-.2-1.1-.2-.8 0-1.6.2-2.4.5-2.5 1-5.6 3-8.8 5.7-1.8 1.5-3.2 2.9-4.5 4.4.2.2.5.4.7.6h4c.7-.7 1.5-1.4 2.3-2 2-1.7 3.9-3 5.5-3.9.4-.2.7-.4 1-.5-1.1 1.6-3.1 3.6-5.5 5.7-.4.3-.7.6-1.1.9h5.9c1.2-1.2 2.4-2.4 3.3-3.4.7-.9 1.3-1.7 1.7-2.5.4-.8.7-1.5.8-2.5-.1-.8-.3-1.5-.7-2zM25.1 11c-.5-.5-1-1-1.6-1.4-2.1-1.8-4.2-3.3-6.1-4.3-.9-.5-1.8-1-2.6-1.3-.8-.3-1.6-.5-2.4-.5-.3 0-.7 0-1.1.2-.4.1-.8.4-1.1.8-.6.5-.7 1.1-.7 1.7 0 1 .4 1.7.8 2.5.5.9 1.3 1.9 2.2 3h5.3c-1.1-1-2.1-2.1-2.8-2.9-.2-.2-.3-.4-.5-.6 1.5.7 3.4 2 5.4 3.6H25.8c-.2-.4-.5-.6-.7-.8z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.transportation {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M0 32.5c.9-2 2.3-1.8 3.8-1.5 2.3.4 4.6.9 6.9 1.2.6.1 1.6-.2 2-.6 3.1-3.3 6.1-6.8 9.1-10.2.6-.7.4-1.1-.2-1.7C16.8 14.8 11.9 10 7 5.1c-.4-.4-.7-.7-1.4-1.5.9-.8 1.8-1.5 2.7-2.2.3-.2.9-.2 1.3-.1C14.3 3.5 19 5.8 23.7 8c2.1 1 4.1 2 6.1 3 .7.4 1.3.2 1.9-.4 2.6-2.6 5.2-5.3 8-7.6C41.2 1.8 43.1.9 45 .3c2.2-.8 3.4.3 2.9 2.6-.6 3.2-2.7 5.8-4.9 8.1-1.8 1.8-3.7 3.6-5.5 5.3-.6.6-.8 1.1-.4 2 3.2 6.6 6.3 13.2 9.5 19.7.5 1 .4 1.6-.4 2.3-1.9 1.8-1.9 1.9-3.7 0L28.8 26.6c-.9-.9-1.5-.9-2.4-.1-3.1 2.9-6.3 5.7-9.5 8.5-.7.6-1 1.3-.8 2.2.5 2.7.9 5.4 1.3 8.2.1.6-.3 1.4-.7 2-.4.6-.9.6-1.3-.3-1.3-2.7-2.8-5.4-4-8.2-.8-2-2.7-2.3-4.2-3.1-2.4-1.1-4.8-2.1-7.2-3.3z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.transportation:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M0 32.5c.9-2 2.3-1.8 3.8-1.5 2.3.4 4.6.9 6.9 1.2.6.1 1.6-.2 2-.6 3.1-3.3 6.1-6.8 9.1-10.2.6-.7.4-1.1-.2-1.7C16.8 14.8 11.9 10 7 5.1c-.4-.4-.7-.7-1.4-1.5.9-.8 1.8-1.5 2.7-2.2.3-.2.9-.2 1.3-.1C14.3 3.5 19 5.8 23.7 8c2.1 1 4.1 2 6.1 3 .7.4 1.3.2 1.9-.4 2.6-2.6 5.2-5.3 8-7.6C41.2 1.8 43.1.9 45 .3c2.2-.8 3.4.3 2.9 2.6-.6 3.2-2.7 5.8-4.9 8.1-1.8 1.8-3.7 3.6-5.5 5.3-.6.6-.8 1.1-.4 2 3.2 6.6 6.3 13.2 9.5 19.7.5 1 .4 1.6-.4 2.3-1.9 1.8-1.9 1.9-3.7 0L28.8 26.6c-.9-.9-1.5-.9-2.4-.1-3.1 2.9-6.3 5.7-9.5 8.5-.7.6-1 1.3-.8 2.2.5 2.7.9 5.4 1.3 8.2.1.6-.3 1.4-.7 2-.4.6-.9.6-1.3-.3-1.3-2.7-2.8-5.4-4-8.2-.8-2-2.7-2.3-4.2-3.1-2.4-1.1-4.8-2.1-7.2-3.3z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.sports-and-recreation {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M15.3 45.4l-.3-.3c-.1-.1-.2-.2-.2-.3l.5.6M43.9 2C41 .1 35.9.3 31.6 1l7.2 6.6L43.9 2zm2.7 5.9c-.2-2-1-3.8-1.7-5.1-.3 0-.3-.2-.6-.2l-.5.6-.7.8-3.8 4.1 7.1 6.5c.4-2 .5-4.4.2-6.7m-32.1 26c.1-.8-.8-.5-.7-1.3.4-.2.7-.5.9-.9-.4-.2-.7-.5-.9-.9.5-.2.6-.8 1.1-.9.5.1.4.8 1.1.6.2-.4.5-.7.9-.9.1-.8-.8-.5-.7-1.3.5-.1.4-.6.9-.7.5.1.4.8 1.1.6.1-.7 1-.6 1.1-1.4-.5-.1-.8-.4-.9-.9.3-.3.7-.6 1.1-.9.2.4.5.7.9.9.2-.6.9-.8 1.1-1.4-.4-.2-.7-.5-.9-.9.5-.2.6-.8 1.1-.9.2.4.5.7.9.9.2-.6.9-.8 1.1-1.4-.4-.2-.7-.5-.9-.9.5-.2.6-.8 1.1-.9.5.1.4.8 1.1.6.2-.4.5-.7.9-.9.1-.8-.8-.5-.7-1.3.5-.1.4-.6.9-.7.5.1.4.8 1.1.6.2-.4.5-.7.9-.9.1-.8-.8-.5-.7-1.3.5-.1.5-.7.9-.9.5.1.6.7 1.1.9.2-.6.9-.8 1.1-1.4-.4-.2-.7-.5-.9-.9.5-.2.6-.8 1.1-.9.2.4.5.7.9.9.2-.4.5-.7.9-.9.4 0 .4.5.7.6l2.6-2.8.1-.1-.9-.8-8.4-7.8h-.2c-2.3 1.3-5.3 2.1-7.2 3.8-2.5 1.2-4.2 3.1-6.3 4.6-4.2 4.6-7.9 9.7-9.7 16.6l9.5 8.8c.3-.3.7-1.1.8-1.2.2-.5.6-.8 1-1.1m21.8-22.2H36l-2.5 2.7v.1c.1.5.6.4.7.9-.4.1-.4.6-.9.7-.1.8.8.5.7 1.3-.2.4-.5.7-.9.9-.3-.4-.5-.9-1.1-.9-.2.4-.5.7-.9.9-.1.8.8.5.7 1.3-.2.4-.5.7-.9.9-.5-.1-.6-.7-1.1-.9-.2.6-.9.8-1.1 1.4.4.3.9.4.9 1.1-.4.1-.4.6-.9.7-.5-.1-.6-.7-1.1-.9-.2.6-.9.8-1.1 1.4.4.3.9.4.9 1.1-.5.1-.4.8-1.1.7-.5-.1-.4-.8-1.1-.6-.1.6-.9.6-.9 1.4.6-.1.6.6.9.9-.7-.2-.4.6-.9.7-.8.1-.6-.8-1.3-.6-.2.4-.5.7-.9.9-.1.8.9.6.7 1.5-.7-.2-.4.6-.9.7-.5-.1-.6-.7-1.1-.9-.1.6-.9.6-.9 1.4.1.5.8.4.7 1.1-.4.1-.4.6-.9.7-.5-.1-.6-.7-1.1-.9-.2.6-.9.8-1.1 1.4.4.3.9.4.9 1.1-.5.1-.4.8-1.1.7-.5-.1-.4-.8-1.1-.6-.2.4-.5.7-.9.9-.1-.1-.2-.3-.4-.5l-2.3 2.5 9.2 8.5c6.7-2.3 11.6-6.3 15.9-10.9 1.4-2.1 2.9-4.1 4.3-6.3 1-2.5 2.4-4.7 2.9-7.6-2.6-3.2-5.8-5.8-8.6-8.9m-30 30.8c.4-.4 2.3-2.2 2.7-2.9l-7.5-6.9C.9 36.8 1 42.9 3.3 45.3c.8-.1 1.1-.9 1.5-1.4.4-.5.9-.8 1.5-1.4m9 2.9l-.3-.3c-.1-.1-.2-.2-.2-.3l-5.1-4.7L4.3 46c2.8 1.8 8.3 1.5 12.3.8-.1-.2-.1-.4-.2-.5l-1.1-.9z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.sports-and-recreation:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M15.3 45.4l-.3-.3c-.1-.1-.2-.2-.2-.3l.5.6M43.9 2C41 .1 35.9.3 31.6 1l7.2 6.6L43.9 2zm2.7 5.9c-.2-2-1-3.8-1.7-5.1-.3 0-.3-.2-.6-.2l-.5.6-.7.8-3.8 4.1 7.1 6.5c.4-2 .5-4.4.2-6.7m-32.1 26c.1-.8-.8-.5-.7-1.3.4-.2.7-.5.9-.9-.4-.2-.7-.5-.9-.9.5-.2.6-.8 1.1-.9.5.1.4.8 1.1.6.2-.4.5-.7.9-.9.1-.8-.8-.5-.7-1.3.5-.1.4-.6.9-.7.5.1.4.8 1.1.6.1-.7 1-.6 1.1-1.4-.5-.1-.8-.4-.9-.9.3-.3.7-.6 1.1-.9.2.4.5.7.9.9.2-.6.9-.8 1.1-1.4-.4-.2-.7-.5-.9-.9.5-.2.6-.8 1.1-.9.2.4.5.7.9.9.2-.6.9-.8 1.1-1.4-.4-.2-.7-.5-.9-.9.5-.2.6-.8 1.1-.9.5.1.4.8 1.1.6.2-.4.5-.7.9-.9.1-.8-.8-.5-.7-1.3.5-.1.4-.6.9-.7.5.1.4.8 1.1.6.2-.4.5-.7.9-.9.1-.8-.8-.5-.7-1.3.5-.1.5-.7.9-.9.5.1.6.7 1.1.9.2-.6.9-.8 1.1-1.4-.4-.2-.7-.5-.9-.9.5-.2.6-.8 1.1-.9.2.4.5.7.9.9.2-.4.5-.7.9-.9.4 0 .4.5.7.6l2.6-2.8.1-.1-.9-.8-8.4-7.8h-.2c-2.3 1.3-5.3 2.1-7.2 3.8-2.5 1.2-4.2 3.1-6.3 4.6-4.2 4.6-7.9 9.7-9.7 16.6l9.5 8.8c.3-.3.7-1.1.8-1.2.2-.5.6-.8 1-1.1m21.8-22.2H36l-2.5 2.7v.1c.1.5.6.4.7.9-.4.1-.4.6-.9.7-.1.8.8.5.7 1.3-.2.4-.5.7-.9.9-.3-.4-.5-.9-1.1-.9-.2.4-.5.7-.9.9-.1.8.8.5.7 1.3-.2.4-.5.7-.9.9-.5-.1-.6-.7-1.1-.9-.2.6-.9.8-1.1 1.4.4.3.9.4.9 1.1-.4.1-.4.6-.9.7-.5-.1-.6-.7-1.1-.9-.2.6-.9.8-1.1 1.4.4.3.9.4.9 1.1-.5.1-.4.8-1.1.7-.5-.1-.4-.8-1.1-.6-.1.6-.9.6-.9 1.4.6-.1.6.6.9.9-.7-.2-.4.6-.9.7-.8.1-.6-.8-1.3-.6-.2.4-.5.7-.9.9-.1.8.9.6.7 1.5-.7-.2-.4.6-.9.7-.5-.1-.6-.7-1.1-.9-.1.6-.9.6-.9 1.4.1.5.8.4.7 1.1-.4.1-.4.6-.9.7-.5-.1-.6-.7-1.1-.9-.2.6-.9.8-1.1 1.4.4.3.9.4.9 1.1-.5.1-.4.8-1.1.7-.5-.1-.4-.8-1.1-.6-.2.4-.5.7-.9.9-.1-.1-.2-.3-.4-.5l-2.3 2.5 9.2 8.5c6.7-2.3 11.6-6.3 15.9-10.9 1.4-2.1 2.9-4.1 4.3-6.3 1-2.5 2.4-4.7 2.9-7.6-2.6-3.2-5.8-5.8-8.6-8.9m-30 30.8c.4-.4 2.3-2.2 2.7-2.9l-7.5-6.9C.9 36.8 1 42.9 3.3 45.3c.8-.1 1.1-.9 1.5-1.4.4-.5.9-.8 1.5-1.4m9 2.9l-.3-.3c-.1-.1-.2-.2-.2-.3l-5.1-4.7L4.3 46c2.8 1.8 8.3 1.5 12.3.8-.1-.2-.1-.4-.2-.5l-1.1-.9z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.religion {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M24.6 16.4c1.6-.2 3.3-1.6 3.2-3.8 0-2.3-2-4.1-4.5-3.7-1.7.3-3.2 1.6-3.2 3.8.1 2.2 2.3 4 4.5 3.7z'/%3E%3Cpath d='M24 .5C11 .5.5 11 .5 24S11 47.5 24 47.5 47.5 37 47.5 24 37 .5 24 .5zM8.6 39.4C4.7 35.4 2.2 30 2.2 24S4.6 12.6 8.6 8.6c4-3.9 9.4-6.4 15.4-6.4 2 0 3.9.3 5.7.8.6.4 1.1.7 1.6 1.2 2.3 2 4.2 5 3.8 9.4-.4 4.7-3.3 7.8-6.9 9.4-1.5.7-3.1.8-5 .9-6 .4-10.7 5.2-10.7 11.3 0 4.9 2.5 8.1 6.1 10-3.8-1.1-7.2-3.1-10-5.8zm19.1-4.3c0 2.1-1.5 3.5-3 3.7-2.2.3-4.3-1.4-4.4-3.6 0-2.1 1.4-3.3 3-3.6 2.4-.4 4.4 1.2 4.4 3.5z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.religion:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M24.6 16.4c1.6-.2 3.3-1.6 3.2-3.8 0-2.3-2-4.1-4.5-3.7-1.7.3-3.2 1.6-3.2 3.8.1 2.2 2.3 4 4.5 3.7z'/%3E%3Cpath d='M24 .5C11 .5.5 11 .5 24S11 47.5 24 47.5 47.5 37 47.5 24 37 .5 24 .5zM8.6 39.4C4.7 35.4 2.2 30 2.2 24S4.6 12.6 8.6 8.6c4-3.9 9.4-6.4 15.4-6.4 2 0 3.9.3 5.7.8.6.4 1.1.7 1.6 1.2 2.3 2 4.2 5 3.8 9.4-.4 4.7-3.3 7.8-6.9 9.4-1.5.7-3.1.8-5 .9-6 .4-10.7 5.2-10.7 11.3 0 4.9 2.5 8.1 6.1 10-3.8-1.1-7.2-3.1-10-5.8zm19.1-4.3c0 2.1-1.5 3.5-3 3.7-2.2.3-4.3-1.4-4.4-3.6 0-2.1 1.4-3.3 3-3.6 2.4-.4 4.4 1.2 4.4 3.5z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.shapes-and-symbols,
+.BrowseByCategory>.scroller>.categoryButton.signs-and-symbols {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M24 0c13.3 0 24 10.7 24 24S37.3 48 24 48 0 37.3 0 24 10.7 0 24 0'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.shapes-and-symbols:hover,
+.BrowseByCategory>.scroller>.categoryButton.signs-and-symbols:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M24 0c13.3 0 24 10.7 24 24S37.3 48 24 48 0 37.3 0 24 10.7 0 24 0'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.food-and-drink {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M44.7 10.3c-2.2-2.6-6-4.4-9.5-4.4h-.7V1.1H0v38s-.8 7.8 6.6 7.8h21.7s6.1-1.8 6.1-7.8v-4.6h.7c3.6 0 7.1-1.8 9.3-4.4 2.2-2.6 3.6-6.1 3.6-9.9 0-3.8-1.1-7.3-3.3-9.9m-4.4 16.2c-1.3 1.5-3.5 2.3-5.1 2.3h-.7V11.6h.7c1.7 0 3.6.8 4.8 2.3 1.3 1.5 2.3 3.8 2.3 6.3s-.8 4.8-2 6.3'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.food-and-drink:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M44.7 10.3c-2.2-2.6-6-4.4-9.5-4.4h-.7V1.1H0v38s-.8 7.8 6.6 7.8h21.7s6.1-1.8 6.1-7.8v-4.6h.7c3.6 0 7.1-1.8 9.3-4.4 2.2-2.6 3.6-6.1 3.6-9.9 0-3.8-1.1-7.3-3.3-9.9m-4.4 16.2c-1.3 1.5-3.5 2.3-5.1 2.3h-.7V11.6h.7c1.7 0 3.6.8 4.8 2.3 1.3 1.5 2.3 3.8 2.3 6.3s-.8 4.8-2 6.3'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.nature-geography {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M37.1 11.1c-.6-.7-.5-1.7.2-2.2L40.5 6c.7-.6 1.7-.5 2.2.2.6.7.5 1.7-.2 2.2l-3.2 2.8c-.7.6-1.7.5-2.2-.1zM40.5 24.1c0-.9.7-1.6 1.6-1.6h4.3c.9 0 1.6.7 1.6 1.6 0 .9-.7 1.6-1.6 1.6h-4.3c-.9 0-1.6-.7-1.6-1.6zM0 24.1c0-.9.7-1.6 1.6-1.6h4.3c.9 0 1.6.7 1.6 1.6 0 .9-.7 1.6-1.6 1.6H1.6C.7 25.7 0 25 0 24.1zM4.5 5.9c.5-.7 1.6-.8 2.2-.3l3.4 2.7c.7.5.8 1.6.3 2.2-.5.7-1.6.8-2.2.3L4.8 8.1c-.7-.5-.8-1.6-.3-2.2zM36.6 37c.6-.7 1.6-.7 2.2-.2l3.2 2.8c.7.6.7 1.6.2 2.2-.6.7-1.6.7-2.2.2l-3.2-2.8c-.7-.5-.8-1.6-.2-2.2zM24 40.3c.9 0 1.6.7 1.6 1.6v4.3c0 .9-.7 1.6-1.6 1.6-.9 0-1.6-.7-1.6-1.6v-4.3c0-.9.7-1.6 1.6-1.6zM10.9 36.6c.7.6.7 1.6.2 2.2L8.3 42c-.6.7-1.6.7-2.2.2-.7-.6-.7-1.6-.2-2.2l2.8-3.2c.6-.7 1.6-.8 2.2-.2zM24 7.7c-.9 0-1.6-.7-1.6-1.6V1.8c0-.9.7-1.6 1.6-1.6.9 0 1.6.7 1.6 1.6v4.3c0 .9-.7 1.6-1.6 1.6zM24 11c-7.6 0-12.8 5.9-12.8 12.7 0 7.5 5.1 13.5 12.8 13.5s12.9-6 12.9-13.5C36.8 16.9 31.7 11 24 11z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.nature-geography:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M37.1 11.1c-.6-.7-.5-1.7.2-2.2L40.5 6c.7-.6 1.7-.5 2.2.2.6.7.5 1.7-.2 2.2l-3.2 2.8c-.7.6-1.7.5-2.2-.1zM40.5 24.1c0-.9.7-1.6 1.6-1.6h4.3c.9 0 1.6.7 1.6 1.6 0 .9-.7 1.6-1.6 1.6h-4.3c-.9 0-1.6-.7-1.6-1.6zM0 24.1c0-.9.7-1.6 1.6-1.6h4.3c.9 0 1.6.7 1.6 1.6 0 .9-.7 1.6-1.6 1.6H1.6C.7 25.7 0 25 0 24.1zM4.5 5.9c.5-.7 1.6-.8 2.2-.3l3.4 2.7c.7.5.8 1.6.3 2.2-.5.7-1.6.8-2.2.3L4.8 8.1c-.7-.5-.8-1.6-.3-2.2zM36.6 37c.6-.7 1.6-.7 2.2-.2l3.2 2.8c.7.6.7 1.6.2 2.2-.6.7-1.6.7-2.2.2l-3.2-2.8c-.7-.5-.8-1.6-.2-2.2zM24 40.3c.9 0 1.6.7 1.6 1.6v4.3c0 .9-.7 1.6-1.6 1.6-.9 0-1.6-.7-1.6-1.6v-4.3c0-.9.7-1.6 1.6-1.6zM10.9 36.6c.7.6.7 1.6.2 2.2L8.3 42c-.6.7-1.6.7-2.2.2-.7-.6-.7-1.6-.2-2.2l2.8-3.2c.6-.7 1.6-.8 2.2-.2zM24 7.7c-.9 0-1.6-.7-1.6-1.6V1.8c0-.9.7-1.6 1.6-1.6.9 0 1.6.7 1.6 1.6v4.3c0 .9-.7 1.6-1.6 1.6zM24 11c-7.6 0-12.8 5.9-12.8 12.7 0 7.5 5.1 13.5 12.8 13.5s12.9-6 12.9-13.5C36.8 16.9 31.7 11 24 11z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.greek {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M2.9 7.2V11H10v20.5s1.7 6-4 6c-3.7 0-6.1-.4-6.1-.4s.2 7 11 7c8.7 0 8.5-7.9 8.5-7.9V11h11.9v24.5s-.8 8.6 6.7 8.6 9.6-7.3 9.6-7.3-7.5.7-8.1-1.3c-.6-2 0-24.5 0-24.5H48V3.9H2.9v3.3z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.greek:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M2.9 7.2V11H10v20.5s1.7 6-4 6c-3.7 0-6.1-.4-6.1-.4s.2 7 11 7c8.7 0 8.5-7.9 8.5-7.9V11h11.9v24.5s-.8 8.6 6.7 8.6 9.6-7.3 9.6-7.3-7.5.7-8.1-1.3c-.6-2 0-24.5 0-24.5H48V3.9H2.9v3.3z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.government {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M43.7 39.7h-3.2V23.5H48L23.7 1.9 0 23.5h8.1v16.2H4.9v3.2H1.6v3.2h45.3v-3.2h-3.2v-3.2zm-6.5 0h-6.5V23.5h6.5v16.2zm-9.7 0H21V23.5h6.5v16.2zM11.3 23.5h6.5v16.2h-6.5V23.5z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.government:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M43.7 39.7h-3.2V23.5H48L23.7 1.9 0 23.5h8.1v16.2H4.9v3.2H1.6v3.2h45.3v-3.2h-3.2v-3.2zm-6.5 0h-6.5V23.5h6.5v16.2zm-9.7 0H21V23.5h6.5v16.2zM11.3 23.5h6.5v16.2h-6.5V23.5z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.occupations {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M38.6 23.7c-2.1-4.6-1.7-8.6 0-11 .8-1.1 4.5-4.4 4.5-4.4l-9-8.3-4.5 4.9h-2.2L25.2.5l-4.5 4.4h-2.2L13.9 0l-9 8.6s6.4 2 6.7 4.3c.3 2.3-2.2 8.8-2.2 8.8s-2.6 5-2.2 8.8c.8 7.8 5.2 11.3 11.2 13.2 3.6 1.1 5.7 2.6 6.7 4.4 0 0-.1-2 6.7-4.4 6.9-2.4 9.3-9.3 9-13.2-.4-4.1-.9-3.8-2.2-6.8m-10.4-1.3l.7 5.5-4.9-2.3-4.8 2.4.7-5.5-3.7-4 5.3-1 2.6-4.9 2.6 4.9 5.3 1-3.8 3.9z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.occupations:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M38.6 23.7c-2.1-4.6-1.7-8.6 0-11 .8-1.1 4.5-4.4 4.5-4.4l-9-8.3-4.5 4.9h-2.2L25.2.5l-4.5 4.4h-2.2L13.9 0l-9 8.6s6.4 2 6.7 4.3c.3 2.3-2.2 8.8-2.2 8.8s-2.6 5-2.2 8.8c.8 7.8 5.2 11.3 11.2 13.2 3.6 1.1 5.7 2.6 6.7 4.4 0 0-.1-2 6.7-4.4 6.9-2.4 9.3-9.3 9-13.2-.4-4.1-.9-3.8-2.2-6.8m-10.4-1.3l.7 5.5-4.9-2.3-4.8 2.4.7-5.5-3.7-4 5.3-1 2.6-4.9 2.6 4.9 5.3 1-3.8 3.9z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.entertainment,
+.BrowseByCategory>.scroller>.categoryButton.music {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0m-3.7 34.7V13.3L33.6 24 20.3 34.7z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.entertainment:hover,
+.BrowseByCategory>.scroller>.categoryButton.music:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0m-3.7 34.7V13.3L33.6 24 20.3 34.7z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.technology {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M0 16.7c1 1.1 2 2.1 3 3.2 12.1-11.7 30.5-11.1 41.8-.1 1.1-1 2.2-2.1 3.2-3.1-13.3-14.1-36.7-12.6-48 0M31.7 33.5c.7-.8 1.3-1.6 2-2.3.3-.3.6-.7 1-1.1-5.8-6-15.7-6-21.4-.2l3.3 3.3c4.9-3.9 9.9-3.8 15.1.3'/%3E%3Cpath d='M6.5 23.5c1 1 2.1 2 3.2 3.1 4-3.8 8.7-5.8 14.2-5.8s10.3 2 14.2 5.7c1.2-1.1 2.3-2.1 3.4-3.1-10.4-10.5-26.9-8.9-35 .1M24.1 35c-1.7 0-3.3.7-4.4 1.9l4.3 4.4 4.3-4.4c-1.1-1.1-2.6-1.9-4.2-1.9'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.technology:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M0 16.7c1 1.1 2 2.1 3 3.2 12.1-11.7 30.5-11.1 41.8-.1 1.1-1 2.2-2.1 3.2-3.1-13.3-14.1-36.7-12.6-48 0M31.7 33.5c.7-.8 1.3-1.6 2-2.3.3-.3.6-.7 1-1.1-5.8-6-15.7-6-21.4-.2l3.3 3.3c4.9-3.9 9.9-3.8 15.1.3'/%3E%3Cpath d='M6.5 23.5c1 1 2.1 2 3.2 3.1 4-3.8 8.7-5.8 14.2-5.8s10.3 2 14.2 5.7c1.2-1.1 2.3-2.1 3.4-3.1-10.4-10.5-26.9-8.9-35 .1M24.1 35c-1.7 0-3.3.7-4.4 1.9l4.3 4.4 4.3-4.4c-1.1-1.1-2.6-1.9-4.2-1.9'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.popular {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M24 12l7.4-10.8-.3 13.1 12.3-4.4-8 10.4L48 24l-12.6 3.7 8 10.4-12.3-4.4.3 13.1L24 36l-7.4 10.8.3-13.1-12.3 4.4 8-10.4L0 24l12.6-3.7-8-10.4 12.3 4.4-.3-13.1z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.popular:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M24 12l7.4-10.8-.3 13.1 12.3-4.4-8 10.4L48 24l-12.6 3.7 8 10.4-12.3-4.4.3 13.1L24 36l-7.4 10.8.3-13.1-12.3 4.4 8-10.4L0 24l12.6-3.7-8-10.4 12.3 4.4-.3-13.1z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.emojis {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zm-8.2 12.6c1.9 0 3.4 2.2 3.4 5s-1.5 5-3.4 5-3.4-2.2-3.4-5c-.1-2.7 1.5-5 3.4-5zm16.8 22c-1.7 1.7-4.9 3.3-8.6 3.3-3.7.1-6.8-1.6-8.6-3.3-1.8-1.7-2.2-3.3-1.9-3.6.8-.6 4.8 3.4 10.5 3.2 5.7.2 9.7-3.8 10.5-3.2.3.2-.1 1.9-1.9 3.6zm-.4-12c-1.9 0-3.4-2.2-3.4-5s1.5-5 3.4-5 3.4 2.2 3.4 5c.1 2.8-1.5 5-3.4 5z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.emojis:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zm-8.2 12.6c1.9 0 3.4 2.2 3.4 5s-1.5 5-3.4 5-3.4-2.2-3.4-5c-.1-2.7 1.5-5 3.4-5zm16.8 22c-1.7 1.7-4.9 3.3-8.6 3.3-3.7.1-6.8-1.6-8.6-3.3-1.8-1.7-2.2-3.3-1.9-3.6.8-.6 4.8 3.4 10.5 3.2 5.7.2 9.7-3.8 10.5-3.2.3.2-.1 1.9-1.9 3.6zm-.4-12c-1.9 0-3.4-2.2-3.4-5s1.5-5 3.4-5 3.4 2.2 3.4 5c.1 2.8-1.5 5-3.4 5z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.cool-and-trendy {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M47.8 21c0-.1 0-.2-.1-.3 0-.2-.1-.3-.1-.3s0 .1-.1.2c0 .1-.1.2-.1.3-.1.1-.1.2-.2.4-.1.1-.2.3-.3.4-.1.2-.2.3-.3.5-.2.3-.5.7-.9 1-.7.6-1.6 1.1-2.5 1.3-.5.1-1 .1-1.4 0-.5-.1-.9-.2-1.3-.4s-.8-.5-1.2-.7c-.1-.1-.2-.2-.3-.2-.1-.1-.2-.2-.3-.2-.2-.2-.4-.4-.6-.5-.8-.7-1.5-1.5-2.2-2.3-.1-.1-.2-.2-.2-.3-.1-.1-.2-.2-.2-.3-.1-.2-.3-.4-.4-.5-.3-.4-.5-.7-.8-1-.5-.6-.9-1.1-1.2-1.3-.3-.2-.7-.5-1-.7-.4-.2-.8-.3-1.2-.4-.4-.1-.8-.2-1.3-.2h-1.3c-.9.1-1.8.4-2.7.8-.6.3-1.2.7-1.8 1.3-.5-.5-1.1-.9-1.8-1.3-.9-.4-1.8-.7-2.7-.8-.5 0-.9-.1-1.3 0-.4 0-.9.1-1.3.2s-.8.3-1.2.4c-.4.2-.7.4-1 .7-.3.3-.7.7-1.2 1.3-.2.3-.5.6-.8 1-.1.2-.3.4-.4.5-.1.1-.1.2-.2.3-.1.1-.2.2-.2.3-.6.8-1.3 1.5-2.2 2.3-.2.2-.4.4-.6.5l-.1.1c-.1.1-.2.2-.3.2-.4.3-.8.5-1.2.7-.4.2-.8.4-1.3.4-.5.1-.9.1-1.4 0-1-.2-1.8-.7-2.5-1.3-.3-.3-.6-.6-.9-1 0-.1-.1-.2-.2-.4s-.2-.3-.3-.4c-.1-.1-.1-.3-.2-.4-.1-.1-.1-.2-.1-.3l-.1-.2s0 .1-.1.3c0 .1 0 .2-.1.3 0 .1 0 .3-.1.4 0 .3-.1.7-.1 1.2s0 1 .1 1.7c.1.6.3 1.3.5 2 .3.7.7 1.5 1.2 2.2.5.7 1.2 1.4 2 2 .8.6 1.7 1.1 2.7 1.5 1 .4 2 .6 3 .7.3 0 .5 0 .8.1h2.2c1.8-.1 3.6-.4 5.1-.8.2-.1.4-.1.6-.2.2-.1.4-.1.5-.2.4-.1.7-.2 1-.4.3-.1.6-.2.9-.4.3-.1.6-.3.8-.4 1.1-.5 1.8-1 2.3-1.3.1-.1.2-.1.2-.2.1.1.2.1.2.2.5.4 1.2.8 2.3 1.3.3.1.5.2.8.4.3.1.6.2.9.4.3.1.7.2 1 .4.2.1.4.1.5.2.2.1.4.1.6.2 1.5.4 3.3.7 5.1.8h2.2c.3 0 .5 0 .8-.1 1-.1 2-.4 3-.7 1-.4 1.9-.9 2.7-1.5.8-.6 1.4-1.3 2-2 .5-.7.9-1.4 1.2-2.2.3-.7.4-1.4.5-2 .1-.6.1-1.2.1-1.7s-.1-.9-.1-1.2c.3-.1.2-.3.2-.4z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.cool-and-trendy:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M47.8 21c0-.1 0-.2-.1-.3 0-.2-.1-.3-.1-.3s0 .1-.1.2c0 .1-.1.2-.1.3-.1.1-.1.2-.2.4-.1.1-.2.3-.3.4-.1.2-.2.3-.3.5-.2.3-.5.7-.9 1-.7.6-1.6 1.1-2.5 1.3-.5.1-1 .1-1.4 0-.5-.1-.9-.2-1.3-.4s-.8-.5-1.2-.7c-.1-.1-.2-.2-.3-.2-.1-.1-.2-.2-.3-.2-.2-.2-.4-.4-.6-.5-.8-.7-1.5-1.5-2.2-2.3-.1-.1-.2-.2-.2-.3-.1-.1-.2-.2-.2-.3-.1-.2-.3-.4-.4-.5-.3-.4-.5-.7-.8-1-.5-.6-.9-1.1-1.2-1.3-.3-.2-.7-.5-1-.7-.4-.2-.8-.3-1.2-.4-.4-.1-.8-.2-1.3-.2h-1.3c-.9.1-1.8.4-2.7.8-.6.3-1.2.7-1.8 1.3-.5-.5-1.1-.9-1.8-1.3-.9-.4-1.8-.7-2.7-.8-.5 0-.9-.1-1.3 0-.4 0-.9.1-1.3.2s-.8.3-1.2.4c-.4.2-.7.4-1 .7-.3.3-.7.7-1.2 1.3-.2.3-.5.6-.8 1-.1.2-.3.4-.4.5-.1.1-.1.2-.2.3-.1.1-.2.2-.2.3-.6.8-1.3 1.5-2.2 2.3-.2.2-.4.4-.6.5l-.1.1c-.1.1-.2.2-.3.2-.4.3-.8.5-1.2.7-.4.2-.8.4-1.3.4-.5.1-.9.1-1.4 0-1-.2-1.8-.7-2.5-1.3-.3-.3-.6-.6-.9-1 0-.1-.1-.2-.2-.4s-.2-.3-.3-.4c-.1-.1-.1-.3-.2-.4-.1-.1-.1-.2-.1-.3l-.1-.2s0 .1-.1.3c0 .1 0 .2-.1.3 0 .1 0 .3-.1.4 0 .3-.1.7-.1 1.2s0 1 .1 1.7c.1.6.3 1.3.5 2 .3.7.7 1.5 1.2 2.2.5.7 1.2 1.4 2 2 .8.6 1.7 1.1 2.7 1.5 1 .4 2 .6 3 .7.3 0 .5 0 .8.1h2.2c1.8-.1 3.6-.4 5.1-.8.2-.1.4-.1.6-.2.2-.1.4-.1.5-.2.4-.1.7-.2 1-.4.3-.1.6-.2.9-.4.3-.1.6-.3.8-.4 1.1-.5 1.8-1 2.3-1.3.1-.1.2-.1.2-.2.1.1.2.1.2.2.5.4 1.2.8 2.3 1.3.3.1.5.2.8.4.3.1.6.2.9.4.3.1.7.2 1 .4.2.1.4.1.5.2.2.1.4.1.6.2 1.5.4 3.3.7 5.1.8h2.2c.3 0 .5 0 .8-.1 1-.1 2-.4 3-.7 1-.4 1.9-.9 2.7-1.5.8-.6 1.4-1.3 2-2 .5-.7.9-1.4 1.2-2.2.3-.7.4-1.4.5-2 .1-.6.1-1.2.1-1.7s-.1-.9-.1-1.2c.3-.1.2-.3.2-.4z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.events {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M47.2 34.6l-6.8 2-2.2-7.5c1.6-.8 3-2 3.8-3.6 1.1-2 1.4-4.4.7-6.6l-3.8-13L24 10.2 9.1 5.9l-3.8 13c-.6 2.2-.4 4.6.7 6.6.9 1.6 2.2 2.9 3.8 3.6l-2.2 7.5-6.8-2-.8 2.7 16.4 4.8.8-2.7-6.8-2 2.2-7.5c.4 0 .7.1 1.1.1 1.4 0 2.9-.4 4.1-1.1 2-1.1 3.5-2.9 4.2-5.2l2.1-7.2 2.1 7.2c1.1 3.8 4.6 6.2 8.3 6.2.3 0 .7 0 1-.1l2.2 7.5-6.8 2 .8 2.7L48 37.3l-.8-2.7zm-25.6-20l-11.2-3.3.6-1.9 11.2 3.3-.6 1.9zm6 4.2l-1.8-6.2L37 9.4l1.8 6.2-11.2 3.2z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.events:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M47.2 34.6l-6.8 2-2.2-7.5c1.6-.8 3-2 3.8-3.6 1.1-2 1.4-4.4.7-6.6l-3.8-13L24 10.2 9.1 5.9l-3.8 13c-.6 2.2-.4 4.6.7 6.6.9 1.6 2.2 2.9 3.8 3.6l-2.2 7.5-6.8-2-.8 2.7 16.4 4.8.8-2.7-6.8-2 2.2-7.5c.4 0 .7.1 1.1.1 1.4 0 2.9-.4 4.1-1.1 2-1.1 3.5-2.9 4.2-5.2l2.1-7.2 2.1 7.2c1.1 3.8 4.6 6.2 8.3 6.2.3 0 .7 0 1-.1l2.2 7.5-6.8 2 .8 2.7L48 37.3l-.8-2.7zm-25.6-20l-11.2-3.3.6-1.9 11.2 3.3-.6 1.9zm6 4.2l-1.8-6.2L37 9.4l1.8 6.2-11.2 3.2z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.vacation {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M32.4 6c-.5-2.7-2.5-7.1-10-5.8 0 0 5.7 2.6 6.7 5.6-3.2-2.4-12.2-7.4-20.9 3.9 0 0 9.3-5.3 13.3-1.6-3.2.5-9.2 2.7-10.5 13.5 0 0 8.9-8.5 14.4-7.3-.2.1-.3.3-.5.4-1.4 1.1-3 2.5-4.6 4.1-1.6 1.6-3.2 3.5-4.6 5.7-.7 1.1-1.3 2.2-1.9 3.4-.6 1.2-1 2.4-1.4 3.6-.4 1.2-.6 2.5-.7 3.7-.1 1.2-.2 2.4-.1 3.4 0 .4.1.9.1 1.3-4.2 1.4-7.2 5.1-7.2 8.2h26.6c0-3.1-5.7-6.7-11.1-8.1l-.3-.6c-.2-.5-.4-1.1-.6-1.8-.2-.7-.3-1.4-.4-2.2-.1-.8-.1-1.7 0-2.6.1-.9.2-1.9.5-2.9.2-1 .6-2 1-3 .8-2 1.9-4 3-5.7 1.1-1.8 2.4-3.4 3.5-4.7.3-.4.6-.7.9-1 2.9 4.9 3.9 17 3.9 17s6.4-12.5 3.1-18.2c4.6 2.5 5.5 10 5.5 10C43 12.3 38.8 9 35.5 8.2c3.6-1.2 8-1.5 8-1.5-4.6-2.9-9-1.6-11.1-.7z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.vacation:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M32.4 6c-.5-2.7-2.5-7.1-10-5.8 0 0 5.7 2.6 6.7 5.6-3.2-2.4-12.2-7.4-20.9 3.9 0 0 9.3-5.3 13.3-1.6-3.2.5-9.2 2.7-10.5 13.5 0 0 8.9-8.5 14.4-7.3-.2.1-.3.3-.5.4-1.4 1.1-3 2.5-4.6 4.1-1.6 1.6-3.2 3.5-4.6 5.7-.7 1.1-1.3 2.2-1.9 3.4-.6 1.2-1 2.4-1.4 3.6-.4 1.2-.6 2.5-.7 3.7-.1 1.2-.2 2.4-.1 3.4 0 .4.1.9.1 1.3-4.2 1.4-7.2 5.1-7.2 8.2h26.6c0-3.1-5.7-6.7-11.1-8.1l-.3-.6c-.2-.5-.4-1.1-.6-1.8-.2-.7-.3-1.4-.4-2.2-.1-.8-.1-1.7 0-2.6.1-.9.2-1.9.5-2.9.2-1 .6-2 1-3 .8-2 1.9-4 3-5.7 1.1-1.8 2.4-3.4 3.5-4.7.3-.4.6-.7.9-1 2.9 4.9 3.9 17 3.9 17s6.4-12.5 3.1-18.2c4.6 2.5 5.5 10 5.5 10C43 12.3 38.8 9 35.5 8.2c3.6-1.2 8-1.5 8-1.5-4.6-2.9-9-1.6-11.1-.7z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.mascots {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M24 26.6c-1.8 0-5.2 1.7-3.7 3.7 0 0 2.4 3.6 3.7 3.6 1.4 0 3.7-3.6 3.7-3.6 1.5-1.9-1.9-3.7-3.7-3.7z'/%3E%3Cpath d='M45.6 2.5C43-1.2 38.4.9 34.1 7 30.8 4.3 27 2.5 23.9 2.5c-3.1 0-6.8 1.8-10.1 4.5C9.5.9 5-1.2 2.4 2.5c-3.4 4.9-4 9.9 3.4 14.2-2.5 5-4.8 11.4-3.4 15.4C5 39.7 13.8 47.3 24 47.3c10.3 0 19-7.6 21.5-15.2 1.4-4-1-10.4-3.4-15.4 7.5-4.3 6.9-9.3 3.5-14.2zM14.8 21.4c-1.2-.5-2.3-1.8-2.8-3.4 0-.1-.1-.3 0-.4 0-.2.1-.5.3-.7.9-.9 3.9-.1 4.3 0 .3.1.5.2.7.4.5.4.9 1 .9 1.7.1 1-.4 1.8-1.2 2.3-.3.2-.7.2-1 .2-.5.1-.9 0-1.2-.1zM24 40.5c-4.3 0-7.8-3.2-7.8-7.2s3.5-10.2 7.8-10.2 7.8 6.2 7.8 10.2-3.5 7.2-7.8 7.2zM36 18c-.5 1.6-1.5 2.8-2.8 3.4-.4.2-.7.2-1.1.2-.4 0-.7-.1-1-.2-.9-.4-1.3-1.3-1.2-2.3.1-.7.4-1.3.9-1.7.2-.2.5-.3.7-.4.3-.1 3.3-1 4.3 0 .2.2.3.4.3.7-.1.1-.1.2-.1.3z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.mascots:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M24 26.6c-1.8 0-5.2 1.7-3.7 3.7 0 0 2.4 3.6 3.7 3.6 1.4 0 3.7-3.6 3.7-3.6 1.5-1.9-1.9-3.7-3.7-3.7z'/%3E%3Cpath d='M45.6 2.5C43-1.2 38.4.9 34.1 7 30.8 4.3 27 2.5 23.9 2.5c-3.1 0-6.8 1.8-10.1 4.5C9.5.9 5-1.2 2.4 2.5c-3.4 4.9-4 9.9 3.4 14.2-2.5 5-4.8 11.4-3.4 15.4C5 39.7 13.8 47.3 24 47.3c10.3 0 19-7.6 21.5-15.2 1.4-4-1-10.4-3.4-15.4 7.5-4.3 6.9-9.3 3.5-14.2zM14.8 21.4c-1.2-.5-2.3-1.8-2.8-3.4 0-.1-.1-.3 0-.4 0-.2.1-.5.3-.7.9-.9 3.9-.1 4.3 0 .3.1.5.2.7.4.5.4.9 1 .9 1.7.1 1-.4 1.8-1.2 2.3-.3.2-.7.2-1 .2-.5.1-.9 0-1.2-.1zM24 40.5c-4.3 0-7.8-3.2-7.8-7.2s3.5-10.2 7.8-10.2 7.8 6.2 7.8 10.2-3.5 7.2-7.8 7.2zM36 18c-.5 1.6-1.5 2.8-2.8 3.4-.4.2-.7.2-1.1.2-.4 0-.7-.1-1-.2-.9-.4-1.3-1.3-1.2-2.3.1-.7.4-1.3.9-1.7.2-.2.5-.3.7-.4.3-.1 3.3-1 4.3 0 .2.2.3.4.3.7-.1.1-.1.2-.1.3z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.people-and-places {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M34.1 0c-6.6 0-12 5-12.8 11.4 4.1 2 6.9 6.2 6.9 11.1 0 1.9-.4 3.7-1.2 5.4 3.4 6.4 7.1 12.2 7.1 12.2S46.9 20 46.9 12.9C46.9 5.7 41.2 0 34.1 0zm0 18.4c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zM24.1 31.7c-2.2 2-5.1 3.2-8.3 3.2-3.2 0-6.1-1.2-8.3-3.2-3.9 3.5-6.4 9.5-6.4 16.3h29.6c-.1-6.8-2.6-12.8-6.6-16.3z'/%3E%3Cpath d='M9.6 30.2c1.7 1.4 3.9 2.2 6.3 2.2s4.6-.8 6.3-2.2c1.6-1.3 2.8-3.2 3.4-5.3.2-.8.3-1.6.3-2.4 0-3.4-1.8-6.5-4.4-8.3-1.6-1.1-3.5-1.7-5.5-1.7-5.5 0-10 4.5-10 10-.1 3.1 1.3 5.9 3.6 7.7z'/%3E%3C/svg%3E")
+}
+.BrowseByCategory>.scroller>.categoryButton.people-and-places:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23009ddc'%3E%3Cpath d='M34.1 0c-6.6 0-12 5-12.8 11.4 4.1 2 6.9 6.2 6.9 11.1 0 1.9-.4 3.7-1.2 5.4 3.4 6.4 7.1 12.2 7.1 12.2S46.9 20 46.9 12.9C46.9 5.7 41.2 0 34.1 0zm0 18.4c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zM24.1 31.7c-2.2 2-5.1 3.2-8.3 3.2-3.2 0-6.1-1.2-8.3-3.2-3.9 3.5-6.4 9.5-6.4 16.3h29.6c-.1-6.8-2.6-12.8-6.6-16.3z'/%3E%3Cpath d='M9.6 30.2c1.7 1.4 3.9 2.2 6.3 2.2s4.6-.8 6.3-2.2c1.6-1.3 2.8-3.2 3.4-5.3.2-.8.3-1.6.3-2.4 0-3.4-1.8-6.5-4.4-8.3-1.6-1.1-3.5-1.7-5.5-1.7-5.5 0-10 4.5-10 10-.1 3.1 1.3 5.9 3.6 7.7z'/%3E%3C/svg%3E")
+}
+.CategoryList>.header .breadcrumbs,
+.ClipartList>.header .breadcrumbs {
+	margin-left: 1rem
+}
+.CategoryList>.header .breadcrumbs li,
+.ClipartList>.header .breadcrumbs li {
+	display: inline-block
+}
+.CategoryList>.header .breadcrumbs li:after,
+.ClipartList>.header .breadcrumbs li:after {
+	content: ">";
+	padding: 0 8px
+}
+.CategoryList>.header .breadcrumbs li:last-child:after,
+.ClipartList>.header .breadcrumbs li:last-child:after {
+	content: "";
+	padding: 0
+}
+.CategoryList>.header .breadcrumbs li a,
+.ClipartList>.header .breadcrumbs li a {
+	color: #666
+}
+.CategoryList>.header .breadcrumbs li a:hover,
+.ClipartList>.header .breadcrumbs li a:hover {
+	color: #009ddc
+}
+.CategoryList>.scroller {
+	position: absolute;
+	top: 24px;
+	left: 1rem;
+	right: 0;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch
+}
+.CategoryList>.scroller .items {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 1rem;
+	-moz-column-gap: 1rem;
+	column-gap: 1rem;
+	margin-top: 1rem
+}
+.CategoryList>.scroller .item {
+	display: block;
+	margin-bottom: 16px;
+	color: #666
+}
+.CategoryList>.scroller .item:hover {
+	color: #009ddc
+}
+.ClipartList {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0
+}
+.ClipartList>.scroller {
+	position: absolute;
+	left: 1rem;
+	right: 0;
+	top: 24px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch
+}
+.ClipartList>.scroller>.item {
+	float: left;
+	width: 31%;
+	height: 0;
+	padding-top: 31%;
+	margin: 2% 2% 0 0;
+	border: 1px solid #b6b6b6;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%
+}
+.MyImages:after,
+.MyImages:before {
+	left: calc(83.33% - 10px)
+}
+.MyImages>.container {
+	left: 1rem;
+	overflow: auto
+}
+.MyImages>.container>.item {
+	display: inline-block;
+	padding: 0;
+	width: 30%;
+	margin: 0 3% 8px 0;
+	border: 1px solid #cacaca
+}
+.EditProductPane {
+	text-align: center
+}
+.EditProductPane .pane-content {
+	overflow-y: auto;
+	height: 100%;
+	margin: 0 -1rem;
+	padding: 0 1rem
+}
+.EditProductPane h2 {
+	font-size: 19px;
+	margin-bottom: 0
+}
+.EditProductPane a.sizeChartLink {
+	display: none
+}
+.EditProductPane .header {
+	margin-bottom: 5px
+}
+.EditProductPane .header span {
+	display: block;
+	font-weight: 700;
+	font-size: 110%
+}
+.EditProductPane .ProductColorPicker {
+	line-height: 0
+}
+.EditProductPane .ProductColorPicker .colorBox {
+	border-radius: 3px
+}
+.EditProductPane .btn-container {
+	margin-bottom: 2rem
+}
+.EditProductPane .digitalInkContainer,
+.EditProductPane .embroideryInkContainer,
+.EditProductPane .screenInkContainer {
+	padding-bottom: 2rem
+}
+.EditProductPane .fabric,
+.EditProductPane .sizes {
+	padding-left: 6px
+}
+.EditProductPane .description {
+	display: block;
+	text-align: justify
+}
+.EditGroupPane .size-container>div,
+.EditImagePane .size-container>div,
+.EditTextPane .size-container>div {
+	margin-bottom: .5rem
+}
+.EditGroupPane .slider-row,
+.EditImagePane .slider-row,
+.EditTextPane .slider-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex
+}
+.EditGroupPane .slider-row input[type=number],
+.EditImagePane .slider-row input[type=number],
+.EditTextPane .slider-row input[type=number] {
+	display: none;
+	width: 40px!important;
+	padding: 4px!important;
+	font-size: 10px
+}
+.EditGroupPane .slider-row label,
+.EditImagePane .slider-row label,
+.EditTextPane .slider-row label {
+	width: 85px
+}
+.EditGroupPane .slider-row>div,
+.EditImagePane .slider-row>div,
+.EditTextPane .slider-row>div {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex
+}
+.EditGroupPane .slider-row>div input[type=range],
+.EditImagePane .slider-row>div input[type=range],
+.EditTextPane .slider-row>div input[type=range] {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1
+}
+.EditGroupPane .slider-row>div input[type=number],
+.EditImagePane .slider-row>div input[type=number],
+.EditTextPane .slider-row>div input[type=number] {
+	margin-left: 1rem
+}
+.EditGroupPane .snap-label,
+.EditImagePane .snap-label,
+.EditTextPane .snap-label {
+	display: none
+}
+.EditImagePane,
+.EditTextPane {
+	position: static;
+	padding: 0;
+	height: 0;
+	overflow-y: visible;
+	top: auto
+}
+.EditImagePane>.container,
+.EditTextPane>.container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 54px;
+	z-index: 3
+}
+.EditImagePane>.container .section,
+.EditTextPane>.container .section {
+	display: none
+}
+.EditImagePane>.container .section.active,
+.EditTextPane>.container .section.active {
+	display: block;
+	background-color: hsla(0, 0%, 100%, .95);
+	padding: 1rem;
+	padding-bottom: 2rem;
+	border-top: 1px solid #cacaca
+}
+.EditImagePane>.container .section.active.slider-row,
+.EditTextPane>.container .section.active.slider-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex
+}
+.EditImagePane>.container .section>.alignment,
+.EditImagePane>.container .section>.layer,
+.EditTextPane>.container .section>.alignment,
+.EditTextPane>.container .section>.layer {
+	display: inline-block;
+	vertical-align: top
+}
+.EditImagePane>.container .section>.layer,
+.EditTextPane>.container .section>.layer {
+	margin-right: 2rem
+}
+.EditImagePane.hidden,
+.EditImagePane.hide-pane,
+.EditTextPane.hidden,
+.EditTextPane.hide-pane {
+	display: none
+}
+.EditImagePane .lock-ratio {
+	width: 20px;
+	margin-left: 16px
+}
+.EditImagePane .lock-ratio input[type=checkbox] {
+	display: none
+}
+.EditImagePane .lock-ratio input[type=checkbox]+span {
+	background-position: 0 -600px;
+	cursor: pointer;
+	width: auto;
+	font-weight: 400;
+	padding-left: 20px
+}
+.EditImagePane .lock-ratio input[type=checkbox]:checked+span {
+	background-position: 0 -550px
+}
+.EditImagePane .section.size {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+.EditImagePane .section.size.active {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex
+}
+.EditImagePane .section.size .size-container {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1
+}
+.EditTextPane>.container .section.text .editor {
+	margin-bottom: 1rem
+}
+.EditTextPane>.container .section.color,
+.EditTextPane>.container .section.shadow-color,
+.EditTextPane>.container .section.stroke-color {
+	width: 65px;
+	text-align: center
+}
+.EditTextPane>.container .section.color label,
+.EditTextPane>.container .section.shadow-color label,
+.EditTextPane>.container .section.stroke-color label {
+	text-align: center
+}
+.EditTextPane>.container .section.more {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column
+}
+.EditTextPane>.container .justify-container .justifyButtons label {
+	width: inherit;
+	display: inline-block;
+	float: none;
+	margin-right: 5px
+}
+.EditTextPane>.container .justify-container .justifyButtons input[type=radio]+span {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	width: 32px;
+	height: 32px;
+	cursor: pointer
+}
+.EditTextPane>.container .justify-container .justifyButtons input[type=radio] {
+	display: none
+}
+.EditTextPane>.container .justify-container .justifyButtons input[type=radio].justifyLeft+span {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23666'%3E%3Cpath d='M28 1c1.7 0 3 1.3 3 3v24c0 1.7-1.3 3-3 3H4c-1.7 0-3-1.3-3-3V4c0-1.7 1.3-3 3-3h24m0-1H4C1.8 0 0 1.8 0 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4z'/%3E%3Cpath d='M7 14h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M7 26h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M7 20h12c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M7 8h12c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1'/%3E%3C/svg%3E")
+}
+.EditTextPane>.container .justify-container .justifyButtons input[type=radio].justifyLeft:checked+span {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%2308588C' d='M28 32H4c-2.2 0-4-1.8-4-4V4c0-2.2 1.8-4 4-4h24c2.2 0 4 1.8 4 4v24c0 2.2-1.8 4-4 4z'/%3E%3Cpath fill='%23666' d='M28 1c1.7 0 3 1.3 3 3v24c0 1.7-1.3 3-3 3H4c-1.7 0-3-1.3-3-3V4c0-1.7 1.3-3 3-3h24m0-1H4C1.8 0 0 1.8 0 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4z'/%3E%3Cpath fill='%23FFF' d='M7 14h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M7 26h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M7 20h12c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M7 8h12c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1'/%3E%3C/svg%3E")
+}
+.EditTextPane>.container .justify-container .justifyButtons input[type=radio].justifyCenter+span {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23666'%3E%3Cpath d='M28 1c1.7 0 3 1.3 3 3v24c0 1.7-1.3 3-3 3H4c-1.7 0-3-1.3-3-3V4c0-1.7 1.3-3 3-3h24m0-1H4C1.8 0 0 1.8 0 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4z'/%3E%3Cpath d='M7 14h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M7 26h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M10 20h12c.6 0 1-.4 1-1s-.4-1-1-1H10c-.6 0-1 .4-1 1s.4 1 1 1M10 8h12c.6 0 1-.4 1-1s-.4-1-1-1H10c-.6 0-1 .4-1 1s.4 1 1 1'/%3E%3C/svg%3E")
+}
+.EditTextPane>.container .justify-container .justifyButtons input[type=radio].justifyCenter:checked+span {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%2308588C' d='M28 32H4c-2.2 0-4-1.8-4-4V4c0-2.2 1.8-4 4-4h24c2.2 0 4 1.8 4 4v24c0 2.2-1.8 4-4 4z'/%3E%3Cpath fill='%23666' d='M28 1c1.7 0 3 1.3 3 3v24c0 1.7-1.3 3-3 3H4c-1.7 0-3-1.3-3-3V4c0-1.7 1.3-3 3-3h24m0-1H4C1.8 0 0 1.8 0 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4z'/%3E%3Cpath fill='%23FFF' d='M7 14h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M7 26h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M10 20h12c.6 0 1-.4 1-1s-.4-1-1-1H10c-.6 0-1 .4-1 1s.4 1 1 1M10 8h12c.6 0 1-.4 1-1s-.4-1-1-1H10c-.6 0-1 .4-1 1s.4 1 1 1'/%3E%3C/svg%3E")
+}
+.EditTextPane>.container .justify-container .justifyButtons input[type=radio].justifyRight+span {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23666'%3E%3Cpath d='M28 1c1.7 0 3 1.3 3 3v24c0 1.7-1.3 3-3 3H4c-1.7 0-3-1.3-3-3V4c0-1.7 1.3-3 3-3h24m0-1H4C1.8 0 0 1.8 0 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4z'/%3E%3Cpath d='M7 14h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M7 26h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M13 20h12c.6 0 1-.4 1-1s-.4-1-1-1H13c-.6 0-1 .4-1 1s.4 1 1 1M13 8h12c.6 0 1-.4 1-1s-.4-1-1-1H13c-.6 0-1 .4-1 1s.4 1 1 1'/%3E%3C/svg%3E")
+}
+.EditTextPane>.container .justify-container .justifyButtons input[type=radio].justifyRight:checked+span {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%2308588C' d='M28 32H4c-2.2 0-4-1.8-4-4V4c0-2.2 1.8-4 4-4h24c2.2 0 4 1.8 4 4v24c0 2.2-1.8 4-4 4z'/%3E%3Cpath fill='%23666' d='M28 1c1.7 0 3 1.3 3 3v24c0 1.7-1.3 3-3 3H4c-1.7 0-3-1.3-3-3V4c0-1.7 1.3-3 3-3h24m0-1H4C1.8 0 0 1.8 0 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4z'/%3E%3Cpath fill='%23FFF' d='M7 14h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M7 26h18c.6 0 1-.4 1-1s-.4-1-1-1H7c-.6 0-1 .4-1 1s.4 1 1 1M13 20h12c.6 0 1-.4 1-1s-.4-1-1-1H13c-.6 0-1 .4-1 1s.4 1 1 1M13 8h12c.6 0 1-.4 1-1s-.4-1-1-1H13c-.6 0-1 .4-1 1s.4 1 1 1'/%3E%3C/svg%3E")
+}
+.EditTextPane>.container .justify-container .justifyButtons input[type=radio][disabled]+span {
+	opacity: .3;
+	cursor: default
+}
+.EditGroupPane {
+	height: auto
+}
+.EditGroupPane .section.rotate {
+	margin: 1rem 0
+}
+.EditGroupPane .position .alignment,
+.EditGroupPane .position .object-alignment {
+	display: inline-block;
+	vertical-align: top
+}
+.EditGroupPane .position .object-alignment {
+	margin-right: 2rem
+}
+.edit-tools {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	overflow-x: scroll;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+	padding-top: 10px;
+	z-index: 3
+}
+.edit-tools .label {
+	display: none
+}
+.edit-tools ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	background-color: #08588c
+}
+.edit-tools ul>li {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	position: relative;
+	padding: 7px 0;
+	background-color: #08588c
+}
+.edit-tools ul>li:first-child,
+.edit-tools ul>li:last-child {
+	border: none;
+	border-radius: 0
+}
+.edit-tools ul>li.selected:after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: " ";
+	bottom: 100%;
+	left: 50%;
+	margin-left: -10px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #08588c
+}
+.edit-tools ul>li>a {
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-background-size: 22.4px 22.4px;
+	background-size: 22.4px 22.4px;
+	display: block;
+	color: #fff;
+	min-width: 57px;
+	padding: 27px 0 3px;
+	font-size: 10px;
+	text-align: center;
+	line-height: 1
+}
+.edit-tools ul>li>a.disabled {
+	opacity: .1;
+	cursor: default
+}
+.edit-tools ul>li>a.color {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M39 25.8c-.2-.7-1.4-3.1-2.2-4.5C34.5 17 29.4 7.9 27.5 4c-.4-.7-.9-2-1.4-2.5-.5-.6-1.4-1.6-2.5-1.5-.8.1-1.8.4-2.4 1.3-.2.3-1.1 1.5-1.7 2.7-1.8 3.8-6 12.5-8.7 17.4-.5.9-1.8 3.4-2.3 5.1-1.4 5.3-3.1 16.9 8.6 20.5 1.7.5 3.6 1.1 6.5 1.1 2.4 0 5.6-.3 7.9-1.3 4.3-2.1 12.2-7.7 7.5-21zm-17 2.1c-.7.2-2.4-.1-2.9-.2-3.8-1.2-3.1-5.7-2.2-8.8.2-.7.6-1.8.8-2.2.9-2.1 2.3-5.8 2.9-7.5.2-.5.4-1.1.5-1.2.8-.9 1.4-.3 1.6.1.1.2.3.8.5 1.1.7 1.7 1.7 10.8 1.7 11.1.8 5.7-1.4 7.2-2.9 7.6z'/%3E%3C/svg%3E")
+}
+.edit-tools ul>li>a.position {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M39.7 25.5c-.1-.1-.2-.1-.4-.1s-.2 0-.4.1l-15 9-15-9c-.1-.1-.2-.1-.4-.1s-.2 0-.4.1l-8 4.8s-.1.3-.1.5.1.5.3.6l23.3 13.9c.1.1.2.1.4.1.1 0 .2 0 .4-.1l23.3-13.9c.2-.1.3-.3.3-.6 0-.2-.1-.5-.3-.6l-8-4.7zM24 44.8L.7 30.8l23.3 14 23.3-14-23.3 14zm-.4-13.1c.1.1.2.1.4.1.1 0 .2 0 .4-.1l23.3-14c.2-.1.3-.3.3-.6 0-.2-.1-.5-.3-.6L24.4 2.7c-.1-.1-.2-.1-.4-.1-.1 0-.2 0-.4.1L.3 16.6c-.2.1-.3.4-.3.6 0 .2.1.5.3.6l23.3 13.9zm23.7-14.5l-11.7-7 11.7 7zm-35-7l-11.7 7 11.7-7z'/%3E%3C/svg%3E")
+}
+.edit-tools ul>li>a.rotate {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M37.3 40.3c.1 0 .1-.1.2-.1l.1-.1c.1-.1.3-.2.4-.4l-.1-.1c.6-1 .5-2.4-.4-3.2-.9-.9-2.2-1-3.2-.4l-.3.3-.2.2-.1.1c-6.6 6.1-17 5.9-23.4-.5-6.6-6.6-6.6-17.3 0-24 6.6-6.6 17.3-6.6 24 0 1.4 1.4 2.5 2.9 3.3 4.7l-5.3 2.5c-.1 0-.2.1-.2.2-.1.1-.2.3-.2.5 0 .3.2.6.4.7l11.6 5.5c.2.1.4.1.6 0 .1 0 .2-.1.2-.2.1-.1.2-.2.2-.3L48 13.2c.1-.3 0-.6-.2-.8-.2-.2-.5-.2-.8-.1l-4.7 2.2c-1.1-2.3-2.5-4.4-4.4-6.2-8.7-8.7-22.8-8.7-31.4 0-8.7 8.7-8.7 22.7 0 31.4 8.5 8.5 22.1 8.7 30.8.6z'/%3E%3C/svg%3E")
+}
+.edit-tools ul>li>a.size {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M47.5 2.2l-7.9.8c-.1 0-.2 0-.3.1-.2.2-.2.5 0 .7l1.4 1.4-6 6c-.3.3-.3.8 0 1.1l3.3 3.3c.3.3.8.3 1.1 0l6-6 1.4 1.4c.1.1.3.2.5.1s.3-.2.3-.4l.7-8v-.2l-.2-.2c-.1-.1-.2-.1-.3-.1zM47.7 45.8l.2-.2v-.2l-.8-7.9c0-.2-.1-.3-.3-.4-.2-.1-.4 0-.5.1l-1.4 1.4-6-6c-.3-.3-.8-.3-1.1 0l-3.3 3.3c-.3.3-.3.8 0 1.1l6 6-1.4 1.4c-.2.2-.2.5 0 .7.1.1.2.1.3.1l7.9.8c.3-.2.4-.2.4-.2zM.3 2.2l-.3.3v.2l.8 7.9c0 .2.1.3.3.4.2.1.4 0 .5-.1L3 9.5l6 6c.3.3.8.3 1.1 0l3.3-3.3c.3-.3.3-.8 0-1.1l-6-6 1.4-1.4c.2-.2.2-.5 0-.7h-.4L.5 2.2H.3zM.5 45.8l7.9-.8c.1 0 .2 0 .3-.1.2-.2.2-.5 0-.7l-1.4-1.4 6-6c.3-.3.3-.8 0-1.1L10 32.5c-.3-.3-.8-.3-1.1 0l-6 6-1.4-1.4c-.1-.1-.3-.1-.4-.1-.2.1-.3.2-.3.4L0 45.3v.2l.2.2c.1.1.2.1.3.1z'/%3E%3C/svg%3E")
+}
+.edit-tools ul>li>a.text {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M48 2.5C48 3.9 46.9 5 45.5 5h-43C1.1 5 0 3.9 0 2.5S1.1 0 2.5 0h43C46.9 0 48 1.1 48 2.5zM48 13.2c0 1.4-1.1 2.5-2.5 2.5h-43c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5h43c1.4.1 2.5 1.2 2.5 2.5zM48 24c0 1.4-1.1 2.5-2.5 2.5h-43C1.1 26.5 0 25.4 0 24s1.1-2.5 2.5-2.5h43c1.4 0 2.5 1.1 2.5 2.5zM48 34.8c0 1.4-1.1 2.5-2.5 2.5h-43c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5h43c1.4 0 2.5 1.1 2.5 2.5zM48 45.5c0 1.4-1.1 2.5-2.5 2.5h-43C1.1 48 0 46.9 0 45.5S1.1 43 2.5 43h43c1.4 0 2.5 1.1 2.5 2.5z'/%3E%3C/svg%3E")
+}
+.edit-tools ul>li>a.font {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M33.5 0c1.9 0 3.4 1.5 3.4 3.5 0 1.9-1.5 3.5-3.4 3.5H18.1v11.8h14c1.8 0 3.5 1.4 3.5 3.6 0 1.9-1.7 3.4-3.5 3.4h-14v18.6c0 2.3-1.1 3.5-3.6 3.5-2.3 0-3.4-1.2-3.4-3.5v-41c0-2 1.4-3.5 3.4-3.5h19z'/%3E%3C/svg%3E")
+}
+.edit-tools ul>li>a.stroke-color {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M35.6 2.9c1.9 0 2.9 1.2 2.9 3.5v23c0 9-5.1 15.6-14.1 15.6S9.5 38.4 9.5 29.4v-23c0-2.3 1-3.5 3-3.5 2.1 0 3.1 1.2 3.1 3.5v23c0 5.7 2.9 9.7 8.6 9.7 6.1 0 8.3-4.1 8.3-9.7v-23c-.1-2.2 1-3.5 3.1-3.5m0-2.9c-3.7 0-6.1 2.5-6.1 6.5v23c0 6-2.6 6.8-5.3 6.8-4.7 0-5.7-3.7-5.7-6.8v-23c0-3.9-2.4-6.5-6-6.5-2.9 0-5.9 1.7-5.9 6.5v23C6.6 40.2 14.1 48 24.4 48c10.2 0 17.1-7.4 17.1-18.5v-23c-.1-4-2.4-6.5-5.9-6.5z'/%3E%3C/svg%3E")
+}
+.edit-tools ul>li>a.shadow-color {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M28 39.4c5.4 0 8-3.1 8-9.6V5.3c0-1.1.3-1.9.6-2.6-.2-.4-.4-.8-.7-1.2-.8-1-2.2-1.6-3.5-1.5-1.4 0-2.8.5-3.7 1.5-.9 1-1.2 2.4-1.2 3.8v24.5c0 2.8-.6 5.1-1.7 6.5-.6.8-1.4 1.4-2.5 1.8 1.3.9 2.9 1.3 4.7 1.3z'/%3E%3Cpath d='M11.6 29.8V5.3c0-1.2.2-2 .6-2.7-.2-.4-.4-.8-.7-1.1C10.7.5 9.3 0 7.9 0S5.1.5 4.3 1.5c-.9 1.1-1.1 2.4-1.1 3.8v24.5c0 5.1 1.7 9.7 4.7 12.9C11 46.1 15.4 48 20.5 48c2.1 0 4.1-.3 5.9-.9-8.8-.9-14.8-7.7-14.8-17.3z'/%3E%3Cpath d='M40.2 1.6c2 0 3.1 1.3 3.1 3.8v24.5c0 9.6-5.4 16.6-15.1 16.6-9.6 0-15.8-7-15.8-16.6V5.3c0-2.5 1-3.8 3.2-3.8s3.3 1.3 3.3 3.8v24.5c0 6 3.1 10.4 9.2 10.4 6.5 0 8.8-4.3 8.8-10.4V5.3c-.1-2.4 1.1-3.7 3.3-3.7m0-1.6c-3.1 0-4.9 2-4.9 5.3v24.5c0 7.9-4.1 8.8-7.2 8.8-6.9 0-7.6-6.2-7.6-8.8V5.3C20.4 2 18.6 0 15.6 0c-1.4 0-4.7.5-4.7 5.3v24.5C10.8 40.5 18 48 28.2 48c10.1 0 16.6-7.1 16.6-18.2V5.3C44.8 2 43.1 0 40.2 0'/%3E%3C/svg%3E")
+}
+.edit-tools ul>li>a.more {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M6.7 19.3c2.6 0 4.7 2.1 4.7 4.7s-2.1 4.7-4.7 4.7S2 26.6 2 24s2.1-4.7 4.7-4.7m0-2a6.7 6.7 0 1 0 0 13.4 6.7 6.7 0 0 0 0-13.4zM24 19.3c2.6 0 4.7 2.1 4.7 4.7s-2.1 4.7-4.7 4.7-4.7-2.1-4.7-4.7 2.1-4.7 4.7-4.7m0-2a6.7 6.7 0 1 0 0 13.4 6.7 6.7 0 0 0 0-13.4zM41.3 19.3c2.6 0 4.7 2.1 4.7 4.7s-2.1 4.7-4.7 4.7-4.7-2.1-4.7-4.7 2.1-4.7 4.7-4.7m0-2a6.7 6.7 0 1 0 0 13.4 6.7 6.7 0 0 0 0-13.4z'/%3E%3C/svg%3E")
+}
+.edit-tools ul>li>a.arc {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M34.1 41.5c-.4 0-.9-.2-1.2-.5-3.1-3.4-6.4-5.1-9.8-5.2-6 0-10.7 5.1-10.7 5.2-.4.4-.9.6-1.5.5-.5-.1-1-.5-1.2-1L.1 15.6c-.3-.7 0-1.5.6-1.9C26.5-3.4 47.3 15 47.5 15.2c.5.5.7 1.3.3 1.9L35.5 40.7c-.2.5-.7.8-1.2.8h-.2zm-11-8.8c3.8 0 7.4 1.5 10.7 4.6l10.7-20.6c-4-3.1-20.4-13.9-40.9-1l8.3 21.5c2.1-1.8 6.2-4.5 11.2-4.5z'/%3E%3C/svg%3E")
+}
+.edit-icon {
+	font-weight: 500;
+	font-size: 13px
+}
+.fontAnchor {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 32px;
+	padding-left: .25rem;
+	border: 1px solid #cacaca;
+	border-radius: 3px
+}
+.fontAnchor:hover>.arrow {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' fill='%23009ddc'%3E%3Cpath d='M.9 6.3l7 7.5c.3.3.7.5 1.1.5.4 0 .8-.2 1.1-.5l7-7.5c.6-.6.5-1.6-.1-2.2-.6-.5-1.6-.5-2.1.1L9 10.5 3.1 4.2c-.6-.6-1.5-.7-2.2-.1-.5.6-.6 1.6 0 2.2z'/%3E%3C/svg%3E")
+}
+.fontAnchor>.fontPreview {
+	display: inline-block;
+	height: 22px;
+	vertical-align: middle
+}
+.fontAnchor>.arrow {
+	position: absolute;
+	right: 0;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' fill='%2308588c'%3E%3Cpath d='M.9 6.3l7 7.5c.3.3.7.5 1.1.5.4 0 .8-.2 1.1-.5l7-7.5c.6-.6.5-1.6-.1-2.2-.6-.5-1.6-.5-2.1.1L9 10.5 3.1 4.2c-.6-.6-1.5-.7-2.2-.1-.5.6-.6 1.6 0 2.2z'/%3E%3C/svg%3E") no-repeat 50%;
+	background-color: #fff;
+	-webkit-background-size: 16px 16px;
+	background-size: 16px 16px;
+	display: inline-block;
+	height: 100%;
+	width: 25px;
+	border-left: 1px solid #cacaca
+}
+.FontDialog {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 54px;
+	background-color: #fff;
+	background-color: hsla(0, 0%, 100%, .98);
+	border-top: 1px solid #cacaca
+}
+.FontDialog.show-category .dlg-header .dlg-back a {
+	display: inline-block
+}
+.FontDialog.show-category .categoryList {
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%)
+}
+.FontDialog.show-category .fontList {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0)
+}
+.FontDialog h2 {
+	padding-left: 16px
+}
+.FontDialog .dlg-header {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: #666;
+	color: #fff;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	padding-left: 1rem;
+	white-space: nowrap
+}
+.FontDialog .dlg-header a {
+	color: #fff
+}
+.FontDialog .dlg-header>div {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+.FontDialog .dlg-header>div:first-child>a {
+	margin-right: auto
+}
+.FontDialog .dlg-header>div:last-child>a {
+	margin-left: auto
+}
+.FontDialog .dlg-header .dlg-back a {
+	display: none;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M11 15c-.3 0-.6-.1-.8-.3L4.3 8.8c-.4-.4-.4-1.1 0-1.5l5.9-6c.4-.4 1.1-.4 1.5 0 .4.4.4 1.1 0 1.5L6.6 8l5.1 5.1c.4.4.4 1.1 0 1.5-.1.3-.4.4-.7.4z'/%3E%3C/svg%3E") 0 no-repeat;
+	-webkit-background-size: 16px 16px;
+	background-size: 16px 16px;
+	padding-left: 20px
+}
+.FontDialog .dlg-header .dlg-header-title {
+	text-align: center
+}
+.FontDialog .dlg-header .dlg-close-btn {
+	width: 25px;
+	height: 25px;
+	margin-right: 1rem;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23fff'%3E%3Cpath d='M25.1 22.9l-16-16c-.6-.6-1.5-.6-2.1 0-.6.6-.6 1.5 0 2.1l16 16c.3.3.6.4 1.1.4s.7-.1 1.1-.4c.4-.5.4-1.5-.1-2.1z'/%3E%3Cpath d='M25.1 6.9c-.6-.6-1.5-.6-2.1 0l-16 16c-.6.6-.6 1.5 0 2.1.3.3.6.4 1.1.4s.7-.1 1.1-.4l16-16c.4-.5.4-1.5-.1-2.1z'/%3E%3C/svg%3E") 50% no-repeat;
+	-webkit-background-size: 20px 20px;
+	background-size: 20px 20px
+}
+.FontDialog .dlgCloseButton {
+	top: .5rem;
+	right: 1.5rem
+}
+.FontDialog .content {
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	top: 2.5rem;
+	left: 0;
+	right: 0;
+	bottom: 0
+}
+.FontDialog .categoryList {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	-webkit-transition: -webkit-transform .5s cubic-bezier(.3, 1, .32, 1);
+	transition: -webkit-transform .5s cubic-bezier(.3, 1, .32, 1);
+	transition: transform .5s cubic-bezier(.3, 1, .32, 1);
+	transition: transform .5s cubic-bezier(.3, 1, .32, 1), -webkit-transform .5s cubic-bezier(.3, 1, .32, 1);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	padding: 1rem .5rem
+}
+.FontDialog .categoryList a.category {
+	display: inline-block;
+	width: calc(100% - 1rem);
+	margin: .5rem;
+	padding: 1rem;
+	text-align: center;
+	background-color: #f4f4f4;
+	border: 1px solid #dcdcdc;
+	border-radius: 4px;
+	color: #666;
+	margin-bottom: .5rem
+}
+.FontDialog .categoryList a.category:hover {
+	background-color: #fafafa
+}
+.FontDialog .categoryList a.category.selected {
+	color: #009ddc;
+	font-weight: 700
+}
+.FontDialog .fontList {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	-webkit-transition: -webkit-transform .5s cubic-bezier(.3, 1, .32, 1);
+	transition: -webkit-transform .5s cubic-bezier(.3, 1, .32, 1);
+	transition: transform .5s cubic-bezier(.3, 1, .32, 1);
+	transition: transform .5s cubic-bezier(.3, 1, .32, 1), -webkit-transform .5s cubic-bezier(.3, 1, .32, 1);
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+	padding: .5rem
+}
+.FontDialog .fontList .font {
+	display: inline-block;
+	width: 50%;
+	padding: .75rem
+}
+.dlgCloseButton {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	width: 25px;
+	height: 25px;
+	z-index: 1;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='%23cf2024'%3E%3Cpath d='M64 12.8L51.2 0 32 19.2 12.8 0 0 12.8 19.2 32 0 51.2 12.8 64 32 44.8 51.2 64 64 51.2 44.8 32z'/%3E%3C/svg%3E") 50% no-repeat;
+	-webkit-background-size: 24px 24px;
+	background-size: 24px 24px
+}
+.colorBox {
+	display: inline-block;
+	position: relative;
+	width: 34px;
+	height: 34px;
+	border: 1px solid #dcdcdc;
+	margin: 0 3px 6px;
+	min-width: 34px;
+	border-radius: 50%;
+	overflow: hidden
+}
+.colorBox:hover {
+	border-color: #009ddc
+}
+.colorBox.none {
+	background-color: #ebebeb;
+	background: -webkit-repeating-linear-gradient(45deg, #ebebeb, #ebebeb 2px, #dedede 3px, #dedede 5px);
+	background: repeating-linear-gradient(45deg, #ebebeb, #ebebeb 2px, #dedede 3px, #dedede 5px)
+}
+.colorBox.selected,
+.colorBox.selected-alt {
+	border: 2px solid #009ddc
+}
+.colorBox.current {
+}
+.colorBox.current-alt {
+}
+.colorBox>div {
+	float: left;
+	width: 50%;
+	height: 100%;
+	pointer-events: none
+}
+.colorBox>div.w33 {
+	width: 33%
+}
+.colorBox>div.w34 {
+	width: 34%
+}
+.colorBox span.current {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.colorBox span.current-alt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+span.noink {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: -2px
+}
+.colorBox.maskInk,
+.noink .colorBox {
+	background-color: #fff!important
+}
+.colorBox.maskInk:before,
+.noink .colorBox:before {
+	content: " ";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23cf2024'%3E%3Cpath d='M48 43.1L5 0H0v5l43.1 43H48z'/%3E%3C/svg%3E") no-repeat 50%!important;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%
+}
+.InkPickerDialog,
+.InksPickerDialog {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: auto;
+	bottom: 54px;
+	height: auto;
+	border-top: 1px solid #cacaca;
+	background-color: #fff;
+	padding: 1rem
+}
+.InkPickerDialog label,
+.InksPickerDialog label {
+	font-weight: 500;
+	font-size: 13px
+}
+.InkPickerDialog .currentInksContainer,
+.InkPickerDialog .currentInksContainer p,
+.InkPickerDialog .selectorContainer p,
+.InksPickerDialog .currentInksContainer,
+.InksPickerDialog .currentInksContainer p,
+.InksPickerDialog .selectorContainer p {
+	display: none
+}
+.InkPickerDialog .colorsContainer,
+.InksPickerDialog .colorsContainer {
+	margin-bottom: 1rem
+}
+.InkPickerDialog .colorsContainer>.item.selected .colorBox,
+.InksPickerDialog .colorsContainer>.item.selected .colorBox {
+	border: 2px solid #009ddc
+}
+.InkPickerDialog .select-group,
+.InksPickerDialog .select-group {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	position: relative;
+	margin: 0 -1rem -1rem;
+	padding: 1rem
+}
+.InkPickerDialog .select-group .inks,
+.InksPickerDialog .select-group .inks {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 -1rem;
+	padding: 0 1rem;
+	overflow-y: hidden;
+	overflow-x: auto
+}
+.InkPickerDialog p {
+	font-weight: 600;
+	margin-bottom: .25rem
+}
+.InkPickerDialog .ink-legend {
+	display: inline-block;
+	padding: .5rem;
+	margin: -5px 0 24px;
+	line-height: 1;
+	border: 1px solid #c2c2c1;
+	border-radius: 4px
+}
+.InkPickerDialog .ink-legend span {
+	display: block;
+	float: left;
+	margin-right: 5px;
+	width: 10px;
+	height: 12px;
+}
+.InkPickerDialog .select-group {
+	padding: 0 1rem
+}
+.InkPickerDialog .selectorContainer {
+	margin-bottom: 20px
+}
+.InkPickerDialog.text-ink-dialog .continueContainer {
+	display: none
+}
+.InkPickerDialog.shadow-ink-dialog,
+.InkPickerDialog.stroke-ink-dialog {
+	height: auto
+}
+.InkPickerDialog.shadow-ink-dialog .currentInksContainer,
+.InkPickerDialog.shadow-ink-dialog .selectorContainer p,
+.InkPickerDialog.stroke-ink-dialog .currentInksContainer,
+.InkPickerDialog.stroke-ink-dialog .selectorContainer p {
+	display: none
+}
+.InkPickerDialog.shadow-ink-dialog .slider-container,
+.InkPickerDialog.stroke-ink-dialog .slider-container {
+	margin-bottom: 1rem
+}
+.InkPickerDialog.shadow-ink-dialog .slider-container label,
+.InkPickerDialog.stroke-ink-dialog .slider-container label {
+	width: 70px;
+	overflow: hidden;
+	vertical-align: top
+}
+.InkPickerDialog.shadow-ink-dialog .slider-container input[type=range],
+.InkPickerDialog.stroke-ink-dialog .slider-container input[type=range] {
+	width: calc(100% - 80px);
+	margin: 0
+}
+.InkPickerDialog.shadow-ink-dialog .slider-container input[type=number],
+.InkPickerDialog.stroke-ink-dialog .slider-container input[type=number] {
+	display: none
+}
+.InkPickerDialog.shadow-ink-dialog .continueContainer,
+.InkPickerDialog.stroke-ink-dialog .continueContainer {
+	text-align: center;
+	margin: 1rem 0
+}
+.InkPickerDialog.shadow-ink-dialog .select-group,
+.InkPickerDialog.stroke-ink-dialog .select-group {
+	padding-bottom: 1rem
+}
+.InksPickerDialog .select-group {
+	border-top: 1px solid #cacaca;
+	background-color: #f4f4f4
+}
+.InksPickerDialog .select-group:after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: " ";
+	bottom: 100%;
+	left: 26px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #f4f4f4
+}
+.InksPickerDialog .select-group:before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: " ";
+	bottom: 100%;
+	left: 25px;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 11px solid #cacaca
+}
+.InksPickerDialog .select-group.ink0:after,
+.InksPickerDialog .select-group.ink0:before {
+	margin-left: 0
+}
+.InksPickerDialog .select-group.ink1:after,
+.InksPickerDialog .select-group.ink1:before {
+	margin-left: 40px
+}
+.InksPickerDialog .select-group.ink2:after,
+.InksPickerDialog .select-group.ink2:before {
+	margin-left: 80px
+}
+.InksPickerDialog .select-group.ink3:after,
+.InksPickerDialog .select-group.ink3:before {
+	margin-left: 120px
+}
+.InksPickerDialog .select-group.ink4:after,
+.InksPickerDialog .select-group.ink4:before {
+	margin-left: 160px
+}
+.InksPickerDialog .select-group.ink5:after,
+.InksPickerDialog .select-group.ink5:before {
+	margin-left: 200px
+}
+.InksPickerDialog .select-group.ink6:after,
+.InksPickerDialog .select-group.ink6:before {
+	margin-left: 240px
+}
+.InksPickerDialog .select-group label {
+	margin-bottom: 1rem
+}
+.SaveDesignPane>.buttons>li {
+	float: left;
+	width: 50%
+}
+.SaveDesignPane>.buttons>li>a {
+	display: block;
+	color: #959595;
+	background-repeat: no-repeat;
+	background-position: top;
+	-webkit-background-size: 28px 28px;
+	background-size: 28px;
+	padding-top: 30px;
+	font-size: 11px;
+	text-align: center
+}
+.SaveDesignPane>.buttons>li>a.save {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M43.6 37H24.4c.2-.1.4-.2.5-.4l13.4-16.3c.2-.2.3-.5.3-.8 0-.7-.6-1.2-1.2-1.2h-5.1V2.1c0-1.2-.9-2.1-2.1-2.1H17.8c-1.2 0-2.1.9-2.1 2.1v16.1h-5.1c-.5 0-.9.3-1.1.7-.2.4-.1 1 .2 1.3L23 36.6c.1.2.3.3.5.4H4.4c-1.2 0-2.1.9-2.1 2.1v6.8c0 1.2.9 2.1 2.1 2.1h39.2c1.2 0 2.1-.9 2.1-2.1v-6.8c0-1.2-.9-2.1-2.1-2.1zM41 42.3h-7.5c-.7 0-1.3-.6-1.3-1.3 0-.7.6-1.3 1.3-1.3H41c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3z'/%3E%3C/svg%3E");
+	border-right: 1px solid #dcdcdc
+}
+.SaveDesignPane>.buttons>li>a.load {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23959595'%3E%3Cpath d='M5.7 37.7c-1.1 0-2 .9-2 2V46c0 1.1.9 2 2 2h36.6c1.1 0 2-.9 2-2v-6.3c0-1.1-.9-2-2-2H5.7zm34.2 4.5h-7c-.7 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2h7c.7 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2zM23.6 0c-.2.1-.4.2-.5.3L10.6 15.6c-.2.2-.3.5-.3.8 0 .6.5 1.2 1.2 1.2h4.8v15c0 1.1.9 2 2 2h11.5c1.1 0 2-.9 2-2V17.5h4.8c.4 0 .9-.3 1.1-.7.2-.4.1-.9-.2-1.2L24.9.3c-.1-.2-.3-.3-.5-.3h-.8z'/%3E%3C/svg%3E")
+}
+.SaveDesignPane>.buttons>li.selected>a {
+	color: #08588c
+}
+.SaveDesignPane>.buttons>li.selected>a.save {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%2308588c'%3E%3Cpath d='M43.6 37H24.4c.2-.1.4-.2.5-.4l13.4-16.3c.2-.2.3-.5.3-.8 0-.7-.6-1.2-1.2-1.2h-5.1V2.1c0-1.2-.9-2.1-2.1-2.1H17.8c-1.2 0-2.1.9-2.1 2.1v16.1h-5.1c-.5 0-.9.3-1.1.7-.2.4-.1 1 .2 1.3L23 36.6c.1.2.3.3.5.4H4.4c-1.2 0-2.1.9-2.1 2.1v6.8c0 1.2.9 2.1 2.1 2.1h39.2c1.2 0 2.1-.9 2.1-2.1v-6.8c0-1.2-.9-2.1-2.1-2.1zM41 42.3h-7.5c-.7 0-1.3-.6-1.3-1.3 0-.7.6-1.3 1.3-1.3H41c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3z'/%3E%3C/svg%3E")
+}
+.SaveDesignPane>.buttons>li.selected>a.load {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%2308588c'%3E%3Cpath d='M5.7 37.7c-1.1 0-2 .9-2 2V46c0 1.1.9 2 2 2h36.6c1.1 0 2-.9 2-2v-6.3c0-1.1-.9-2-2-2H5.7zm34.2 4.5h-7c-.7 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2h7c.7 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2zM23.6 0c-.2.1-.4.2-.5.3L10.6 15.6c-.2.2-.3.5-.3.8 0 .6.5 1.2 1.2 1.2h4.8v15c0 1.1.9 2 2 2h11.5c1.1 0 2-.9 2-2V17.5h4.8c.4 0 .9-.3 1.1-.7.2-.4.1-.9-.2-1.2L24.9.3c-.1-.2-.3-.3-.5-.3h-.8z'/%3E%3C/svg%3E")
+}
+.SaveDesignPane>.loadPane,
+.SaveDesignPane>.savePane {
+	display: none;
+	position: absolute;
+	top: 80px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #f4f4f4;
+	border-top: 1px solid #dcdcdc;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px
+}
+.SaveDesignPane>.loadPane:after,
+.SaveDesignPane>.savePane:after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: " ";
+	bottom: 100%;
+	left: 50%;
+	margin-left: -10px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #f4f4f4
+}
+.SaveDesignPane>.loadPane:before,
+.SaveDesignPane>.savePane:before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: " ";
+	bottom: 100%;
+	left: 50%;
+	margin-left: -11px;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 11px solid #dcdcdc
+}
+.SaveDesignPane>.loadPane.active,
+.SaveDesignPane>.savePane.active {
+	display: block
+}
+.SaveDesignPane>.savePane:after,
+.SaveDesignPane>.savePane:before {
+	left: calc(25% + 4px)
+}
+.SaveDesignPane>.savePane input[type=text],
+.SaveDesignPane>.savePane textarea {
+	margin-bottom: 1.5rem
+}
+.SaveDesignPane>.savePane .notesText {
+	display: none
+}
+.SaveDesignPane>.savePane .notesText.opened {
+	display: inline-block
+}
+.SaveDesignPane>.savePane .notesToggle {
+	background-position: left -450px;
+	cursor: pointer;
+	font-weight: 600;
+	color: #08588c;
+	display: inline-block;
+	padding-left: 20px;
+	line-height: 16px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+.SaveDesignPane>.savePane .notesToggle.opened {
+	background-position: left -500px
+}
+.SaveDesignPane>.savePane .message {
+	display: none;
+	margin-top: 2rem
+}
+.SaveDesignPane>.savePane .message a {
+	text-decoration: underline
+}
+.SaveDesignPane>.savePane .message.alert-error {
+	border: 2px solid #cf2024;
+	border-radius: 5px;
+	padding: .5rem
+}
+.SaveDesignPane>.loadPane:after,
+.SaveDesignPane>.loadPane:before {
+	left: calc(75% - 12px)
+}
+.SaveDesignPane>.loadPane>.scroller {
+	height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch
+}
+.DesignItem {
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	vertical-align: top
+}
+.DesignItem:hover {
+	color: #009ddc
+}
+.DesignItem:hover .thumbnail {
+	border-color: #009ddc
+}
+.DesignItem .thumbnail {
+	max-width: 95%;
+	border: 1px solid #cacaca
+}
+.DesignItem .name {
+	font-weight: 600;
+	word-wrap: break-word
+}
+.DesignItem .desc {
+	font-size: 11px
+}
+.DialogGlass {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000;
+	opacity: .7;
+	z-index: 4
+}
+.DialogGlass.DialogTransparent {
+	opacity: 0
+}
+.pop-dialog {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 5
+}
+.pop-dialog .dialog-box {
+	position: absolute;
+	top: 3rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	padding: 1rem;
+	width: 100%
+}
+.pop-dialog .dialog-box a.close-icon {
+	position: absolute;
+	top: -2rem;
+	right: 1rem;
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	overflow: hidden;
+	cursor: pointer;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M61 16L49 4 31 22 13 4 1 16l18 18L1 52l12 12 18-18 18 18 12-12-18-18z'/%3E%3Cpath fill='%23FFF' d='M61 13L49 1 31 19 13 1 1 13l18 18L1 49l12 12 18-18 18 18 12-12-18-18z'/%3E%3C/svg%3E") no-repeat 50%;
+	-webkit-background-size: 1.5rem 1.5rem;
+	background-size: 1.5rem 1.5rem
+}
+.pop-dialog .dialog-box a.close-icon:hover {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M61 16L49 4 31 22 13 4 1 16l18 18L1 52l12 12 18-18 18 18 12-12-18-18z'/%3E%3Cpath fill='%23009DDC' d='M61 13L49 1 31 19 13 1 1 13l18 18L1 49l12 12 18-18 18 18 12-12-18-18z'/%3E%3C/svg%3E")
+}
+.EmailDialog .form-wrapper {
+	margin-top: 20px
+}
+.EmailDialog .fail {
+	display: none;
+	background-color: #cf2024;
+	color: #fff;
+	font-weight: 700;
+	padding: 2px 4px;
+	margin-bottom: 20px
+}
+.EmailDialog .form div {
+	margin-bottom: 15px
+}
+.EmailDialog .form label {
+	float: left;
+	width: 100px;
+	text-align: right;
+	margin-top: 5px;
+	margin-right: 10px
+}
+.EmailDialog .form input[type=email],
+.EmailDialog .form input[type=text],
+.EmailDialog .form textarea {
+	width: 320px
+}
+.EmailDialog button.sendButton {
+	margin-left: 110px
+}
+.EmailDialog .success-wrapper {
+	display: none;
+	text-align: center
+}
+.EmailDialog .success-wrapper div {
+	padding: 50px 0
+}
+.PinterestDialog .wrap,
+.ProductDialog .wrap,
+.UploadDialog .wrap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden
+}
+.PinterestDialog .wrap>iframe,
+.ProductDialog .wrap>iframe,
+.UploadDialog .wrap>iframe {
+	width: 100%;
+	height: 100%;
+	border: none
+}
+.TemplatesDialog .dialog-box {
+	text-align: center
+}
+.TemplatesDialog p {
+	margin-bottom: .5rem
+}
+.TemplatesDialog .breadcrumbs {
+	display: inline-block
+}
+.TemplatesDialog .breadcrumbs li {
+	float: left
+}
+.TemplatesDialog .breadcrumbs li:after {
+	content: ">";
+	padding: 0 .5rem
+}
+.TemplatesDialog .breadcrumbs li:last-child:after {
+	content: "";
+	padding: 0
+}
+.TemplatesDialog .scroller {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	top: 125px;
+	bottom: 10px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch
+}
+.TemplatesDialog .item {
+	display: block;
+	float: left;
+	text-align: center;
+	font-weight: 400;
+	width: 98%;
+	margin: 1rem 1%;
+	text-decoration: none
+}
+.TemplatesDialog .item img {
+	border: 5px solid #fafafa;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	margin-bottom: .5rem
+}
+.TemplatesDialog .item:hover img {
+	-webkit-filter: initial;
+	filter: none
+}
+.TemplatesDialog .item:hover h2 {
+	color: #009ddc
+}
+.TemplatesDialog .item span {
+	display: block;
+	padding: 16vw 8px 0;
+	font-size: 12px
+}
+.TemplatesDialog .template {
+	float: left;
+	width: 48%;
+	margin: 1%;
+	border: 8px solid #f7f7f7;
+	-webkit-box-shadow: rgba(0, 0, 0, .2) 0 3px 3px;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, .2)
+}
+.PriceDialog {
+	font-size: 14px
+}
+.PriceDialog h3 {
+	display: inline-block
+}
+.PriceDialog .hidden {
+	display: none
+}
+.PriceDialog .dialog-box {
+	padding: 0
+}
+.PriceDialog .dialog-box .dialog-content {
+	position: relative;
+	overflow-y: auto;
+	height: 100%;
+	padding: 1rem
+}
+.PriceDialog .orderForm .decoration span.na {
+	display: none
+}
+.PriceDialog .orderForm .decoration.disabled {
+	color: #cacaca;
+	cursor: default
+}
+.PriceDialog .orderForm .decoration.disabled span.na {
+	display: inline;
+	padding-left: 20px;
+	color: #cf2024
+}
+.PriceDialog .orderForm a.compareLink {
+	display: none
+}
+.PriceDialog .orderForm .sizes {
+	text-align: left
+}
+.PriceDialog .orderForm .quantity {
+	display: inline-block;
+	text-align: right;
+	min-width: 25%
+}
+.PriceDialog .orderForm .quantity .label {
+	margin-right: .5rem;
+	white-space: nowrap
+}
+.PriceDialog .orderForm .quantity input {
+	width: 55px;
+	padding-left: 4px;
+	padding-right: 4px
+}
+.PriceDialog .orderForm .calculateButton {
+	margin-top: 20px
+}
+.PriceDialog .cartForm {
+	display: none
+}
+.PriceDialog .cartForm.visible {
+	display: block
+}
+.PriceDialog .cartForm>a.dlgCloseButton {
+	display: none
+}
+.PriceDialog .priceWrapper {
+	margin-bottom: 1rem
+}
+.PriceDialog .priceWrapper .priceBox h3 {
+	display: none
+}
+.PriceDialog .priceWrapper .priceBox .priceResult {
+	display: block;
+	background-color: #08588c;
+	color: #fff;
+	font-size: 16px;
+	padding: 1rem;
+	margin-bottom: .5rem
+}
+.PriceDialog .priceWrapper .priceBox a.edit {
+	color: #009ddc;
+	border-bottom: 1px solid #009ddc;
+	font-weight: 600;
+	text-decoration: none
+}
+.PriceDialog .priceWrapper .priceTips {
+	display: none;
+	margin-top: 20px
+}
+.PriceDialog .priceWrapper .priceTips.visible {
+	display: block
+}
+.PriceDialog .priceWrapper .priceTips label {
+	display: block;
+	font-weight: 700
+}
+.PriceDialog .priceWrapper .priceTips ul {
+	display: inline-block;
+	list-style: disc inside;
+	margin-left: 0
+}
+.PriceDialog .priceWrapper .priceTips ul li {
+	margin-bottom: .25rem
+}
+.PriceDialog .priceWrapper .priceTips ul li.nobullet {
+	list-style: none
+}
+.PriceDialog .addToCartWrapper h2 {
+	display: none
+}
+.PriceDialog .addToCartWrapper p {
+	margin: 0
+}
+.PriceDialog .addToCartWrapper p:nth-child(2) {
+	font-weight: 700;
+	margin: 10px 0
+}
+.PriceDialog .addToCartWrapper .notesToggle {
+	color: #08588c;
+	font-weight: 700;
+	background-position: left -450px;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 16px;
+	padding-left: 20px
+}
+.PriceDialog .addToCartWrapper .notesToggle.opened {
+	background-position: left -500px
+}
+.PriceDialog .addToCartWrapper .notesText {
+	display: none;
+	margin-top: .75rem
+}
+.PriceDialog .addToCartWrapper .notesText.opened {
+	display: inline-block
+}
+.PriceDialog .addToCartWrapper .designName {
+	margin-bottom: 1.25rem
+}
+.PriceDialog .addToCartWrapper button.addToCart {
+	margin-top: 1.25rem
+}
+.PriceDialog .addToCartWrapper .warnMessage {
+	display: none;
+	margin-top: 25px;
+	background-color: #cf2024;
+	color: #fff;
+	font-weight: 700;
+	padding: 4px
+}
+.PriceDialog .addToCartWrapper .warnMessage a {
+	color: #fff;
+	text-decoration: underline
+}
+.PriceDialog .error {
+	display: none;
+	background-color: #cf2024;
+	color: #fff;
+	padding: 2px 6px;
+	margin-left: 5px
+}
+.PriceDialog .error.visible {
+	display: inline-block
+}
+.LoginDialog {
+	text-align: center
+}
+.LoginDialog .header {
+	text-align: center;
+	margin-bottom: 1.5rem
+}
+.LoginDialog .msg.error {
+	color: #cf2024;
+	font-weight: 500
+}
+.LoginDialog .msg.error span {
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='%23cf2024'%3E%3Cpath d='M47.2 39.5L27.3 5.1c-1.8-3.2-4.8-3.2-6.6 0L.8 39.5c-1.8 3.2-.3 5.7 3.3 5.7h39.8c3.7.1 5.1-2.5 3.3-5.7zm-20.7-1.9c0 1.4-1.2 2.4-2.4 2.4-.7 0-1.3-.2-1.7-.7-.4-.4-.7-1-.7-1.7v-.1c0-.6.2-1.2.7-1.7.4-.4 1.1-.7 1.8-.7 1.3 0 2.4 1.1 2.5 2.4l-.2.1zm.3-21.3c-.2 4.8-.3 9.6-.5 14.4 0 .6-.2 1.2-.7 1.6-.4.4-1 .5-1.7.5s-1.3-.1-1.7-.5c-.4-.4-.6-.9-.7-1.6-.2-4.8-.3-9.6-.5-14.4v-.1c0-.7.3-1.3.8-1.6.5-.4 1.2-.5 2.1-.5.9 0 1.5.2 2 .5.5.4.8 1 .8 1.6l.1.1z'/%3E%3C/svg%3E") no-repeat 0;
+	padding-left: 2rem
+}
+.LoginDialog h2 {
+	font-size: 1.25rem;
+	margin: 0
+}
+.LoginDialog .dialog-box {
+	flex-direction: column
+}
+.LoginDialog .dialog-box,
+.LoginDialog .dialog-box .container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column
+}
+.LoginDialog .dialog-box .container {
+	flex-direction: column;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	margin-left: -1rem;
+	margin-right: -1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch
+}
+.LoginDialog .dialog-box .container .LoginView,
+.LoginDialog .dialog-box .container .RegisterView {
+	-webkit-box-flex: 0;
+	-webkit-flex: none;
+	-ms-flex: none;
+	flex: none
+}
+.LoginDialog input:not([type=submit]):not([type=checkbox]):not([type=range]) {
+	padding: .75rem 1rem;
+	border-radius: .3rem
+}
+.LoginDialog input:not([type=submit]):not([type=checkbox]):not([type=range])::-webkit-input-placeholder {
+	color: #959595;
+	font-weight: 500
+}
+.LoginDialog input:not([type=submit]):not([type=checkbox]):not([type=range])::-moz-placeholder {
+	color: #959595;
+	font-weight: 500
+}
+.LoginDialog input:not([type=submit]):not([type=checkbox]):not([type=range]):-ms-input-placeholder {
+	color: #959595;
+	font-weight: 500
+}
+.LoginDialog input:not([type=submit]):not([type=checkbox]):not([type=range])::placeholder {
+	color: #959595;
+	font-weight: 500
+}
+.LoginDialog .btn {
+	width: 100%
+}
+.LoginDialog ul.account-list li {
+	height: 2.5rem;
+	line-height: 2.5rem;
+	margin-bottom: 1.5rem;
+	padding: 1px
+}
+.LoginDialog ul.account-list li.or {
+	text-align: center
+}
+.LoginDialog ul.account-list li input {
+	margin-bottom: 0
+}
+.LoginDialog .pw-wrapper {
+	position: relative;
+	line-height: 1
+}
+.LoginDialog .pw-wrapper input {
+	margin-bottom: 0
+}
+.LoginDialog .toggle-pw {
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	margin-top: -.5em;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50' fill='%23009ddc'%3E%3Cpath d='M48.7 24.2c-4-4.6-8-7.7-12-9.6-3.9-2-7.7-2.7-11.3-2.7-3.6 0-6.9.8-9.8 2-4.4 1.8-8 4.4-10.5 6.5-2.5 2.2-3.9 3.9-4 3.9-.3.4-.3 1 0 1.4 0 0 2.5 3.1 6.8 6.2 2.1 1.5 4.7 3.1 7.6 4.3 2.9 1.2 6.2 2 9.8 2 3.6 0 7.4-.8 11.3-2.7 3.9-2 7.9-5.1 12-9.6.5-.6.5-1.2.1-1.7zm-13 9.2c-3.6 1.8-7 2.5-10.3 2.5-3.2 0-6.2-.7-8.9-1.8C12.4 32.5 9 30 6.7 28c-1.2-1-2.1-1.9-2.7-2.6l-.3-.3c1-1.1 3-3.1 5.8-5.1 2-1.4 4.4-2.9 7.1-3.9 2.7-1.1 5.7-1.8 8.9-1.8s6.7.7 10.3 2.5c3.4 1.7 7 4.4 10.6 8.4-3.7 3.8-7.3 6.5-10.7 8.2z'/%3E%3Cpath d='M36.9 25h-1.1c0 3-1.2 5.7-3.2 7.7s-4.7 3.2-7.7 3.2-5.7-1.2-7.7-3.2S14 28 14 25s1.2-5.7 3.2-7.7 4.7-3.2 7.7-3.2 5.7 1.2 7.7 3.2 3.2 4.7 3.2 7.7H38c0-3.6-1.5-6.9-3.8-9.3-2.4-2.4-5.7-3.8-9.3-3.8-3.6 0-6.9 1.5-9.3 3.8-2.4 2.4-3.8 5.7-3.8 9.3 0 3.6 1.5 6.9 3.8 9.3 2.4 2.4 5.7 3.8 9.3 3.8 3.6 0 6.9-1.5 9.3-3.8 2.4-2.4 3.8-5.7 3.8-9.3h-1.1z'/%3E%3Cpath d='M28.8 24.3c-1.7 0-3-1.3-3-3 0-.8.3-1.5.8-2.1-.6-.2-1.3-.3-1.9-.3-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2c0-.5-.1-1-.2-1.5-.5.4-1.1.7-1.9.7z'/%3E%3C/svg%3E") no-repeat 0;
+	-webkit-background-size: 22px 22px;
+	background-size: 22px;
+	padding-left: 34px;
+	font-size: .75rem;
+	font-weight: 600
+}
+.LoginDialog .toggle-pw:hover {
+	text-decoration: none
+}
+.LoginDialog .toggle-pw.hide-pw {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50' fill='%23009ddc'%3E%3Cstyle%3E.st0{fill:none}%3C/style%3E%3Cpath class='st0' d='M33.2 32l-3.4-3.4c-1.1 1.7-3 2.7-5.2 2.7-3.4 0-6.2-2.8-6.2-6.2 0-2.2 1.1-4 2.7-5.2l-3.3-3.3c-.2.2-.5.4-.7.6-2 2-3.2 4.7-3.2 7.7s1.2 5.7 3.2 7.7c1.7 1.7 3.9 2.8 6.3 3.1.5 0 1 .1 1.5.1 2.9-.1 5.6-1.2 7.5-3.2.4-.1.6-.4.8-.6zM23.5 19c.4-.1.8-.1 1.2-.1.7 0 1.3.1 1.9.3-.5.5-.8 1.3-.8 2.1v.1l2.9 2.9h.1c.7 0 1.4-.3 1.9-.7.1.5.2 1 .2 1.5 0 .4 0 .8-.1 1.2l3.7 3.7c.8-1.5 1.2-3.2 1.2-5 0-3-1.2-5.7-3.2-7.7-1.9-1.9-4.6-3.1-7.5-3.2-.5 0-1 0-1.5.1-1.3.2-2.6.6-3.7 1.2l3.7 3.6z'/%3E%3Cpath class='st0' d='M36.2 31.7l.9.9c3-1.7 6.1-4.2 9.2-7.6-3.6-4-7.2-6.7-10.6-8.4l-1.2-.6c2.2 2.3 3.5 5.5 3.5 8.9 0 2.5-.6 4.8-1.8 6.8zM14.7 16.8c-1.9.9-3.7 2-5.2 3.1-2.8 2-4.9 4.1-5.8 5.1l.3.3c.6.7 1.6 1.6 2.7 2.6 2 1.7 4.7 3.7 8 5.3-1.8-2.3-2.9-5.1-2.9-8.2 0-3.1 1.1-6 2.9-8.2zM34.5 33.9c.1-.1.3-.1.4-.2l-.1-.1-.3.3z'/%3E%3Cpath d='M23.3 12c-2 .2-3.9.6-5.7 1.2l.6.6c1.5-1 3.3-1.6 5.1-1.8zM24.9 14.1c-.5 0-.9 0-1.3.1.5 0 1-.1 1.5-.1h-.2zM24.9 35.9h.2c-.5 0-1 0-1.5-.1.4 0 .9.1 1.3.1zM34.5 33.9c-.1.1-.2.3-.3.4-2.3 2.3-5.5 3.8-9.1 3.8h.4c3.5 0 7.3-.8 11.2-2.7L35 33.7c-.2.1-.3.1-.5.2zM48.7 24.2c-4-4.6-8-7.7-12-9.6-3.9-2-7.7-2.7-11.3-2.7H25c3.5.1 6.8 1.5 9.1 3.8.1.1.2.3.3.4l1.2.6c3.4 1.7 7 4.4 10.6 8.4-3.1 3.5-6.2 5.9-9.2 7.6l1.7 1.7c3.3-2 6.6-4.7 9.9-8.5.5-.6.5-1.2.1-1.7zM24.1 11.9h0zM24.2 38.1h-.1.1zM14.7 33.2c-3.2-1.6-6-3.6-8-5.3-1.2-1-2.1-1.9-2.7-2.6l-.3-.3c1-1.1 3-3.1 5.8-5.1 1.5-1.1 3.3-2.2 5.2-3.1.3-.4.6-.7.9-1 .2-.2.5-.4.7-.6l-1-1.2c-4.2 1.7-7.6 4.2-10.1 6.3-2.5 2.2-3.9 3.9-4 3.9-.3.4-.3 1 0 1.4 0 0 2.5 3.1 6.8 6.2 2.1 1.5 4.7 3.1 7.6 4.3 2.3.9 4.9 1.6 7.6 1.9-3-.4-5.7-1.7-7.7-3.7-.2-.3-.5-.7-.8-1.1z'/%3E%3Cpath d='M36.2 31.7c1.2-2 1.9-4.3 1.9-6.7h-2.2c0 1.8-.5 3.5-1.2 5l1.5 1.7zM24.9 38.1h.2-.9.7zM23.6 14.2c-1.4.1-2.8.4-4.1.7l.4.4c1.1-.5 2.3-.9 3.7-1.1zM24.1 38.1c-.3 0-.5 0-.8-.1.3.1.5.1.8.1zM24.9 11.9h-.7.9-.2zM23.3 12c.3 0 .5 0 .8-.1-.3 0-.5 0-.8.1zM14 25c0-3 1.2-5.7 3.2-7.7.2-.2.5-.4.7-.6l-.9-.9c-.1.1-.3.1-.4.2-.7.3-1.3.5-1.9.8-1.8 2.3-2.9 5.1-2.9 8.2 0 3.1 1.1 6 2.9 8.2.6.3 1.2.6 1.9.8 2.2.9 4.5 1.5 7 1.7-2.5-.3-4.7-1.4-6.3-3.1-2-1.9-3.3-4.6-3.3-7.6zM33.2 32c-.2.2-.4.5-.6.7-1.9 1.9-4.6 3.1-7.5 3.2h.4c2.9 0 5.9-.6 9.1-2l.3-.3-1.7-1.6zM25.1 14.1c2.9.1 5.6 1.2 7.5 3.2 2 2 3.2 4.7 3.2 7.7H38c0-3.4-1.3-6.6-3.5-8.9-3.2-1.4-6.2-1.9-9.1-2h-.3z'/%3E%3Cpath d='M34.5 33.9c-3.2 1.4-6.2 1.9-9.1 2H24.8c-.5 0-.9 0-1.3-.1-2.5-.2-4.9-.8-7-1.7-.6-.3-1.3-.5-1.9-.8.3.4.6.7.9 1.1 2 2 4.7 3.4 7.7 3.7.3 0 .5 0 .8.1h1c3.5-.1 6.8-1.5 9.1-3.8.2-.2.3-.4.4-.5zM19.5 15c1.3-.4 2.7-.6 4.1-.7.4-.1.9-.1 1.3-.1H25.5c2.9 0 5.9.6 9.1 2-.1-.1-.2-.3-.3-.4-2.3-2.3-5.5-3.8-9.1-3.8h-.9-.1c-.3 0-.5 0-.8.1-1.9.2-3.6.8-5.1 1.7l1.2 1.2zM17 15.8l-.7-.7c-.2.2-.5.4-.7.6-.3.3-.6.7-.9 1 .6-.3 1.3-.6 1.9-.8.1 0 .3-.1.4-.1zM25.8 21.3c0-.8.3-1.5.8-2.1-.6-.2-1.3-.3-1.9-.3-.4 0-.8 0-1.2.1l2.3 2.3zM18.5 25.1c0 3.4 2.8 6.2 6.2 6.2 2.2 0 4-1.1 5.2-2.7L21.2 20c-1.6 1.1-2.7 3-2.7 5.1zM30.9 25.1c0-.5-.1-1-.2-1.5-.5.4-1.2.7-1.9.7h-.1l2.1 2.1c.1-.5.1-.9.1-1.3z'/%3E%3Cpath d='M8.4 10L40 41.6c.4.4 1.2.4 1.6 0 .4-.4.4-1.2 0-1.6L10 8.4c-.4-.4-1.2-.4-1.6 0-.4.4-.4 1.2 0 1.6'/%3E%3C/svg%3E")
+}
+@-webkit-keyframes a {
+	0% {
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		display: block
+	}
+	to {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+}
+@keyframes a {
+	0% {
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		display: block
+	}
+	to {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+}
+@-webkit-keyframes b {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+	to {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+		display: none
+	}
+}
+@keyframes b {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+	to {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+		display: none
+	}
+}
+@-webkit-keyframes c {
+	0% {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+		display: block
+	}
+	to {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+}
+@keyframes c {
+	0% {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+		display: block
+	}
+	to {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+}
+@-webkit-keyframes d {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+	to {
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		display: none
+	}
+}
+@keyframes d {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+	to {
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		display: none
+	}
+}
+.LoginView {
+	position: relative;
+	overflow: hidden;
+	height: 17.5rem
+}
+.LoginView.show-email-login .login-opts {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	-webkit-animation: b .25s ease-in-out forwards;
+	animation: b .25s ease-in-out forwards
+}
+.LoginView.show-email-login .options {
+	visibility: visible;
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+	-webkit-animation: a .25s ease-in-out forwards;
+	animation: a .25s ease-in-out forwards
+}
+.LoginView.hide-email-login .login-opts {
+	-webkit-animation: c .25s ease-in-out forwards;
+	animation: c .25s ease-in-out forwards
+}
+.LoginView.hide-email-login .options {
+	visibility: visible;
+	-webkit-animation: d .25s ease-in-out forwards;
+	animation: d .25s ease-in-out forwards
+}
+.LoginView .login-opts,
+.LoginView .options {
+	position: absolute;
+	left: 0;
+	right: 0
+}
+.LoginView .options {
+	visibility: hidden
+}
+.LoginView .btn-back {
+	-webkit-background-size: 12px 12px;
+	background-size: 12px;
+	padding-left: 24px;
+	font-size: 1rem;
+	font-weight: 500
+}
+.RegisterView {
+	margin-bottom: 2rem
+}
+.RegisterView .fail,
+.RegisterView .passwordFail {
+	display: none;
+	margin-top: 1rem;
+	color: #cf2024
+}
+.ContinueDialog .dialog-box {
+	top: 50%;
+	text-align: center
+}
+.ContinueDialog .dialog-box h1 {
+	margin-bottom: 2.5rem
+}
+.ContinueDialog .dialog-box div a {
+	margin-bottom: 2rem;
+	width: 100%
+}
+.PaneGlass {
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000;
+	opacity: .7;
+	z-index: 4
+}
+.EditPaneGlass {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 2000px;
+	background-color: transparent
+}
+.EditPaneGlass.show {
+	display: block
+}
+button {
+	cursor: pointer
+}
+button.alignCenter,
+button.fixed-width {
+	width: 165px
+}
+button.alignCenter,
+button.bringForward,
+button.centerAlignEnts,
+button.icon-button,
+button.leftAlignEnts,
+button.rightAlignEnts,
+button.sendBackward {
+	font-size: 10px;
+	background-color: #fff;
+	line-height: 24px;
+	width: 100px;
+	padding: 3px 0;
+	text-align: left;
+	border: 1px solid #959595;
+	border-radius: 4px
+}
+button.alignCenter span,
+button.bringForward span,
+button.centerAlignEnts span,
+button.icon-button span,
+button.leftAlignEnts span,
+button.rightAlignEnts span,
+button.sendBackward span {
+	display: inline-block;
+	padding-left: 22px
+}
+button.centerAlignEnts,
+button.leftAlignEnts,
+button.rightAlignEnts {
+	display: block;
+	margin-bottom: 10px
+}
+button.centerAlignEnts span,
+button.leftAlignEnts span,
+button.rightAlignEnts span {
+	padding-left: 26px
+}
+button.leftAlignEnts span {
+	background-position: 0 -250px
+}
+button.centerAlignEnts span {
+	background-position: 0 -300px
+}
+button.rightAlignEnts span {
+	background-position: 0 -350px
+}
+button.alignCenter span {
+	background-position: 0 -200px
+}
+button.bringForward,
+button.sendBackward {
+	display: block;
+	margin-bottom: 10px
+}
+button.bringForward span,
+button.sendBackward span {
+	background-position: 0 0
+}
+button.sendBackward span {
+	background-position: 0 -100px
+}
+button.primary {
+	background-color: #eb623f;
+	color: #fff;
+	border-color: transparent
+}
+button.sendBackward:hover,
+button:hover.alignCenter,
+button:hover.bringForward,
+button:hover.centerAlignEnts,
+button:hover.leftAlignEnts,
+button:hover.rightAlignEnts,
+button:hover.sendBackward {
+	background-color: #f4f4f4
+}
+button:active {
+	background-color: #009ddc!important;
+	border-color: #009ddc!important;
+	color: #fff!important
+}
+button.sendBackward:active span,
+button:active.bringForward span {
+	background-position: 0 -50px
+}
+button:active.sendBackward span {
+	background-position: 0 -150px
+}
+button:active.leftAlignEnts span {
+	background-position: 0 -275px
+}
+button:active.centerAlignEnts span {
+	background-position: 0 -325px
+}
+button:active.rightAlignEnts span {
+	background-position: 0 -375px
+}
+button:active.alignCenter span {
+	background-position: 0 -225px
+}
+.ds-icon,
+ul.tool-nav li a,
+ul.view-controls li.share .share-links li a,
+ul.view-controls li a {
+}
+.context-menu {
+	position: absolute;
+	font-size: 11px;
+	z-index: 5;
+	background: #fff;
+	border: 1px solid #cacaca;
+	border-radius: 2px;
+	-webkit-box-shadow: 3px 3px 5px #888;
+	box-shadow: 3px 3px 5px #888
+}
+.context-menu ul li {
+	padding: 3px 8px
+}
+.context-menu ul li:hover {
+	background-color: #c3d5db
+}
+.context-menu ul li a {
+	display: block;
+	color: #222;
+	font-weight: 400;
+	padding: 5px 22px
+}
+.context-menu ul li a.copy {
+	background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iIzIyMjIyMiIgZD0iTTI1LjEsNi45VjBIMHYyNS4xaDYuOVYzMkgzMnYtMS41VjYuOUgyNS4xeiBNMi45LDIyLjFWMi45aDE5LjJ2NEg2Ljl2MTUuMkgyLjl6IE05LjksOS45aDE5LjJ2MTkuMkg5LjkNCglWOS45eiIvPg0KPC9zdmc+DQo=") no-repeat 0;
+	-webkit-background-size: 16px 16px;
+	background-size: 16px 16px
+}
+.context-menu ul li a.cut {
+	background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBvbHlnb24gZmlsbD0iIzIyMjIyMiIgcG9pbnRzPSIyNS4xLDAgMCwwIDAsMjUuMSA2LjksMjUuMSA2LjksMjUuMyA5LjksMjUuMyA5LjksMjAuNiA2LjksMjAuNiA2LjksMjIuMSAyLjksMjIuMSAyLjksMi45IA0KCQkyMi4xLDIuOSAyMi4xLDYuOSAyMC42LDYuOSAyMC42LDkuOSAyNS4zLDkuOSAyNS4zLDYuOSAyNS4xLDYuOSAJIi8+DQoJPHBvbHlnb24gZmlsbD0iIzIyMjIyMiIgcG9pbnRzPSIyOS4xLDI5LjEgMjcuNiwyOS4xIDI3LjYsMzIgMzIsMzIgMzIsMjcuNiAyOS4xLDI3LjYgCSIvPg0KCTxyZWN0IHg9IjIwLjYiIHk9IjI5LjEiIGZpbGw9IiMyMjIyMjIiIHdpZHRoPSI0LjciIGhlaWdodD0iMi45Ii8+DQoJPHJlY3QgeD0iMTMuNiIgeT0iMjkuMSIgZmlsbD0iIzIyMjIyMiIgd2lkdGg9IjQuNyIgaGVpZ2h0PSIyLjkiLz4NCgk8cG9seWdvbiBmaWxsPSIjMjIyMjIyIiBwb2ludHM9IjkuOSwyNy42IDYuOSwyNy42IDYuOSwzMiAxMS4zLDMyIDExLjMsMjkuMSA5LjksMjkuMSAJIi8+DQoJPHJlY3QgeD0iNi45IiB5PSIxMy42IiBmaWxsPSIjMjIyMjIyIiB3aWR0aD0iMi45IiBoZWlnaHQ9IjQuNyIvPg0KCTxwb2x5Z29uIGZpbGw9IiMyMjIyMjIiIHBvaW50cz0iNi45LDExLjMgOS45LDExLjMgOS45LDkuOSAxMS4zLDkuOSAxMS4zLDYuOSA2LjksNi45IAkiLz4NCgk8cmVjdCB4PSIxMy42IiB5PSI2LjkiIGZpbGw9IiMyMjIyMjIiIHdpZHRoPSI0LjciIGhlaWdodD0iMi45Ii8+DQoJPHBvbHlnb24gZmlsbD0iIzIyMjIyMiIgcG9pbnRzPSIyNy42LDYuOSAyNy42LDkuOSAyOS4xLDkuOSAyOS4xLDExLjMgMzIsMTEuMyAzMiw2LjkgCSIvPg0KCTxyZWN0IHg9IjI5LjEiIHk9IjIwLjYiIGZpbGw9IiMyMjIyMjIiIHdpZHRoPSIyLjkiIGhlaWdodD0iNC43Ii8+DQoJPHJlY3QgeD0iMjkuMSIgeT0iMTMuNiIgZmlsbD0iIzIyMjIyMiIgd2lkdGg9IjIuOSIgaGVpZ2h0PSI0LjciLz4NCjwvZz4NCjwvc3ZnPg0K") no-repeat 0;
+	-webkit-background-size: 16px 16px;
+	background-size: 16px 16px
+}
+.context-menu ul li a.paste {
+	background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iIzIyMjIyMiIgZD0iTTI1LjEsNi45VjBIMHYyNS4xaDYuOVYzMkgzMnYtMS41VjYuOUgyNS4xeiBNMi45LDIyLjFWMi45aDE5LjJ2NEg2Ljl2MTUuMkwyLjksMjIuMXoiLz4NCjwvc3ZnPg0K") no-repeat 0;
+	-webkit-background-size: 16px 16px;
+	background-size: 16px 16px
+}
+.context-menu ul li a:hover {
+	text-decoration: none
+}
+.context-menu ul li.disabled:hover {
+	background-color: transparent
+}
+.context-menu ul li.disabled a {
+	cursor: default;
+	opacity: .4
+}
+.dummy-submit {
+	position: absolute;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	border: none
+}
+.spinner {
+	display: none;
+	position: absolute;
+	width: 4rem;
+	height: 4rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -2rem;
+	margin-left: -2rem;
+	z-index: 6;
+	border: .35rem solid #cacaca;
+	border-top: .35rem solid #009ddc;
+	border-radius: 50%;
+	-webkit-animation: e 1s linear infinite;
+	animation: e 1s linear infinite
+}
+@-webkit-keyframes e {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn)
+	}
+}
+@keyframes e {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn)
+	}
+}
+@media(min-width:48em){.wrapper{width:auto;margin-left:1rem;margin-right:1rem}.ProductView>.controls>li.templates-btn{top:130px}.AddImagePane>.intro ul {
+	margin: 1rem
+}
+.CategoryList>.scroller .items {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3
+}
+.ClipartList>.scroller>.item {
+	width: 19%;
+	padding-top: 19%;
+	margin: 1% 1% 0 0
+}
+.EditGroupPane .slider-row input[type=number],
+.EditImagePane .slider-row input[type=number],
+.EditTextPane .slider-row input[type=number] {
+	display: block
+}
+.FontDialog .categoryList a.category {
+	width: calc(50% - 1rem)
+}
+.TemplatesDialog .item {
+	width: 48%
+}
+.TemplatesDialog .template {
+	width: 31%
+}
+.LoginDialog {
+	text-align: left
+}
+.LoginDialog .dialog-box .container {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row
+}
+.LoginDialog .dialog-box .container .LoginView,
+.LoginDialog .dialog-box .container .RegisterView {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0;
+	-ms-flex: 1 0;
+	flex: 1 0
+}
+.LoginDialog ul.account-list {
+	margin-top: 1rem
+}
+.LoginView {
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+	order: 0;
+	margin-right: 50px;
+	height: auto
+}
+.RegisterView {
+	padding-left: 50px;
+	border-left: 1px solid #cacaca
+}
+}
+@media(min-width:64em){.wrapper{width:auto;margin-left:1rem;margin-right:1rem}.up-footer{display:block}.Studio{margin-bottom:3rem;min-height:575px}.Studio>.content{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;height:100%}.Studio>.content>.product{position:relative;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1}.Studio>.content .tools {
+	position: relative;
+	width: auto;
+	margin-right: 1rem;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column
+}
+.Studio>.content .tools>.desc {
+	display: block;
+	margin: 1rem 0;
+	padding: 5px 10px;
+	font-size: 12px;
+	background-color: #f4f4f4;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px
+}
+.Studio>.content .tools>.desc label {
+	font-weight: 700;
+	margin: 0
+}
+.Studio>.content .menu {
+	margin-top: 1rem;
+	width: 420px
+}
+.Studio>.content .panes {
+	position: relative
+}
+.ProductView>.controls>li.shareButton {
+	display: block
+}
+.ProductView>.controls>li.templates-btn {
+	position: relative;
+	top: 0;
+	margin-top: 1.5rem
+}
+.MenuBar>li {
+	border-bottom: 1px solid #dcdcdc
+}
+.MenuBar>li.selected {
+	border-bottom-color: #fff
+}
+.MenuBar>li:first-child {
+	border-left: 1px solid #dcdcdc;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px
+}
+.MenuBar>li:last-child {
+	border-bottom-right-radius: 5px
+}
+.MenuBar>li.buy {
+	border-right: 1px solid #dcdcdc;
+	border-top-right-radius: 5px
+}
+.MenuBar>li>a {
+	padding-top: 50px;
+	padding-bottom: 0;
+	height: 80px;
+	-webkit-background-size: 28px 28px;
+	background-size: 28px 28px;
+	background-position: center 14px
+}
+.MenuBar.active>li:first-child {
+	border-bottom-left-radius: 0
+}
+.MenuBar.active>li:last-child {
+	border-bottom-right-radius: 0
+}
+.Pane {
+	top: 0;
+	left: auto;
+	bottom: 0;
+	width: 100%;
+	border-left: 1px solid #dcdcdc;
+	border-right: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	overflow: auto
+}
+.Pane.show {
+	height: auto
+}
+.Pane a.close-icon {
+	display: none
+}
+.ContinuePane,
+.EditGroupPane,
+.EditImagePane,
+.EditTextPane,
+.IntroPane {
+	border-top: 1px solid #dcdcdc;
+	border-radius: 5px
+}
+.ContinuePane,
+.EditGroupPane,
+.IntroPane {
+	display: block
+}
+.AddTextPane {
+	text-align: left
+}
+.ClipArtCatalog,
+.MyImages {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px
+}
+.ClipartList>.scroller>.item {
+	width: 31%;
+	padding-top: 31%;
+	margin: 2% 2% 0 0
+}
+.EditProductPane {
+	text-align: left
+}
+.EditProductPane .pane-content {
+	overflow-y: visible;
+	height: auto;
+	margin: 0;
+	padding: 0
+}
+.EditProductPane a.sizeChartLink {
+	display: inline;
+	margin-left: 20px
+}
+.EditImagePane,
+.EditTextPane {
+	position: absolute;
+	padding: 1rem;
+	height: auto;
+	margin-top: 1rem
+}
+.EditImagePane>.container,
+.EditTextPane>.container {
+	top: 0;
+	bottom: auto;
+	padding: 1rem 1rem 0;
+	overflow: visible
+}
+.EditImagePane>.container .section-row,
+.EditTextPane>.container .section-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex
+}
+.EditImagePane>.container .section,
+.EditTextPane>.container .section {
+	display: block;
+	margin-bottom: .5rem
+}
+.EditImagePane>.container .section.slider-row,
+.EditTextPane>.container .section.slider-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex
+}
+.EditImagePane>.container .section.active,
+.EditTextPane>.container .section.active {
+	background-color: transparent;
+	padding: 0;
+	border: none
+}
+.EditImagePane.hidden,
+.EditImagePane.hide-pane,
+.EditTextPane.hidden,
+.EditTextPane.hide-pane {
+	display: block
+}
+.EditImagePane .section.size {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex
+}
+.EditImagePane .section.rotate {
+	margin: 1rem 36px 1rem 0
+}
+.EditTextPane>.container .section.text .editor {
+	margin-bottom: 0
+}
+.EditTextPane>.container .section.font {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	margin-right: .75rem
+}
+.EditTextPane>.container .section.more {
+	margin-top: 1rem
+}
+.EditTextPane>.container .section.arc {
+	margin-bottom: 1rem
+}
+.EditTextPane>.container .justify-container {
+	position: absolute;
+	bottom: -70px
+}
+.edit-tools {
+	display: none
+}
+.FontDialog {
+	bottom: 0;
+	z-index: 3;
+	border-top: none
+}
+.colorBox {
+	width: 32px;
+	height: 32px;
+	min-width: 32px;
+	border-radius: 3px
+}
+.InkPickerDialog,
+.InksPickerDialog {
+	bottom: 0;
+	z-index: 3;
+	border: none
+}
+.InkPickerDialog .select-group .inks,
+.InksPickerDialog .select-group .inks {
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+.InkPickerDialog {
+	top: 185px;
+	padding-top: 0
+}
+.InkPickerDialog .select-group {
+	border-top: 1px solid #cacaca;
+	background-color: #f4f4f4;
+	padding: 1rem
+}
+.InkPickerDialog .select-group:after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: " ";
+	bottom: 100%;
+	right: 168px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #f4f4f4
+}
+.InkPickerDialog .select-group:before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	content: " ";
+	bottom: 100%;
+	right: 167px;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 11px solid #cacaca
+}
+.InkPickerDialog.text-ink-dialog .continueContainer {
+	display: block;
+	text-align: center;
+	margin: 1rem 0
+}
+.InkPickerDialog.stroke-ink-dialog .select-group:after,
+.InkPickerDialog.stroke-ink-dialog .select-group:before {
+	margin-right: -65px
+}
+.InkPickerDialog.shadow-ink-dialog .select-group:after,
+.InkPickerDialog.shadow-ink-dialog .select-group:before {
+	margin-right: -130px
+}
+.InksPickerDialog {
+	top: 0
+}
+.InksPickerDialog .dlgCloseButton {
+	top: 7rem
+}
+.InksPickerDialog .select-group:before {
+	left: 25px
+}
+.InksPickerDialog .select-group:after {
+	left: 26px
+}
+.InksPickerDialog .select-group.ink0:after,
+.InksPickerDialog .select-group.ink0:before {
+	margin-left: 0
+}
+.InksPickerDialog .select-group.ink1:after,
+.InksPickerDialog .select-group.ink1:before {
+	margin-left: 38px
+}
+.InksPickerDialog .select-group.ink2:after,
+.InksPickerDialog .select-group.ink2:before {
+	margin-left: 76px
+}
+.InksPickerDialog .select-group.ink3:after,
+.InksPickerDialog .select-group.ink3:before {
+	margin-left: 114px
+}
+.InksPickerDialog .select-group.ink4:after,
+.InksPickerDialog .select-group.ink4:before {
+	margin-left: 152px
+}
+.InksPickerDialog .select-group.ink5:after,
+.InksPickerDialog .select-group.ink5:before {
+	margin-left: 190px
+}
+.InksPickerDialog .select-group.ink6:after,
+.InksPickerDialog .select-group.ink6:before {
+	margin-left: 228px
+}
+.pop-dialog .dialog-box {
+	position: relative;
+	top: auto;
+	bottom: auto;
+	left: auto;
+	right: auto;
+	border: 1px solid #cacaca;
+	border-radius: 5px;
+	text-align: left;
+	width: 59rem
+}
+.pop-dialog .dialog-box a.close-icon {
+	top: -2.5rem;
+	-webkit-background-size: 2rem 2rem;
+	background-size: 2rem 2rem
+}
+.EmailDialog .dialog-box {
+	width: 600px
+}
+.UploadDialog .dialog-box {
+	height: 590px;
+	max-height: calc(100vh - 6rem)
+}
+.PinterestDialog .dialog-box {
+	height: 550px;
+	max-height: calc(100vh - 6rem)
+}
+.TemplatesDialog .dialog-box {
+	width: 890px;
+	height: 725px;
+	max-height: calc(100vh - 6rem);
+	text-align: center
+}
+.TemplatesDialog .item {
+	width: 31%
+}
+.ProductDialog .dialog-box {
+	width: calc(100% - 2rem);
+	height: calc(100vh - 6rem)
+}
+.PriceDialog .dialog-box {
+	height: 30rem;
+	padding: 2rem
+}
+.PriceDialog .orderForm a.compareLink {
+	display: inline;
+	margin-left: 2rem
+}
+.PriceDialog .orderForm .quantity {
+	min-width: 100px
+}
+.PriceDialog .addToCartWrapper,
+.PriceDialog .priceWrapper {
+	float: left;
+	margin-top: 1.5rem;
+	width: 50%
+}
+.PriceDialog .priceWrapper {
+	padding-right: 3rem;
+	border-right: 1px solid #dcdcdc
+}
+.PriceDialog .priceWrapper .priceBox h3 {
+	display: block
+}
+.PriceDialog .priceWrapper .priceBox a.edit {
+	float: right
+}
+.PriceDialog .priceWrapper .priceTips ul {
+	margin-left: 1.25rem
+}
+.PriceDialog .addToCartWrapper {
+	padding-left: 3rem
+}
+.LoginDialog .dialog-box {
+	min-height: 30rem;
+	max-height: calc(100vh - 6rem);
+	padding: 2rem
+}
+.LoginDialog .dialog-box .container {
+	margin-left: -2rem;
+	margin-right: -2rem;
+	padding-left: 2rem;
+	padding-right: 2rem
+}
+.ContinueDialog .dialog-box {
+	width: 550px;
+	padding: 2rem;
+	text-align: center
+}
+.ContinueDialog .dialog-box div a {
+	width: 80%
+}
+.EditPaneGlass,
+.PaneGlass {
+	display: none!important
+}
+}
+@media(min-width:85em){.wrapper{width:83rem;margin:0 auto
+}
+.wrapper.main {
+	max-width:100rem;
+	margin:0 auto
+}
+.Studio>.content .menu {
+	width:550px
+}
+.EditProductPane .header span {
+	display:inline;
+	margin-right:20px
+}
+.EditGroupPane .slider-row>div input[type=number],
+.EditImagePane .slider-row>div input[type=number],
+.EditTextPane .slider-row>div input[type=number] {
+	margin-left:2rem
+}
+.colorBox {
+	margin-right:4px
+}
+}
+@media(max-width:63.9375em){::-webkit-scrollbar{display:none}}@media only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2) {
+	.EditImagePane .lock-ratio input[type=checkbox]+span,
+	.PriceDialog .addToCartWrapper .notesToggle,
+	.SaveDesignPane>.savePane .notesToggle,
+	button.alignCenter span,
+	button.bringForward span,
+	button.centerAlignEnts span,
+	button.leftAlignEnts span,
+	button.rightAlignEnts span,
+	button.sendBackward span {
+		-webkit-background-size:60px 750px;
+		background-size:60px 750px
+	}
+	.colorBox.selected {
+		-webkit-background-size:12px 12px;
+		background-size:12px 12px
+	}
+	.colorBox span.current {
+	}
+	.colorBox span.current,
+	.colorBox span.current-alt {
+		-webkit-background-size:34px 34px;
+		background-size:34px 34px
+	}
+	.colorBox span.current-alt {
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	input,
+	select,
+	textarea {
+		font-size:16px
+	}
+}
