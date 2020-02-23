@@ -1,3 +1,5 @@
 import './axios'
 import './fontawesome'
-import 'bootstrap'
+// import 'bootstrap'
+import './quasar'
+// import 'quasar-extras/material-icons'

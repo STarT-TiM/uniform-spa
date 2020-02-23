@@ -5,8 +5,8 @@ require('laravel-mix-versionhash')
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 mix
-  .js('resources/js/app.js', 'public/dist/js')
-  .sass('resources/sass/app.scss', 'public/dist/css')
+  .js('resources/js/app.js', 'public/js')
+  .sass('resources/sass/app.scss', 'public/css')
 
   .disableNotifications()
 
@@ -30,7 +30,7 @@ mix.webpackConfig({
     }
   },
   output: {
-    chunkFilename: 'dist/js/[chunkhash].js',
+    chunkFilename: 'js/[chunkhash].js',
     path: mix.config.hmr ? '/' : path.resolve(__dirname, './public/build')
   }
 })
@@ -45,9 +45,9 @@ function publishAseets () {
   const publicDir = path.resolve(__dirname, './public')
 
   if (mix.inProduction()) {
-    fs.removeSync(path.join(publicDir, 'dist'))
+    fs.removeSync(path.join(publicDir, ''))
   }
 
-  fs.copySync(path.join(publicDir, 'build', 'dist'), path.join(publicDir, 'dist'))
+  fs.copySync(path.join(publicDir, 'build', ''), path.join(publicDir, ''))
   fs.removeSync(path.join(publicDir, 'build'))
 }

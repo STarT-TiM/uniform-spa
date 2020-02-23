@@ -3,28 +3,27 @@
     <div class="row justify-center">
       <div class="col-12" style="max-width: 800px;">
         <p class="text-subtitle1">
-          {{ $t('your_password') }}
+          {{ $t('your_info') }}
         </p>
         <q-card>
           <form @submit.prevent="update" @keydown="form.onKeydown($event)">
-            <alert-success :form="form" :message="$t('password_updated')"/>
+            <alert-success :form="form" :message="$t('info_updated')"/>
 
             <div class="q-pa-lg">
               <div class="col-12 q-pb-md">
                 <div class="q-pa-xs">
-                  <q-input v-model="form.password" type="password" bottom-slots
-                           :label="$t('new_password')" :error="form.errors.has('password')">
+                  <q-input v-model="form.name" type="text" bottom-slots
+                           :label="$t('name')" :error="form.errors.has('name')">
                     <template v-slot:error>
-                      <has-error :form="form" field="password"/>
+                      <has-error :form="form" field="name"/>
                     </template>
                   </q-input>
                 </div>
                 <div class="q-pa-xs">
-                  <q-input v-model="form.password_confirmation" type="password" bottom-slots
-                           :label="$t('confirm_password')"
-                           :error="form.errors.has('password_confirmation')">
+                  <q-input v-model="form.email" type="email" bottom-slots
+                           :label="$t('email')" :error="form.errors.has('email')">
                     <template v-slot:error>
-                      <has-error :form="form" field="password_confirmation"/>
+                      <has-error :form="form" field="email"/>
                     </template>
                   </q-input>
                 </div>
@@ -45,6 +44,7 @@
 
 <script>
   import Form from 'vform'
+  import { mapGetters } from 'vuex'
 
   export default {
     scrollToTop: false,
@@ -55,16 +55,27 @@
 
     data: () => ({
       form: new Form({
-        password: '',
-        password_confirmation: ''
+        name: '',
+        email: ''
       })
     }),
 
+    computed: mapGetters({
+      user: 'auth/user'
+    }),
+
+    created () {
+      // Fill the form with user data.
+      this.form.keys().forEach(key => {
+        this.form[key] = this.user[key]
+      })
+    },
+
     methods: {
       async update () {
-        await this.form.patch('/api/settings/password')
+        const { data } = await this.form.patch('/api/settings/profile')
 
-        this.form.reset()
+        this.$store.dispatch('auth/updateUser', { user: data })
       }
     }
   }
