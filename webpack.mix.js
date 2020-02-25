@@ -31,7 +31,7 @@ mix.webpackConfig({
   },
   output: {
     chunkFilename: 'js/[chunkhash].js',
-    path: mix.config.hmr ? '/' : path.resolve(__dirname, './public/build')
+    path: mix.config.hmr ? '/' : path.resolve(__dirname, './public/')
   }
 })
 
@@ -48,6 +48,6 @@ function publishAseets () {
     fs.removeSync(path.join(publicDir, ''))
   }
 
-  fs.copySync(path.join(publicDir, 'build', ''), path.join(publicDir, ''))
-  fs.removeSync(path.join(publicDir, 'build'))
+  fs.copySync(path.join(publicDir, '', ''), path.join(publicDir, ''))
+  fs.removeSync(path.join(publicDir, ''))
 }
