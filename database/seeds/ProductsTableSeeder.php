@@ -20,9 +20,10 @@ class ProductsTableSeeder extends Seeder
             'features' => 'áo có độ đàn hồi tốt, thấm hút mồ hôi',
             'fabric' => '1',
             'sizes' => 'S;M;L',
-            'color' => 'đen; trắng; xám; đỏ; vàng; cam',
+            'colors' => 'đen; trắng; xám; đỏ; vàng; cam',
             'quantity' => '99',
             'type' => '1',
+            'image' => '1',
             'map_size' => 'L:55 - 60kg; M:47 - 54kg; S:<47kg',
 
         ]);
@@ -35,8 +36,9 @@ class ProductsTableSeeder extends Seeder
             'features' => 'tay áo được thiết kế đặc biệt, giống tay áo sơ mi Song Joong Ki mặc trong đám cưới',
             'fabric' => '1',
             'sizes' => 'S;M;L',
-            'color' => 'đen; trắng',
+            'colors' => 'đen; trắng',
             'quantity' => '876',
+            'image' => '1',
             'type' => '2',
             'map_size' => 'L:60-70kg; M:50-59kg; S:<50kg'
 
