@@ -28,7 +28,8 @@ export default [
     component: page('admin/index.vue'),
     children: [
       { path: '', redirect: { name: 'admin.home' } },
-      { path: 'home', name: 'admin.home', component: page('admin/home.vue') }
+      { path: 'home', name: 'admin.home', component: page('admin/home.vue') },
+      { path: 'product', name: 'admin.product', component: page('admin/product/index.vue') }
     ] },
 
   { path: '*', component: page('errors/404.vue') }
