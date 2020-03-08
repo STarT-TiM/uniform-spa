@@ -40,7 +40,8 @@
       return {
         links1: [
           { icon: 'web', text: 'Home', route: 'admin.home' },
-          { icon: 'person', text: 'Profile', route: 'settings.profile' }
+          { icon: 'person', text: 'Profile', route: 'settings.profile' },
+          { icon: 'flag', text: 'Product', route: 'admin.product' }
         ],
         links2: [
           { icon: 'flag', text: 'Canada' },
