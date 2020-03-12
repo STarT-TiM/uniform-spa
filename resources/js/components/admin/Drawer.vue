@@ -41,7 +41,8 @@
         links1: [
           { icon: 'web', text: 'Home', route: 'admin.home' },
           { icon: 'person', text: 'Profile', route: 'settings.profile' },
-          { icon: 'flag', text: 'Product', route: 'admin.product' }
+          { icon: 'flag', text: 'Product', route: 'admin.product' },
+          { icon: 'place', text: 'Category', route: 'admin.category' }
         ],
         links2: [
           { icon: 'flag', text: 'Canada' },

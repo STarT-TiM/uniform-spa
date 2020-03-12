@@ -29,7 +29,24 @@ export default [
     children: [
       { path: '', redirect: { name: 'admin.home' } },
       { path: 'home', name: 'admin.home', component: page('admin/home.vue') },
-      { path: 'product', name: 'admin.product', component: page('admin/product/index.vue') }
+      { path: 'product', name: 'admin.product', component: page('admin/product/index.vue') },
+      {
+        path: 'category',
+        component: page('admin/category/index.vue'),
+        name: 'admin.category',
+        children: [
+          {
+            path: 'create',
+            name: 'category.create',
+            component: page('admin/category/edit.vue')
+          },
+          {
+            path: ':id(\\d+)/edit',
+            name: 'category.edit',
+            component: page('admin/category/edit.vue')
+          }
+        ]
+      }
     ] },
 
   { path: '*', component: page('errors/404.vue') }
