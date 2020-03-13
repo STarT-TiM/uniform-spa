@@ -32,17 +32,23 @@ export default [
       { path: 'product', name: 'admin.product', component: page('admin/product/index.vue') },
       {
         path: 'category',
-        component: page('admin/category/index.vue'),
-        name: 'admin.category',
+        component: page('admin/index.vue'),
         children: [
+          {
+            path: '',
+            name: 'admin.category',
+            component: page('admin/category/index.vue')
+          },
           {
             path: 'create',
             name: 'category.create',
+            props: { isEdit: false },
             component: page('admin/category/edit.vue')
           },
           {
             path: ':id(\\d+)/edit',
             name: 'category.edit',
+            props: { isEdit: true },
             component: page('admin/category/edit.vue')
           }
         ]

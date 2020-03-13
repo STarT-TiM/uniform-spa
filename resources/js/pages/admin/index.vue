@@ -12,18 +12,6 @@
 <script>
   export default {
     middleware: 'auth',
-
-    computed: {
-      tabs () {
-        return [
-          {
-            icon: 'user',
-            name: this.$t('home'),
-            route: 'admin.home'
-          }
-        ]
-      }
-    }
   }
 </script>
 
