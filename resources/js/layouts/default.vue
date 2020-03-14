@@ -1,21 +1,15 @@
 <template>
   <div class="main-layout">
-    <navbar />
-
-    <div class="container mt-4">
-      <child />
-    </div>
+    <child/>
   </div>
 </template>
 
 <script>
-import Navbar from '~/components/Navbar'
 
+import $ from 'jquery'
+import slickCarousel from 'slick-carousel'
 export default {
-  name: 'MainLayout',
+  name: 'default'
 
-  components: {
-    Navbar
-  }
 }
 </script>

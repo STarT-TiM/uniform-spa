@@ -37,17 +37,6 @@
         leftDrawerOpen: true
       }
     },
-
-    computed: {
-      leftDrawer: {
-        get () {
-          return this.$store.state.drawer.leftDrawer
-        },
-        set (v) {
-          this.$store.dispatch('drawer/setDrawer', v)
-        }
-      }
-    },
     methods: {
       toggleMenu(isOpen) {
         this.leftDrawerOpen = isOpen
