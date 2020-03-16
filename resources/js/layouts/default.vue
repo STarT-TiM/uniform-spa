@@ -1,15 +1,27 @@
 <template>
   <div class="main-layout">
-    <child/>
+    <div class="page-wrapper" canvas="container">
+      <Header />
+
+      <child/>
+
+      <Footer />
+    </div>
   </div>
 </template>
 
 <script>
 
-import $ from 'jquery'
-import slickCarousel from 'slick-carousel'
-export default {
-  name: 'default'
 
+import Header from '~/components/home/Header'
+import Footer from '~/components/home/Footer'
+
+export default {
+  name: 'default',
+
+  components: {
+    Header,
+    Footer,
+  },
 }
 </script>
