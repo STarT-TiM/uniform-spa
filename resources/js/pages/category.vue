@@ -1,10 +1,8 @@
 <template>
   <div class="main wrapper">
     <div id="content" class="page-content up-content">
-      <Banner />
       <Product />
       <Category />
-      <Template />
     </div>
   </div>
 </template>
@@ -20,34 +18,16 @@
     layout: 'default',
 
     metaInfo () {
-      return { title: this.$t('home') }
+      return { title: this.$t('category') }
     },
 
     components: {
-      Banner,
       Product,
       Category,
-      Template,
     },
 
     data: () => ({
       title: window.config.appName
-    }),
-
-    computed: mapGetters({
-      authenticated: 'auth/check'
     })
   }
 </script>
-
-<style scoped>
-  .top-right {
-    position: absolute;
-    right: 10px;
-    top: 18px;
-  }
-
-  .title {
-    font-size: 85px;
-  }
-</style>
