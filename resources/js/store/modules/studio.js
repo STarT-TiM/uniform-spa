@@ -69,7 +69,7 @@ export const mutations = {
 export const actions = {
   addProductImage({commit}) {
     const image  = new window.Image();
-    image.src    = 'http://localhost:8000/images/product_1.jpg';
+    image.src    = '/images/product_1.jpg';
     image.onload = () => {
       commit('ADD_PRODUCT_IMAGE', image);
     };
