@@ -8,11 +8,8 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
-  import Banner from '~/components/home/Banner'
   import Product from '~/components/home/Product'
   import Category from '~/components/home/Category'
-  import Template from '~/components/home/Template'
 
   export default {
     layout: 'default',

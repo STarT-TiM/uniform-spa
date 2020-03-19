@@ -16,6 +16,8 @@ export default [
 
   { path: '/category', name: 'category', component: page('category.vue') },
 
+  { path: '/product', name: 'product', component: page('product.vue') },
+
   { path: '/studio', name: 'studio', component: page('catalog/studio/index.vue') },
 
   { path: '/settings',
