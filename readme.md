@@ -58,3 +58,9 @@ To enable email verification make sure that your `App\User` model implements the
 
 //TODO: change css for admin and front separate
 //TODO: change layout of studio
+//TODO: upload image in admin: upload to folder upload/... of folder public
+
+## upload seed
+composer dump-autoload
+php artisan db:seed --class=ProductsTableSeeder
+
