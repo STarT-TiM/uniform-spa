@@ -4,6 +4,7 @@ import router from '~/router'
 import i18n from '~/plugins/i18n'
 import App from '~/components/App'
 import VueKonva  from 'vue-konva'
+import vuetify from '~/plugins/vuetify'
 
 import '~/plugins'
 import '~/components'
@@ -13,6 +14,7 @@ Vue.use(VueKonva)
 
 /* eslint-disable no-new */
 new Vue({
+  vuetify,
   i18n,
   store,
   router,
