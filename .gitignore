@@ -1,5 +1,6 @@
 /node_modules
 /.idea
+/resources/.idea
 /public/hot
 /public/storage
 /public/dist
@@ -19,3 +20,4 @@ npm-debug.log
 yarn-error.log
 phpunit.dusk.xml
 *.code-workspace
+yarn.lock

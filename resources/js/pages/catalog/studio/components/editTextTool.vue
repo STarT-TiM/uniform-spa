@@ -7,19 +7,9 @@
       <button class="addText btn" v-on:click="addNewText">Add To Design</button>
     </div>
     <div class="Pane EditTextPane" v-if="textChoosed">
-      <div class="EditPaneGlass"></div>
       <div class="container">
         <div class="section text">
-
           <textarea class="editor" rows="3" v-model="editText"></textarea>
-          <div class="justify-container">
-            <label class="edit-icon justify block">Justify</label>
-            <div class="justifyButtons">
-              <label><input class="justifyLeft" name="justify" type="radio"><span></span></label>
-              <label><input class="justifyCenter" name="justify" type="radio" checked="checked"><span></span></label>
-              <label><input class="justifyRight" name="justify" type="radio"><span></span></label>
-            </div>
-          </div>
         </div>
         <div class="section-row">
           <div class="section font inline">
@@ -28,17 +18,27 @@
                                                 src="/studio/data/fonts/previews/png/finadmedcon.png"><span
               class="arrow"></span></a>
           </div>
+          {{showColorTable}}
           <div class="section color inline">
             <label class="edit-icon color block">Color</label>
-            <a class="colorAnchor colorBox" href="#" title="Black" style="background-color: rgb(0, 0, 0);"></a>
+            <a class="colorAnchor colorBox" href="#" style="background-color: #000000;"
+              v-on:click="() => {$store.dispatch('studio/editColorTableType', 'color')}"
+            >
+            </a>
           </div>
           <div class="section stroke-color inline">
             <label class="edit-icon stroke-color block">Stroke</label>
-            <a class="strokeColorAnchor colorBox none" href="#" title="none"></a>
+            <a class="strokeColorAnchor colorBox none" href="#" title="none"
+              v-on:click="() => {$store.dispatch('studio/editColorTableType', 'stroke')}"
+            >
+            </a>
           </div>
           <div class="section shadow-color inline">
             <label class="edit-icon shadow-color block">Shadow</label>
-            <a class="shadowColorAnchor colorBox none" href="#" title="none"></a>
+            <a class="shadowColorAnchor colorBox none" href="#" title="none"
+              v-on:click="() => {$store.dispatch('studio/editColorTableType', 'shadow')}"
+            >
+            </a>
           </div>
         </div>
         <div class="section more">
@@ -85,135 +85,231 @@
           <div class="layer">
             <label class="section-name">Layer Order</label>
             <label class="edit-icon layer block">Layer Order</label>
-            <button class="bringForward"><span>bring forward</span></button>
-            <button class="sendBackward"><span>send backward</span></button>
+            <button class="bringForward" v-on:click="moveUp"><span>bring forward</span></button>
+            <button class="sendBackward" v-on:click="moveDown"><span>send backward</span></button>
           </div>
           <div class="alignment">
             <label class="edit-icon align block">Position</label>
             <button class="alignCenter" @click="setPositionCenter"><span>position center</span></button>
             <label class="snap-label"><input class="snap" type="checkbox"> Snap to other objects when dragging</label>
           </div>
+          <div class="alignment">
+            <label class="edit-icon align block">Action</label>
+            <button class="alignCenter" v-on:click="deleteText"><span>Delete</span></button>
+          </div>
         </div>
       </div>
-      <div class="edit-tools">
-        <div class="label">edit text</div>
-        <div>
-          <ul>
-            <li>
-              <a class="text" href="#">Text</a>
-            </li>
-            <li>
-              <a class="font" href="#">Font</a>
-            </li>
-            <li>
-              <a class="color" href="#">Color</a>
-            </li>
-            <li>
-              <a class="stroke-color" href="#">Stroke</a>
-            </li>
-            <li>
-              <a class="shadow-color" href="#">Shadow</a>
-            </li>
-            <li>
-              <a class="arc" href="#">Arc</a>
-            </li>
-            <li>
-              <a class="more" href="#">More</a>
-            </li>
-            <li>
-              <a class="position" href="#">Layers</a>
-            </li>
-          </ul>
+      <textColor
+        v-if="showColorTable === 'color'"
+        v-bind:textChoosed="textChoosed"
+        v-bind:layerDraw="layerDraw"
+        v-bind:colorType="'textColor'"
+      >
+      </textColor>
+      <textColor
+        v-if="showColorTable === 'stroke'"
+        v-bind:textChoosed="textChoosed"
+        v-bind:layerDraw="layerDraw"
+        v-bind:colorType="'strokeColor'"
+      >
+        <div class="slider-container">
+          <label class="edit-icon stroke-weight">Weight</label>
+          <input class="strokeWeightInput" type="range" min="0" max="2" step="0.1" pattern="[0-9]*" v-model="editStrokeWeight">
+          <input type="number" class="strokeWeightBox" min="0" max="2" step="0.1" pattern="[0-9]*" v-model="editStrokeWeight">
         </div>
-      </div>
+      </textColor>
+      <textColor
+        v-if="showColorTable === 'shadow'"
+        v-bind:textChoosed="textChoosed"
+        v-bind:layerDraw="layerDraw"
+        v-bind:colorType="'shadowColor'"
+      >
+        <div class="slider-container">
+          <label class="edit-icon stroke-weight">offset X</label>
+          <input class="strokeWeightInput" type="range" min="-2" max="2" step="0.1" pattern="[0-9]*" v-model="editShadowOffsetX">
+          <input type="number" class="strokeWeightBox" min="-2" max="2" step="0.1" pattern="[0-9]*" v-model="editShadowOffsetX">
+        </div>
+        <div class="slider-container">
+          <label class="edit-icon stroke-weight">offsetY</label>
+          <input class="strokeWeightInput" type="range" min="-2" max="2" step="0.1" pattern="[0-9]*" v-model="editShadowOffsetY">
+          <input type="number" class="strokeWeightBox" min="-2" max="2" step="0.1" pattern="[0-9]*" v-model="editShadowOffsetY">
+        </div>
+      </textColor>
     </div>
   </div>
 </template>
 
 <script>
   import RangeSlider  from 'vue-range-slider'
-  // you probably need to import built-in style
   import 'vue-range-slider/dist/vue-range-slider.css'
   import {mapGetters} from 'vuex'
+  import textColor    from "./textColor";
 
   export default {
     components: {
-      RangeSlider
+      RangeSlider,
+      textColor
     },
-    props     : ['textChoosed', 'layerDraw', 'findItem', 'getLayer', 'updateTransformer', 'setObjectSelecting'],
+    props     : ['textChoosed', 'layerDraw', 'findItem', 'getLayer', 'updateTransformer', 'setObjectSelecting', 'getGroup'],
 
     data() {
       return {
-        borderColor: '#1976D2FF',
-        mask       : '!#XXXXXXXX',
-        menu       : false,
-        newText    : ''
+        newText     : '',
+      }
+    },
+    methods : {
+      addNewText       : async function () {
+        let text = this.newText;
+        let id   = this.textId;
+        await this.$store.dispatch('studio/addTextItem', text);
+        await this.setObjectSelecting(this.getLayer().findOne('.text-' + id));
+        await this.updateTransformer('text-' + id);
+        this.setPositionCenter();
+        this.newText = '';
+      },
+      setPositionCenter: async function () {
+        let textWidth = this.textChoosed.width();
+        this.$store.dispatch('studio/updateText', {
+          group  : this.textChoosed.attrs.group,
+          name   : this.textChoosed.attrs.name,
+          offsetX: textWidth / 2,
+          x      : 400
+        });
+      },
+      moveUp: async function () {
+        let that = this
+        let name = this.textChoosed.attrs.name
+        let group = this.textChoosed.attrs.group
+        await this.$store.dispatch('studio/moveUpText', {
+          name: this.textChoosed.attrs.name,
+          group: this.textChoosed.attrs.group
+        });
+        await this.setObjectSelecting(this.getGroup('group' + (group + 1)).findOne('.'+name))
+        await that.updateTransformer(name);
+        await that.layerDraw();
+      },
+      moveDown: async function () {
+        let that = this
+        let name = this.textChoosed.attrs.name
+        let group = this.textChoosed.attrs.group
+        await this.$store.dispatch('studio/moveDownText', {
+          name: this.textChoosed.attrs.name,
+          group: this.textChoosed.attrs.group
+        });
+        await this.setObjectSelecting(this.getGroup('group' + (group -1)).findOne('.'+name))
+        await that.updateTransformer(name);
+        await that.layerDraw();
+      },
+      deleteText: function () {
+        this.$store.dispatch('studio/deleteText', {
+          name: this.textChoosed.attrs.name,
+          group: this.textChoosed.attrs.group
+        });
+        this.setObjectSelecting(null);
       }
     },
     computed: {
       editSize         : {
         get() {
-          console.log(this.textChoosed);
-          return this.textChoosed.attrs.scaleX ? this.textChoosed.attrs.scaleX : 1;
+          let textObject = this.textItems['group' + this.textChoosed.attrs.group].find(event => event.name === this.textChoosed.attrs.name)
+          return textObject.scaleX
         },
         set(newVal) {
-          this.textChoosed.scale({x: newVal, y: newVal});
-          this.layerDraw();
+          this.$store.dispatch('studio/updateText', {
+            group: this.textChoosed.attrs.group,
+            name: this.textChoosed.attrs.name,
+            scaleX: parseFloat(newVal),
+            scaleY: parseFloat(newVal)
+          });
         }
       },
       editText         : {
         get() {
-          return this.textChoosed.attrs.text ? this.textChoosed.attrs.text : '';
+          console.log(this.textChoosed.attrs.name)
+          console.log(this.textItems['group' + this.textChoosed.attrs.group])
+          let textObject = this.textItems['group' + this.textChoosed.attrs.group].find(event => event.name === this.textChoosed.attrs.name)
+          return textObject.text
         },
         set(newVal) {
-          this.textChoosed.setAttr('text', newVal);
-          this.textChoosed.lineJoin('round');
-          this.layerDraw();
+          this.$store.dispatch('studio/updateText', {
+            group: this.textChoosed.attrs.group,
+            name: this.textChoosed.attrs.name,
+            text: parseFloat(newVal),
+          });
         }
       },
       editRotate       : {
         get() {
-          return this.textChoosed.attrs.rotation ? this.textChoosed.attrs.rotation : 0;
+          let textObject = this.textItems['group' + this.textChoosed.attrs.group].find(event => event.name === this.textChoosed.attrs.name)
+          return textObject.rotation
         },
         set(newVal) {
-          this.textChoosed.setAttr('offsetX', this.textChoosed.width() / 2);
-          this.textChoosed.setAttr('offsetY', this.textChoosed.height() / 2);
-          this.textChoosed.setAttr('rotation', parseInt(newVal));
-          this.layerDraw();
+          this.$store.dispatch('studio/updateText', {
+            group: this.textChoosed.attrs.group,
+            name: this.textChoosed.attrs.name,
+            offsetX: this.textChoosed.width() / 2,
+            offsetY: this.textChoosed.height() / 2,
+            rotation: parseInt(newVal)
+          });
+        }
+      },
+      editStrokeWeight: {
+        get() {
+          let textObject = this.textItems['group' + this.textChoosed.attrs.group].find(event => event.name === this.textChoosed.attrs.name)
+          return textObject.strokeWidth
+        },
+        set(newVal) {
+          this.$store.dispatch('studio/updateText', {
+            group: this.textChoosed.attrs.group,
+            name: this.textChoosed.attrs.name,
+            strokeWidth: parseInt(newVal)
+          });
+        }
+      },
+      editShadowOffsetX : {
+        get() {
+          let textObject = this.textItems['group' + this.textChoosed.attrs.group].find(event => event.name === this.textChoosed.attrs.name)
+          return textObject.shadowOffsetX
+        },
+        set(newVal) {
+          this.$store.dispatch('studio/updateText', {
+            group: this.textChoosed.attrs.group,
+            name: this.textChoosed.attrs.name,
+            shadowOffsetX: parseInt(newVal)
+          });
+        }
+      },
+      editShadowOffsetY : {
+        get() {
+          let textObject = this.textItems['group' + this.textChoosed.attrs.group].find(event => event.name === this.textChoosed.attrs.name)
+          return textObject.shadowOffsetY
+        },
+        set(newVal) {
+          this.$store.dispatch('studio/updateText', {
+            group: this.textChoosed.attrs.group,
+            name: this.textChoosed.attrs.name,
+            shadowOffsetY: parseInt(newVal)
+          });
         }
       },
       editLetterSpacing: {
         get() {
-          return this.textChoosed.attrs.letterSpacing;
+          let textObject = this.textItems['group' + this.textChoosed.attrs.group].find(event => event.name === this.textChoosed.attrs.name)
+          return textObject.letterSpacing
         },
         set(newVal) {
-          this.textChoosed.letterSpacing(parseInt(newVal));
-          this.updateTransformer('111');
-          this.updateTransformer(this.textChoosed.attrs.name);
-          this.layerDraw();
+          this.$store.dispatch('studio/updateText', {
+            group: this.textChoosed.attrs.group,
+            name: this.textChoosed.attrs.name,
+            letterSpacing: parseInt(newVal)
+          });
         }
       },
       ...mapGetters({
-        textItems    : 'studio/textItems',
+        textId: 'studio/textId',
+        textItems: 'studio/textItems',
+        showColorTable: 'studio/showColorTable',
       })
-    },
-    methods : {
-      addNewText: async function()  {
-        let text = this.newText;
-        let id   = this.textItems.length;
-        await this.$store.dispatch('studio/addTextItem', text);
-        this.setObjectSelecting(this.getLayer().findOne('.text-' + id));
-        await this.updateTransformer('text-' + id);
-        this.setPositionCenter();
-        this.newText = '';
-      },
-      setPositionCenter: function() {
-        let textWidth = this.textChoosed.width();
-        this.textChoosed.setAttr('offsetX', textWidth / 2);
-        this.textChoosed.setAttr('x', 400);
-
-        this.layerDraw();
-      }
     }
   };
 </script>
