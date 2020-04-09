@@ -40,3 +40,7 @@ Route::group(['middleware' => 'guest:api'], function () {
 Route::resource('product','ProductController');
 
 Route::resource('category','CategoryController');
+
+Route::resource('design','DesignController');
+
+Route::post('image-item','DesignController@store');

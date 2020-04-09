@@ -44,14 +44,15 @@ export const mutations = {
   EDIT_COLOR_TABLE_TYPE(stage, type) {
     state.showColorTable = type
   },
-  ADD_PRODUCT_IMAGE(state, image) {
+  ADD_PRODUCT_IMAGE(state, {image, url}) {
     state.productImage = {
       image  : image,
       offsetX: state.configKonva.width / 2,
       offsetY: state.configKonva.height / 2,
       x      : state.configKonva.width / 2,
       y      : state.configKonva.height / 2,
-      name   : 'product'
+      name   : 'product',
+      url : url
     };
   },
 
@@ -83,19 +84,21 @@ export const mutations = {
     })
   },
 
-  ADD_IMAGE_ITEM(state, image) {
+  ADD_IMAGE_ITEM(state, {image, url}) {
+    console.log(image, url)
     let id        = state.imageId;
     state.imageId = state.imageId + 1
     state.imageItems.group3.push({
       image    : image,
       x        : 0,
-      y        : 0,
+      y        : 300,
       draggable: true,
       rotation : 0,
       scaleX   : 1,
       scaleY   : 1,
       name     : 'image-' + id,
-      group    : 3
+      group    : 3,
+      url: url
     })
   },
 
@@ -189,7 +192,7 @@ export const actions = {
     const image  = new window.Image();
     image.src    = '/images/product_1.jpg';
     image.onload = () => {
-      commit('ADD_PRODUCT_IMAGE', image);
+      commit('ADD_PRODUCT_IMAGE', {image, url: '/images/product_1.jpg'});
     };
   },
 
@@ -197,11 +200,11 @@ export const actions = {
     commit('ADD_TEXT_ITEM', text)
   },
 
-  addImageItem({commit}, imageSrc) {
+  addImageItem({commit}, url) {
     const image  = new window.Image();
-    image.src    = imageSrc;
+    image.src    = url;
     image.onload = () => {
-      commit('ADD_IMAGE_ITEM', image);
+      commit('ADD_IMAGE_ITEM', {image, url});
     };
   },
 
