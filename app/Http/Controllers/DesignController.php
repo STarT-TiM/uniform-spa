@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\PDesign;
+use App\Models\ProductDesign;
 use App\Repositories\Contract\UserRepositoryInterface;
-use App\Repositories\Contract\PDesignRepositoryInterface;
+use App\Repositories\Contract\ProductDesignRepositoryInterface;
 
 class DesignController extends Controller
 {
@@ -15,12 +15,12 @@ class DesignController extends Controller
 
     public function __construct(
         UserRepositoryInterface $userRepo,
-        PDesignRepositoryInterface $productDesign
+        ProductDesignRepositoryInterface $productDesignRepo
 
     )
     {
         $this->userRepo = $userRepo;
-        $this->productDesign = $productDesign;
+        $this->productDesignRepo = $productDesignRepo;
     }
 
     /**
@@ -30,7 +30,7 @@ class DesignController extends Controller
      */
     public function index()
     {
-        dd($this->productDesign->all());
+        dd($this->productDesignRepo->all());
         //
     }
 
@@ -52,7 +52,7 @@ class DesignController extends Controller
      */
     public function store(Request $request)
     {
-        $productDesign = PDesign::create([
+        ProductDesign::create([
             'name' => '123',
             'data' => json_encode([
                 'images' => $request->images,
@@ -66,9 +66,7 @@ class DesignController extends Controller
         return response()->json([
             'status-code' => 200,
             'message' => 'OK',
-            'data' => json_decode($productDesign),
         ]);
-        //dd($productDesign);
     }
 
     /**
@@ -79,7 +77,12 @@ class DesignController extends Controller
      */
     public function show($id)
     {
-        //
+        $product = $this->productDesign->find($id);
+        return response()->json([
+            'status-code' => 200,
+            'message' => 'OK',
+            'data' => $product,
+        ]);
     }
 
     /**

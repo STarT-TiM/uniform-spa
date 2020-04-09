@@ -6,8 +6,8 @@ use Illuminate\Support\ServiceProvider;
 use App\Repositories\Contract\UserRepositoryInterface;
 use App\Repositories\Service\UserRepository;
 
-use App\Repositories\Contract\PDesignRepositoryInterface;
-use App\Repositories\Service\PDesignRepository;
+use App\Repositories\Contract\ProductDesignRepositoryInterface;
+use App\Repositories\Service\ProductDesignRepository;
 
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -15,7 +15,7 @@ class RepositoryServiceProvider extends ServiceProvider
 
     public $bindings = [
         UserRepositoryInterface::class => UserRepository::class,
-        PDesignRepositoryInterface::class => PDesignRepository::class,
+        ProductDesignRepositoryInterface::class => ProductDesignRepository::class,
     ];
 
     /**

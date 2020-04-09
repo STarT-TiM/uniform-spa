@@ -2,7 +2,7 @@
 
 namespace App\Repositories\Contract;
 
-interface PDesignRepositoryInterface
+interface ProductDesignRepositoryInterface
 {
 
 }
