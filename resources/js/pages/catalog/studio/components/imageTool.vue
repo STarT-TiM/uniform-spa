@@ -121,6 +121,7 @@
   import RangeSlider  from 'vue-range-slider'
   import 'vue-range-slider/dist/vue-range-slider.css'
   import {mapGetters} from 'vuex'
+  import axios from 'axios'
 
   export default {
     components: {
@@ -204,9 +205,25 @@
         });
       },
       uploadImage: function (e) {
-        const file = e.target.files[0];
-        const a = URL.createObjectURL(file);
-        this.addNewImage(a)
+        const that = this
+        let formData = new FormData();
+        let file = e.target.files[0];
+        formData.append('file', file);
+
+        axios.post( '/api/image-item',
+          formData,
+          {
+            headers: {
+              'Content-Type': 'multipart/form-data'
+            }
+          }
+        ).then(function(response){
+          that.addNewImage(response.data.data)
+          console.log('add image success!!');
+        })
+        .catch(function(){
+          console.log('FAILURE!!');
+        });
       },
       moveUp: async function () {
         let that = this
