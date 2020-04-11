@@ -84,6 +84,10 @@ export const mutations = {
     })
   },
 
+  LOAD_TEXT_ITEMS(state, textItems) {
+    state.textItems = textItems
+  },
+
   ADD_IMAGE_ITEM(state, {image, url}) {
     console.log(image, url)
     let id        = state.imageId;
@@ -100,6 +104,30 @@ export const mutations = {
       group    : 3,
       url: url
     })
+  },
+
+  LOAD_DESIGN(state, data) {
+    let imageItems = data.images
+    state.textItems = data.texts
+    state.imageItems = {
+      group1: [],
+      group2: [],
+      group3: [],
+      group4: [],
+      group5: [],
+    }
+    for (let i in imageItems) {
+      let group = imageItems[i];
+      let a = group.map((imageData) => {
+        const image  = new window.Image();
+        image.src    = imageData.url;
+        image.onload = () => {
+          imageData.image = image
+          state.imageItems['group' + imageData.group].push(imageData)
+        };
+      })
+    }
+
   },
 
   UPDATE_IMAGE(state, data) {
@@ -199,6 +227,11 @@ export const actions = {
   addTextItem({commit}, text) {
     commit('ADD_TEXT_ITEM', text)
   },
+
+  loadDesign({commit}, data) {
+    commit('LOAD_DESIGN', data)
+  },
+
 
   addImageItem({commit}, url) {
     const image  = new window.Image();

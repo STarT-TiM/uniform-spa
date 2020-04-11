@@ -15,4 +15,9 @@ class ProductDesignRepository extends BaseRepository implements ProductDesignRep
         $this->model = $pDesign;
         parent::__construct($pDesign);
     }
+
+    public function getByUserId($userId) {
+        return $this->model->where('user_id', $userId)->get();
+    }
+
 }

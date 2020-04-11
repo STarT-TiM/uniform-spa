@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Storage;
+namespace App\Http\Controllers\Catalog;
 
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\Models\Product;
 
-class ItemController extends Controller
+class ImageItemController extends Controller
 {
     public function store(Request $request)
     {

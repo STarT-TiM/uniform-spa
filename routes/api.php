@@ -38,9 +38,8 @@ Route::group(['middleware' => 'guest:api'], function () {
     Route::get('oauth/{driver}/callback', 'Auth\OAuthController@handleProviderCallback')->name('oauth.callback');
 });
 Route::resource('product','ProductController');
-
 Route::resource('category','CategoryController');
+Route::resource('design','Catalog\DesignController');
 
-Route::resource('design','DesignController');
-
-Route::post('image-item','DesignController@store');
+Route::get('user/design','Catalog\UserDesignController@getUserDesign');
+Route::post('image-item','Catalog\ImageItemController@store');

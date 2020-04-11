@@ -1,27 +1,28 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Catalog;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\ProductDesign;
 use App\Repositories\Contract\UserRepositoryInterface;
 use App\Repositories\Contract\ProductDesignRepositoryInterface;
+use Illuminate\Support\Facades\Auth;
 
 class DesignController extends Controller
 {
     private $userRepo;
     private $productDesign;
 
-
     public function __construct(
         UserRepositoryInterface $userRepo,
         ProductDesignRepositoryInterface $productDesignRepo
-
     )
     {
+        $this->middleware('admin');
         $this->userRepo = $userRepo;
         $this->productDesignRepo = $productDesignRepo;
     }
+
 
     /**
      * Display a listing of the resource.
@@ -30,7 +31,9 @@ class DesignController extends Controller
      */
     public function index()
     {
-        dd($this->productDesignRepo->all());
+        //dd(Auth::user());
+        //
+        //dd($this->productDesignRepo->all());
         //
     }
 
@@ -52,19 +55,18 @@ class DesignController extends Controller
      */
     public function store(Request $request)
     {
-        ProductDesign::create([
-            'name' => '123',
+        $user = Auth::user();
+        $this->productDesignRepo->create([
+            'name' => $request->name,
             'data' => json_encode([
                 'images' => $request->images,
                 'texts' => $request->texts
             ]),
             'product_id' => $request->product,
-            'user_id' => null,
-            'id' => '127.0.0.1',
-            'cookie' => null,
+            'user_id' => $user->id,
         ]);
         return response()->json([
-            'status-code' => 200,
+            'code' => 200,
             'message' => 'OK',
         ]);
     }
@@ -79,7 +81,7 @@ class DesignController extends Controller
     {
         $product = $this->productDesign->find($id);
         return response()->json([
-            'status-code' => 200,
+            'code' => 200,
             'message' => 'OK',
             'data' => $product,
         ]);

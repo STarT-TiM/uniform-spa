@@ -60,7 +60,10 @@
             v-bind:setObjectSelecting="setObjectSelecting"
             v-bind:getGroup="getGroup"
           ></editTextTool>
-          <descriptionTool></descriptionTool>
+          <saveAndLoadTool
+            v-if="typeSelecting === 'saveAndLoad'"
+          />
+          <descriptionTool/>
         </div>
       </div>
     </div>
@@ -72,6 +75,7 @@
   import imageTool       from './components/imageTool'
   import menuTool        from './components/menuTool'
   import descriptionTool from './components/descriptionTool'
+  import saveAndLoadTool from './components/saveAndLoadTool'
   import {mapGetters}    from 'vuex'
   import '../../../../sass/studio.css'
 
@@ -80,6 +84,7 @@
       editTextTool,
       imageTool,
       descriptionTool,
+      saveAndLoadTool,
       menuTool
     },
     computed  : {
@@ -103,7 +108,7 @@
       };
     },
     created() {
-      this.$store.dispatch('studio/addProductImage')
+      // this.$store.dispatch('studio/addProductImage')
     },
     methods   : {
       getLayer            : function () {
